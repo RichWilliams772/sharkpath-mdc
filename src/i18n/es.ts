@@ -16,19 +16,19 @@ export const es: typeof en = {
     signedInAs: "Sesión iniciada como",
   },
   common: {
-    sample: "Datos de muestra",
+    sample: "De nuestra base de datos",
     verified: "Verificado",
-    unverified: "Datos de muestra",
+    unverified: "Aún sin verificar",
     source: "Fuente",
     asOf: "Período de datos: {period}",
-    pendingTiger: "Provisional hasta conectar nuestra base de datos Tiger Data",
+    pendingTiger: "consulta la fuente antes de usarlo",
     loading: "Cargando…",
     back: "Atrás",
     continue: "Continuar",
     yrs: "{n} años",
     perYear: "/año",
     close: "Cerrar",
-    footer: "SharkPath · Un proyecto estudiantil para Miami Dade College · Todas las cifras son datos de muestra hasta conectar nuestra base de datos Tiger Data",
+    footer: "SharkPath · Un proyecto estudiantil para Miami Dade College · Las cifras vienen de nuestra base de datos Tiger Data y citan sus fuentes. Confirma con MDC antes de decidir.",
   },
   landing: {
     badge: "Para los Sharks de Miami Dade College",
@@ -179,7 +179,7 @@ export const es: typeof en = {
     add: "Agregar",
     past: "Pasada",
     onlyMine: "Solo mi carrera",
-    sampleDates: "Fechas de muestra — confírmalas con la fuente antes de usarlas.",
+    sampleDates: "Confirma las fechas con la fuente antes de usarlas.",
     categories: {
       "financial-aid": "Ayuda financiera",
       admissions: "Admisiones",
@@ -215,7 +215,7 @@ export const es: typeof en = {
     placeholder: "Pregunta sobre carreras, clases, dinero…",
     send: "Enviar",
     greeting: "¡Hola{name}! Soy Finn. Pregúntame lo que quieras sobre tu ruta — siempre cito mis fuentes.",
-    facts: "Datos usados (de muestra)",
+    facts: "Datos usados",
     extended: "Estimación de IA",
     planThis: "Planear esta ruta: {career}",
     suggestions: {
@@ -256,7 +256,7 @@ export const es: typeof en = {
   careers: {
     title: "Toda carrera empieza en algún lugar",
     subtitle:
-      "Busca cualquier carrera y trazaremos una ruta desde MDC. Cada número tiene su fuente. Por ahora todo son datos de muestra (arena) o estimaciones de IA (violeta) hasta conectar nuestra base de datos Tiger Data.",
+      "Busca cualquier carrera y trazaremos una ruta desde MDC. Cada número tiene su fuente. Las carreras en arena vienen de nuestra base de datos; las violetas son estimaciones de IA.",
     filter: "Filtrar por meta-carrera",
     median: "Sueldo mediano",
     growth: "Crecimiento laboral",
@@ -304,7 +304,7 @@ export const es: typeof en = {
   },
   origin: {
     verified: "Verificado",
-    catalog: "Datos de muestra",
+    catalog: "Base de datos",
     ai: "Estimación de IA",
   },
   tracks: {
@@ -366,8 +366,8 @@ export const es: typeof en = {
       fafsa: "Renueva tu FAFSA cada octubre",
     },
     assumptions: "Cómo lo calculamos",
-    sample: "Datos de muestra — confirma con MDC",
-    sampleShort: "datos de muestra",
+    sample: "Confirma con MDC antes de decidir",
+    sampleShort: "aún sin verificar",
     page: "Página {n} de {total}",
   },
   money: {
@@ -405,7 +405,7 @@ export const es: typeof en = {
     actionsTitle: "Tu lista de tareas financieras",
     due: "Antes del {date}",
     kinds: { grant: "Becas federales", scholarship: "Becas", family: "Familia", savings: "Ahorros", work: "Trabajo", loan: "Préstamos" },
-    sample: "Estimaciones de muestra — confirma tus números con Ayuda Financiera de MDC.",
+    sample: "Estimaciones — confirma tus números con Ayuda Financiera de MDC.",
     exportPrompt: {
       title: "Primero crea tu plan financiero",
       body: "Tu PDF incluye exactamente cómo vas a pagar esta ruta. Haz el quiz financiero de 2 minutos para completar tu plan.",

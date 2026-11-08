@@ -24,7 +24,7 @@ INSERT INTO sources (id, label, title, url, as_of, verified) VALUES
   ('mdc-calendar', 'MDC', 'Miami Dade College academic calendar', 'https://www.mdc.edu', NULL, FALSE),
   ('fiu-admissions', 'FIU', 'FIU transfer admissions deadlines', 'https://admissions.fiu.edu', NULL, FALSE),
   ('bright-futures', 'FL OSFA', 'Florida Bright Futures Scholarship', 'https://www.floridastudentfinancialaidsg.org', '2026–27', FALSE),
-  ('college-tuition', 'Tuition', 'College tuition & required fees per credit (sample directory — College Scorecard / school tuition pages)', 'https://collegescorecard.ed.gov', '2026–27', FALSE);
+  ('college-tuition', 'Tuition', 'College tuition & required fees per credit (College Scorecard / school tuition pages)', 'https://collegescorecard.ed.gov', '2026–27', FALSE);
 
 INSERT INTO programs (id, name, degree, school, total_credits_value, total_credits_unit, total_credits_source_id) VALUES
   ('mdc-aa-architecture', 'Associate in Arts · Pre-Architecture', 'A.A.', 'School of Architecture & Interior Design', 60, 'credits', 'mdc-catalog'),
