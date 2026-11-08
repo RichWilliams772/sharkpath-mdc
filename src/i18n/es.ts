@@ -172,7 +172,7 @@ export const es: typeof en = {
     timeline: "Cronología",
     earning: "con ingresos",
     assumptions: "Cómo lo calculamos",
-    placeholder: "Cálculo provisional — lo reemplazará la calculadora del equipo Backend.",
+    placeholder: "Estimaciones según tu plan y costos de matrícula con fuente. Confirma tus costos con Ayuda Financiera de MDC.",
     noAid: "Aún no hay becas — haz el quiz financiero para ver qué ayuda te corresponde.",
   },
   deadlines: {
@@ -197,7 +197,7 @@ export const es: typeof en = {
     run: "Consultar al equipo",
     rerun: "Consultar de nuevo con mis cambios",
     thinking: "Pensando…",
-    mock: "Modo demo — se conecta a la API de Swarms cuando /api/counselor-team esté activo.",
+    mock: "Consejeros de IA con los datos con fuente de SharkPath. Confirma las decisiones importantes con un asesor de MDC.",
     agents: {
       career: "Carrera",
       careerDesc: "Mercado laboral y afinidad",
@@ -226,7 +226,7 @@ export const es: typeof en = {
       two: "¿Qué debo tomar el primer semestre?",
       three: "¿Y si quiero ser biólogo/a marino/a?",
     },
-    mock: "Modo demo — se conecta a Gemini cuando /api/chat esté activo.",
+    mock: "Finn es un consejero de IA que usa los datos con fuente de SharkPath. Confirma las decisiones importantes con un asesor de MDC.",
     lostSignal: "⚠️ Finn perdió la señal. Inténtalo de nuevo.",
     voice: {
       talk: "Hablar con Finn",
