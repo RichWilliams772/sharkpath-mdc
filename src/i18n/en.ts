@@ -479,4 +479,10 @@ export const en = {
       },
     },
   },
+  school: {
+    colleges: "Colleges",
+    home: "Home state",
+    inState: "In-state tuition",
+    outOfState: "Out-of-state tuition",
+  },
 };

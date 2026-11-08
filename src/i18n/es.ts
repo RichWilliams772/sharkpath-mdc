@@ -482,6 +482,12 @@ export const es: typeof en = {
       },
     },
   },
+  school: {
+    colleges: "Universidades",
+    home: "Estado de residencia",
+    inState: "Matrícula estatal",
+    outOfState: "Matrícula de fuera del estado",
+  },
 };
 
 /** Spanish for data content (careers, quiz). English comes from src/data. */
