@@ -169,7 +169,7 @@ export const en = {
     timeline: "Timeline",
     earning: "earning",
     assumptions: "How we calculated this",
-    placeholder: "Placeholder math — the Backend calculator will replace it.",
+    placeholder: "Estimates based on your plan and sourced tuition rates. Confirm your costs with MDC Financial Aid.",
     noAid: "No grants yet — take the financial quiz to see what aid you qualify for.",
   },
   deadlines: {
@@ -194,7 +194,7 @@ export const en = {
     run: "Ask the team",
     rerun: "Ask again with my changes",
     thinking: "Thinking…",
-    mock: "Demo mode — connects to the Swarms API when /api/counselor-team is live.",
+    mock: "AI counselors using SharkPath’s sourced data. Confirm big decisions with an MDC advisor.",
     agents: {
       career: "Career",
       careerDesc: "Job market & fit",
@@ -223,7 +223,7 @@ export const en = {
       two: "What should I take first semester?",
       three: "What about becoming a marine biologist?",
     },
-    mock: "Demo mode — connects to Gemini when /api/chat is live.",
+    mock: "Finn is an AI counselor using SharkPath’s sourced data. Confirm big decisions with an MDC advisor.",
     lostSignal: "⚠️ Finn lost signal. Try again.",
     voice: {
       talk: "Talk with Finn",
