@@ -22,7 +22,7 @@ export const US_STATES: { code: StateCode; name: string }[] = [
 
 export const stateName = (code: StateCode) => US_STATES.find((s) => s.code === code)?.name ?? code;
 
-const rate = (value: number): Sourced => ({ value, unit: "USD/credit", source: S.collegeTuition });
+const rate = (value: number, source = S.collegeTuition): Sourced => ({ value, unit: "USD/credit", source });
 
 function school(
   id: string,
@@ -39,7 +39,13 @@ function school(
 
 export const SCHOOLS: School[] = [
   // ── Community colleges (start here) ──
-  school("mdc", "Miami Dade College", "MDC", "FL", "Miami", "community", 118, 403),
+  // MDC: verified 2026-11-08 ("Total Cost Per Credit", tuition + per-credit fees).
+  {
+    ...school("mdc", "Miami Dade College", "MDC", "FL", "Miami", "community", 118.22, 402.51),
+    tuitionPerCredit: { inState: rate(118.22, S.mdcTuitionPerCredit), outOfState: rate(402.51, S.mdcTuitionPerCredit) },
+    // Baccalaureate (B.S./B.A.S.) programs, same page, verified 2026-11-08.
+    bachelorTuitionPerCredit: { inState: rate(129.89, S.mdcTuitionBachelor), outOfState: rate(535.97, S.mdcTuitionBachelor) },
+  },
   school("valencia", "Valencia College", "Valencia", "FL", "Orlando", "community", 103, 391),
   school("broward", "Broward College", "Broward", "FL", "Fort Lauderdale", "community", 112, 399),
   school("acc", "Austin Community College", "ACC", "TX", "Austin", "community", 101, 399),

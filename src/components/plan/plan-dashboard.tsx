@@ -1,14 +1,18 @@
 "use client";
 
-import { CalendarDays, GraduationCap, LineChart, Network, PiggyBank, SlidersHorizontal, Users } from "lucide-react";
+import { CalendarDays, GraduationCap, Info, LineChart, Network, PiggyBank, SlidersHorizontal, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useState } from "react";
 import { CareerIcon } from "@/components/career-icon";
 import { Panel } from "@/components/section";
+import { SourceChip } from "@/components/source-chip";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useLocalized } from "@/i18n/use-localized";
+import { useCareerLoading } from "@/lib/api/career-data";
+import { isBuiltin } from "@/lib/careers/registry";
 import { usePlanStore } from "@/store/plan-store";
 import { CounselorTeam } from "./counselor-team";
 import { DeadlineCalendar } from "./deadline-calendar";
@@ -33,12 +37,27 @@ const TABS = [
 ] as const;
 
 export function PlanDashboard() {
+  const tCommon = useTranslations("common");
   const hydrated = useHydrated();
-  if (!hydrated) {
+  const careerId = usePlanStore((s) => s.inputs.careerId);
+  const custom = usePlanStore((s) => s.customCareers);
+  // Load this career from Tiger Data. Student-generated (AI) careers never live there.
+  const fromApi = hydrated && !(custom[careerId] && !isBuiltin(careerId)) ? careerId : null;
+  const careerLoading = useCareerLoading(fromApi);
+
+  // Only the first load shows the skeleton; switching careers later swaps data in place.
+  const [shown, setShown] = useState(false);
+  const loading = !shown && (!hydrated || careerLoading);
+  if (!loading && !shown) setShown(true);
+
+  if (loading) {
     return (
-      <div className="grid gap-6 lg:grid-cols-[320px_1fr]" aria-busy="true">
-        <div className="h-[640px] animate-pulse rounded-2xl bg-card/60" />
-        <div className="h-[640px] animate-pulse rounded-2xl bg-card/60" />
+      <div role="status" aria-live="polite" aria-busy="true">
+        <span className="sr-only">{tCommon("loading")}</span>
+        <div className="grid gap-6 lg:grid-cols-[320px_1fr]" aria-hidden="true">
+          <div className="h-[640px] animate-pulse rounded-2xl bg-card/60" />
+          <div className="h-[640px] animate-pulse rounded-2xl bg-card/60" />
+        </div>
       </div>
     );
   }
@@ -49,7 +68,7 @@ function Dashboard() {
   const t = useTranslations("plan");
   const tWhatIf = useTranslations("whatIf");
   const { career } = usePlan();
-  const { careerTitle } = useLocalized();
+  const { careerTitle, tx } = useLocalized();
   const profile = usePlanStore((s) => s.profile);
   const tab = usePlanStore((s) => s.planTab);
   const setTab = usePlanStore((s) => s.setPlanTab);
@@ -71,6 +90,21 @@ function Dashboard() {
           <ExportPdfButton />
         </div>
       </div>
+
+      {career.notes && career.notes.length > 0 && (
+        <aside className="glass mb-6 rounded-2xl p-4" aria-label={t("notes")}>
+          <p className="mb-2 flex items-center gap-1.5 text-sm font-semibold text-primary">
+            <Info className="size-4" /> {t("notes")}
+          </p>
+          <ul className="space-y-1.5 text-sm">
+            {career.notes.map((note, i) => (
+              <li key={i}>
+                {tx(`career.${career.id}.note.${i}`, note.text)} <SourceChip source={note.source} />
+              </li>
+            ))}
+          </ul>
+        </aside>
+      )}
 
       {/* Phones: what-if controls slide up from the bottom so results stay visible. */}
       <Sheet>

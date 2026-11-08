@@ -22,6 +22,8 @@ export interface Source {
   asOf?: string;
   /** true once the Data team has checked it into Tiger Data */
   verified: boolean;
+  /** ISO date (YYYY-MM-DD) someone last opened `url` and confirmed the figure is written there */
+  checkedOn?: string;
 }
 
 export interface Sourced<T = number> {
@@ -82,6 +84,10 @@ export interface PathwayStage {
   fee?: Sourced;
   /** Can you work in the field while doing this stage? (AXP, EIT…) */
   earningWhileInStage?: boolean;
+  /** Career-growth step taken after the first job (e.g. FE → PE). Not counted in years to first job; the map shows it after the career. */
+  afterFirstJob?: boolean;
+  /** A bachelor's at the starting college (e.g. MDC B.S.), charged at its bachelor's rate when it has one */
+  atStartSchool?: boolean;
 }
 
 export interface PathwayRoute {
@@ -141,6 +147,13 @@ export interface Career {
   /** The career's stages (excluding "start" and the career node itself) */
   stages: PathwayStage[];
   routes: PathwayRoute[];
+  /** Sourced things a student should know about this path (shown on the plan page) */
+  notes?: CareerNote[];
+}
+
+export interface CareerNote {
+  text: string;
+  source: Source;
 }
 
 // ─── Schools (any U.S. college) ────────────────────────────────────────────
@@ -159,6 +172,8 @@ export interface School {
   kind: "community" | "university";
   /** Tuition & required fees per credit hour */
   tuitionPerCredit: { inState: Sourced; outOfState: Sourced };
+  /** Per-credit rate for the college's own bachelor's programs, if it offers them (e.g. MDC B.S.) */
+  bachelorTuitionPerCredit?: { inState: Sourced; outOfState: Sourced };
   /** Typed in by the student ("my college isn't listed") — uses national averages */
   custom?: boolean;
 }

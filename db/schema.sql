@@ -9,7 +9,7 @@
 
 BEGIN;
 
-DROP TABLE IF EXISTS saved_plans, deadline_careers, deadlines, schools, pathway_routes,
+DROP TABLE IF EXISTS counselor_team_cache, ai_rate_limits, saved_plans, deadline_careers, deadlines, schools, career_notes, pathway_routes,
   pathway_stages, careers, program_courses, programs, sources CASCADE;
 
 -- ─── Sources ────────────────────────────────────────────────────────────────
@@ -19,7 +19,8 @@ CREATE TABLE sources (
   title     TEXT NOT NULL,              -- full citation
   url       TEXT NOT NULL,
   as_of     TEXT,                       -- data period, e.g. "May 2024"
-  verified  BOOLEAN NOT NULL DEFAULT FALSE
+  verified  BOOLEAN NOT NULL DEFAULT FALSE,
+  checked_on DATE                        -- when someone confirmed the figure is written at `url`
 );
 
 -- ─── Programs & courses ─────────────────────────────────────────────────────
@@ -108,6 +109,8 @@ CREATE TABLE pathway_stages (
   fee_source_id    TEXT REFERENCES sources(id),
 
   earning_while_in_stage BOOLEAN,
+  after_first_job        BOOLEAN,       -- career-growth step after the first job (FE → PE)
+  at_start_school        BOOLEAN,       -- bachelor's at the starting college (MDC B.S.)
   PRIMARY KEY (career_id, id),
   CHECK ((years_value IS NULL) = (years_source_id IS NULL)),
   CHECK ((fee_value IS NULL) = (fee_source_id IS NULL))
@@ -123,6 +126,15 @@ CREATE TABLE pathway_routes (
   requires_bachelors  BOOLEAN NOT NULL,
   PRIMARY KEY (career_id, id),
   UNIQUE (id)
+);
+
+-- Career.notes: sourced things a student should know about the path.
+CREATE TABLE career_notes (
+  career_id  TEXT NOT NULL REFERENCES careers(id) ON DELETE CASCADE,
+  position   INT  NOT NULL,
+  text       TEXT NOT NULL,
+  source_id  TEXT NOT NULL REFERENCES sources(id),
+  PRIMARY KEY (career_id, position)
 );
 
 -- ─── Schools ────────────────────────────────────────────────────────────────
@@ -141,6 +153,14 @@ CREATE TABLE schools (
   tuition_out_state_value      NUMERIC NOT NULL,
   tuition_out_state_unit       TEXT,
   tuition_out_state_source_id  TEXT NOT NULL REFERENCES sources(id),
+
+  -- the college's own bachelor's programs (e.g. MDC B.S.), if any
+  bachelor_tuition_in_state_value       NUMERIC,
+  bachelor_tuition_in_state_unit        TEXT,
+  bachelor_tuition_in_state_source_id   TEXT REFERENCES sources(id),
+  bachelor_tuition_out_state_value      NUMERIC,
+  bachelor_tuition_out_state_unit       TEXT,
+  bachelor_tuition_out_state_source_id  TEXT REFERENCES sources(id),
 
   custom      BOOLEAN NOT NULL DEFAULT FALSE
 );
@@ -179,5 +199,25 @@ CREATE TABLE saved_plans (
 );
 
 CREATE INDEX saved_plans_owner_idx ON saved_plans (owner_id, created_at DESC);
+
+-- ─── AI routes ──────────────────────────────────────────────────────────────
+-- Per-visitor rate limits. `bucket` = SHA-256 of route + IP (no raw IPs stored).
+CREATE TABLE ai_rate_limits (
+  bucket        TEXT        NOT NULL,
+  window_start  TIMESTAMPTZ NOT NULL,
+  count         INT         NOT NULL,
+  PRIMARY KEY (bucket, window_start)
+);
+
+-- Finished Counselor Team reports per career + route + language.
+CREATE TABLE counselor_team_cache (
+  career_id   TEXT        NOT NULL,
+  route_id    TEXT        NOT NULL,
+  locale      TEXT        NOT NULL CHECK (locale IN ('en', 'es')),
+  facts_hash  TEXT        NOT NULL,        -- career facts + prompts; a change makes the report stale
+  agents      JSONB       NOT NULL,        -- AgentReport[]
+  created_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
+  PRIMARY KEY (career_id, route_id, locale)
+);
 
 COMMIT;

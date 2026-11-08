@@ -13,19 +13,20 @@ export const en = {
     signedInAs: "Signed in as",
   },
   common: {
-    sample: "Sample data",
+    sample: "From our database",
     verified: "Verified",
-    unverified: "Sample data",
+    checkedOn: "checked {date}",
+    unverified: "Not yet verified",
     source: "Source",
     asOf: "Data period: {period}",
-    pendingTiger: "Placeholder until our Tiger Data database is connected",
+    pendingTiger: "check the source before relying on it",
     loading: "Loading…",
     back: "Back",
     continue: "Continue",
     yrs: "{n} yrs",
     perYear: "/yr",
     close: "Close",
-    footer: "SharkPath · A student project for Miami Dade College · All figures are sample data until our Tiger Data database is connected",
+    footer: "SharkPath · A student project for Miami Dade College · Figures come from our Tiger Data database and cite their sources. Confirm with MDC before you decide.",
   },
   landing: {
     badge: "For Miami Dade College Sharks",
@@ -103,6 +104,7 @@ export const en = {
     personalize: "Personalize my plan",
     greeting: "Ahoy, {name}",
     title: "Your path to {career}",
+    notes: "Good to know",
     tabs: { map: "Map", semesters: "Semesters", money: "Financial plan", roi: "Cost & ROI", deadlines: "Deadlines", team: "Counselor team" },
     stats: {
       years: "Years to first job",
@@ -144,6 +146,7 @@ export const en = {
     title: "Pathway map",
     hint: "Tap a career to change course. Glowing current = your route.",
     you: "You",
+    afterFirstJob: "After first job",
   },
   semesters: {
     title: "Semester by semester",
@@ -176,7 +179,7 @@ export const en = {
     add: "Add",
     past: "Passed",
     onlyMine: "Only my career",
-    sampleDates: "Sample dates — confirm with the source before relying on them.",
+    sampleDates: "Confirm dates with the source before relying on them.",
     categories: {
       "financial-aid": "Financial aid",
       admissions: "Admissions",
@@ -212,7 +215,7 @@ export const en = {
     placeholder: "Ask about careers, classes, money…",
     send: "Send",
     greeting: "Hey{name}! I’m Finn. Ask me anything about your path — I’ll cite my sources.",
-    facts: "Facts used (sample data)",
+    facts: "Facts used",
     extended: "AI estimate",
     planThis: "Plan this path: {career}",
     suggestions: {
@@ -253,7 +256,7 @@ export const en = {
   careers: {
     title: "Every career starts somewhere",
     subtitle:
-      "Search any career and we’ll chart a path from MDC. Every number has a source. For now everything is sample data (sand) or an AI estimate (violet) until our Tiger Data database is connected.",
+      "Search any career and we’ll chart a path from MDC. Every number has a source. Careers in sand come from our database; violet ones are AI estimates.",
     filter: "Filter by meta-major",
     median: "Median pay",
     growth: "Job growth",
@@ -301,7 +304,7 @@ export const en = {
   },
   origin: {
     verified: "Verified",
-    catalog: "Sample data",
+    catalog: "Database",
     ai: "AI estimate",
   },
   tracks: {
@@ -363,8 +366,8 @@ export const en = {
       fafsa: "Renew your FAFSA every October",
     },
     assumptions: "How we calculated this",
-    sample: "Sample data — confirm with MDC",
-    sampleShort: "sample data",
+    sample: "Confirm with MDC before you decide",
+    sampleShort: "not yet verified",
     page: "Page {n} of {total}",
   },
   money: {
@@ -402,7 +405,7 @@ export const en = {
     actionsTitle: "Your financial to-do list",
     due: "By {date}",
     kinds: { grant: "Grants", scholarship: "Scholarships", family: "Family", savings: "Savings", work: "Work", loan: "Loans" },
-    sample: "Sample estimates — confirm your numbers with MDC Financial Aid.",
+    sample: "Estimates — confirm your numbers with MDC Financial Aid.",
     exportPrompt: {
       title: "Build your financial plan first",
       body: "Your PDF includes exactly how you’ll pay for this path. Take the 2-minute financial quiz so your plan is complete.",

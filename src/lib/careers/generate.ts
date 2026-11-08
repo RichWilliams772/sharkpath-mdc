@@ -96,7 +96,8 @@ function fill(courses: Course[], target: number, title: string, code: string, ca
   return out;
 }
 
-function buildProgram(spec: CareerSpec, id: string) {
+/** The MDC program for a spec. Exported so core careers can reuse the same course pools. */
+export function buildProgram(spec: CareerSpec, id: string) {
   const mm = metaMajorById(spec.metaMajor);
   const name = spec.programName ?? `${mm.label} pathway`;
   if (spec.track === "as") {

@@ -116,8 +116,9 @@ export function calculatePlan(inputs: WhatIfInputs, career: Career, schools: Sch
       upperYears += years;
     }
     if (st.kind === "graduate") gradYears += years;
-    timeline.push({ stageId: id, label: st.title, startYear: year, years, earning: !!st.earningWhileInStage });
-    if (!st.earningWhileInStage) yearsToCareer = year + years;
+    timeline.push({ stageId: id, label: st.title, startYear: year, years, earning: !!st.earningWhileInStage || !!st.afterFirstJob });
+    // Career-growth steps (FE → PE) happen after the first job, so they don't delay it.
+    if (!st.earningWhileInStage && !st.afterFirstJob) yearsToCareer = year + years;
     year += years;
     if (st.fee) costs.push({ label: st.title, amount: st.fee.value, source: st.fee.source });
   }
@@ -126,6 +127,15 @@ export function calculatePlan(inputs: WhatIfInputs, career: Career, schools: Sch
   // `term` already points at the term after MDC (or the start term if MDC is done).
   const routeStages = route.stageIds.map(stage);
   const transfer = routeStages.find((s) => s.kind === "transfer");
+  // A bachelor's at the starting college (e.g. MDC B.S.) uses that college's bachelor's rate.
+  const startBachelorRate = transfer?.atStartSchool ? schools.start.bachelorTuitionPerCredit : undefined;
+  const bachelorSchool = startBachelorRate ? schools.start : schools.transfer;
+  const bachelorResidency = startBachelorRate ? schools.residency.start : schools.residency.transfer;
+  const bachelorRate = startBachelorRate
+    ? bachelorResidency === "in-state"
+      ? startBachelorRate.inState
+      : startBachelorRate.outOfState
+    : upperRate;
   const graduate = routeStages.find((s) => s.kind === "graduate");
   if (term.startsWith("summer")) term = nextTerm(term, false);
   let first = true;
@@ -138,7 +148,7 @@ export function calculatePlan(inputs: WhatIfInputs, career: Career, schools: Sch
   };
   if (transfer) {
     const terms = Math.max(1, Math.round(upperYears * 2));
-    addSummary(`${schools.transfer.shortName} · ${transfer.title}`, "Upper-division major courses (from transfer plan)", terms, Math.round(60 / terms));
+    addSummary(`${bachelorSchool.shortName} · ${transfer.title}`, "Upper-division major courses (from transfer plan)", terms, Math.round(60 / terms));
   }
   if (graduate) addSummary(graduate.title, "Graduate / professional coursework", Math.max(1, Math.round(gradYears * 2)), 12);
 
@@ -146,14 +156,14 @@ export function calculatePlan(inputs: WhatIfInputs, career: Career, schools: Sch
 
   // ── Costs ──
   const mdcTuition = mdcCredits * startRate.value;
-  const upperTuition = transfer ? 60 * upperRate.value : 0;
+  const upperTuition = transfer ? 60 * bachelorRate.value : 0;
   // Out-of-state graduate school costs roughly 1.8× (sample estimate).
   const gradTuition = gradYears * RATES.gradPerYear.value * (outOfStateGrad ? 1.8 : 1);
   const outLabel = (r: string) => (r === "out-of-state" ? " (out-of-state)" : "");
   costs.unshift(
     { label: `${schools.start.shortName} tuition${outLabel(schools.residency.start)}`, amount: round(mdcTuition), source: startRate.source },
     ...(transfer
-      ? [{ label: `${schools.transfer.shortName} tuition${outLabel(schools.residency.transfer)}`, amount: round(upperTuition), source: upperRate.source }]
+      ? [{ label: `${bachelorSchool.shortName}${startBachelorRate ? " B.S." : ""} tuition${outLabel(bachelorResidency)}`, amount: round(upperTuition), source: bachelorRate.source }]
       : []),
     ...(graduate ? [{ label: `${graduate.title} tuition${outLabel(schools.residency.transfer)}`, amount: round(gradTuition), source: RATES.gradPerYear.source }] : []),
     { label: "Books & supplies", amount: round(schoolYears * RATES.booksPerYear.value), source: RATES.booksPerYear.source },
@@ -165,7 +175,7 @@ export function calculatePlan(inputs: WhatIfInputs, career: Career, schools: Sch
   // State grants/scholarships (Bright Futures, Cal Grant, HOPE…) only cover in-state students.
   if (inputs.brightFutures) {
     const share = inputs.brightFuturesShare ?? 1;
-    const covered = (schools.residency.start === "in-state" ? mdcTuition : 0) + (schools.residency.transfer === "in-state" ? upperTuition : 0);
+    const covered = (schools.residency.start === "in-state" ? mdcTuition : 0) + (bachelorResidency === "in-state" ? upperTuition : 0);
     const name = stateAidName(schools.homeState);
     if (covered > 0) {
       aid.push({
@@ -222,7 +232,7 @@ export function calculatePlan(inputs: WhatIfInputs, career: Career, schools: Sch
       { text: `Course load of ${load} credits per term at ${inputs.workHoursPerWeek} work hours/week`, source: S.sharkpathEstimate },
       { text: `${schools.start.name} tuition $${startRate.value}/credit (${schools.residency.start})`, source: startRate.source },
       ...(transfer
-        ? [{ text: `${schools.transfer.name} tuition $${upperRate.value}/credit (${schools.residency.transfer})`, source: upperRate.source }]
+        ? [{ text: `${bachelorSchool.name}${startBachelorRate ? " bachelor's" : ""} tuition $${bachelorRate.value}/credit (${bachelorResidency})`, source: bachelorRate.source }]
         : []),
       { text: `Part-time pay at about $${RATES.minWage.value}/hr`, source: RATES.minWage.source },
       { text: `No-degree baseline $${RATES.baselinePay.value.toLocaleString("en-US")}/yr (high school diploma median)`, source: RATES.baselinePay.source },

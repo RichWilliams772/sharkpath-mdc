@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
+import { useCareerData } from "@/lib/api/career-data";
 import { calculatePlan } from "@/lib/calculator";
 import { getCareer } from "@/lib/careers/registry";
 import { buildFinancePlan } from "@/lib/finance";
@@ -27,12 +28,13 @@ export function useLocalCareer(career: Career) {
 export function usePlan() {
   const inputs = usePlanStore((s) => s.inputs);
   const custom = usePlanStore((s) => s.customCareers);
+  const fromDb = useCareerData((s) => s.byId);
   const schools = useSchools();
   return useMemo(() => {
-    const career = withSchools(getCareer(inputs.careerId, custom), schools);
+    const career = withSchools(getCareer(inputs.careerId, custom, fromDb), schools);
     const plan = calculatePlan({ ...inputs, careerId: career.id }, career, schools);
     return { plan, career, schools };
-  }, [inputs, custom, schools]);
+  }, [inputs, custom, fromDb, schools]);
 }
 
 /** The money plan for the live plan, or null until the money quiz is taken. */

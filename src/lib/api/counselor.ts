@@ -163,13 +163,14 @@ export async function runCounselorTeam(
   plan: PlanResult,
   career: Career,
   onUpdate: (report: AgentReport) => void,
+  locale: "en" | "es" = "en",
 ): Promise<void> {
   AGENT_ORDER.forEach((role) => onUpdate({ role, status: "thinking", headline: "", points: [] }));
   try {
     const res = await callEndpoint(ENDPOINTS.counselorTeam, {
       method: "POST",
       // The full career is sent so the agents can reason about AI-generated careers too.
-      body: JSON.stringify({ inputs: plan.inputs, career, summary: { yearsToCareer: plan.yearsToCareer, netCost: plan.netCost } }),
+      body: JSON.stringify({ inputs: plan.inputs, career, locale, summary: { yearsToCareer: plan.yearsToCareer, netCost: plan.netCost } }),
     });
     const data = (await res.json()) as { agents: AgentReport[] };
     data.agents.forEach(onUpdate);
