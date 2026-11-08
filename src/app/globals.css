@@ -1,0 +1,226 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * SharkPath "Deep Ocean" theme.
+ * The page gets darker the deeper you scroll — like a shark diving from the
+ * sunlit shallows to the open ocean. Colors are hex on purpose (the PDF
+ * exporter can't read oklch).
+ *
+ *   primary  = bioluminescent aqua (your route, main actions)
+ *   coral    = warm highlight (calls to action, break-even)
+ *   sand     = warnings / "unverified" badges
+ *   kelp     = success / verified
+ */
+:root {
+  color-scheme: dark;
+
+  --background: #021526;
+  --foreground: #e3f4fb;
+  --card: #06243a;
+  --card-foreground: #e3f4fb;
+  --popover: #072a43;
+  --popover-foreground: #e3f4fb;
+  --primary: #2ee6d6;
+  --primary-foreground: #01262b;
+  --secondary: #0b3551;
+  --secondary-foreground: #d4eef8;
+  --muted: #0a2e47;
+  --muted-foreground: #8db4c8;
+  --accent: #0e3d5c;
+  --accent-foreground: #e3f4fb;
+  --destructive: #ff5d6c;
+  --border: #164a6b;
+  --input: #1a5578;
+  --ring: #2ee6d6;
+
+  --coral: #ff7f66;
+  --sand: #f4d58d;
+  --kelp: #5fd38d;
+  --shallows: #0b5a7a;
+  --abyss: #010b16;
+
+  --chart-1: #2ee6d6;
+  --chart-2: #5ab8ff;
+  --chart-3: #ff7f66;
+  --chart-4: #f4d58d;
+  --chart-5: #a78bfa;
+
+  --radius: 0.75rem;
+  --sidebar: #04192b;
+  --sidebar-foreground: #e3f4fb;
+  --sidebar-primary: #2ee6d6;
+  --sidebar-primary-foreground: #01262b;
+  --sidebar-accent: #0e3d5c;
+  --sidebar-accent-foreground: #e3f4fb;
+  --sidebar-border: #164a6b;
+  --sidebar-ring: #2ee6d6;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-display);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-coral: var(--coral);
+  --color-sand: var(--sand);
+  --color-kelp: var(--kelp);
+  --color-shallows: var(--shallows);
+  --color-abyss: var(--abyss);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  --animate-rise: rise var(--rise-duration, 9s) linear infinite;
+  --animate-sway: sway 7s ease-in-out infinite;
+  --animate-sweep: sweep 6s linear infinite;
+  --animate-caustic-a: caustic-a 60s linear infinite;
+  --animate-caustic-b: caustic-b 45s linear infinite;
+  --animate-ray: ray 10s ease-in-out infinite;
+  --animate-rays-sway: rays-sway 18s ease-in-out infinite;
+
+  /* Caustics move exactly one 600px tile so the loop is seamless */
+  @keyframes caustic-a {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(600px, 0, 0); }
+  }
+  @keyframes caustic-b {
+    from { transform: translate3d(0, 0, 0) scaleY(1.15); }
+    to { transform: translate3d(-600px, 0, 0) scaleY(1.15); }
+  }
+  @keyframes page-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes ray {
+    0%, 100% { opacity: 0.35; }
+    50% { opacity: 1; }
+  }
+  @keyframes rays-sway {
+    0%, 100% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
+  }
+  --animate-bob: bob 4s ease-in-out infinite;
+  --animate-swim: swim 22s linear infinite;
+
+  @keyframes sweep {
+    to { transform: rotate(360deg); }
+  }
+  @keyframes bob {
+    0%, 100% { transform: translateY(-6px); }
+    50% { transform: translateY(6px); }
+  }
+  @keyframes swim {
+    0% { transform: translate(-15vw, 0); }
+    25% { transform: translate(15vw, -22px); }
+    50% { transform: translate(45vw, 8px); }
+    75% { transform: translate(75vw, -18px); }
+    100% { transform: translate(105vw, 0); }
+  }
+
+  @keyframes rise {
+    0% { transform: translateY(0) translateX(0); opacity: 0; }
+    10% { opacity: 0.7; }
+    100% { transform: translateY(-110vh) translateX(18px); opacity: 0; }
+  }
+  @keyframes sway {
+    0%, 100% { transform: translateX(-2%) skewX(-4deg); }
+    50% { transform: translateX(2%) skewX(4deg); }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    background: var(--abyss);
+  }
+  body {
+    @apply text-foreground;
+    /* Transparent so the fixed underwater scene (OceanBackground) shows through. */
+    background: transparent;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* Page transition: a soft fade each time a page is shown. Next.js keeps visited
+   pages mounted but hidden, so the animation replays when one is shown again.
+   Opacity only — no transform, so fixed buttons and layout never shift. */
+main > * {
+  animation: page-in 0.35s ease-out both;
+}
+
+@layer components {
+  /* Frosted "underwater glass" panel */
+  .glass {
+    background: rgba(6, 36, 58, 0.72);
+    border: 1px solid rgba(46, 230, 214, 0.14);
+    backdrop-filter: blur(10px);
+  }
+  .glow {
+    box-shadow: 0 0 0 1px rgba(46, 230, 214, 0.35), 0 0 32px -6px rgba(46, 230, 214, 0.55);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* React Flow — match the ocean theme */
+.react-flow {
+  --xy-background-color: transparent;
+  --xy-edge-stroke: #1d5a80;
+  --xy-attribution-background-color: transparent;
+}
+.react-flow__attribution a { color: var(--muted-foreground); }
