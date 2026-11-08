@@ -29,7 +29,8 @@ export async function callEndpoint(url: string, init?: RequestInit): Promise<Res
   } catch {
     throw new EndpointMissing(url);
   }
-  if (res.status === 404 || res.status === 501) throw new EndpointMissing(url);
+  // 404/501 = not built yet; 503 = built but its AI service is down right now (e.g. Gemini overloaded).
+  if (res.status === 404 || res.status === 501 || res.status === 503) throw new EndpointMissing(url);
   if (!res.ok) throw new Error(`${url} failed: ${res.status}`);
   return res;
 }
