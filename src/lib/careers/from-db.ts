@@ -2,6 +2,7 @@ import "server-only";
 import { db } from "@/lib/db";
 import type {
   Career,
+  CareerNote,
   CareerTrack,
   Course,
   MetaMajorId,
@@ -15,12 +16,12 @@ import type {
 } from "@/types/roadmap";
 
 // Rebuilds full `Career` objects (src/types/roadmap.ts) from the Tiger Data
-// tables in db/schema.sql. Six queries in total, however many careers you ask
+// tables in db/schema.sql. Seven queries in total, however many careers you ask
 // for — never one query per career.
 
 type Num = string | number; // Postgres NUMERIC arrives as a string
 
-interface SourceRow { id: string; label: string; title: string; url: string; as_of: string | null; verified: boolean }
+interface SourceRow { id: string; label: string; title: string; url: string; as_of: string | null; verified: boolean; checked_on: string | null }
 interface ProgramRow { id: string; name: string; degree: Program["degree"]; school: string; total_credits_value: Num; total_credits_unit: string | null; total_credits_source_id: string }
 interface CourseRow { program_id: string; code: string; title: string; credits: Num; category: Course["category"] }
 interface StageRow {
@@ -28,8 +29,11 @@ interface StageRow {
   years_value: Num | null; years_unit: string | null; years_source_id: string | null;
   fee_value: Num | null; fee_unit: string | null; fee_source_id: string | null;
   earning_while_in_stage: boolean | null;
+  after_first_job: boolean | null;
+  at_start_school: boolean | null;
 }
 interface RouteRow { career_id: string; id: string; label: string; stage_ids: string[]; requires_bachelors: boolean }
+interface NoteRow { career_id: string; text: string; source_id: string }
 interface CareerRow {
   id: string; title: string; summary: string; origin: Career["origin"]; meta_major: MetaMajorId; track: CareerTrack;
   aliases: string[]; traits: QuizTrait[];
@@ -58,11 +62,12 @@ export async function loadCareers(ids?: string[]): Promise<Career[]> {
   const programIds = [...new Set(careers.map((c) => c.program_id))];
 
   // Everything else, fetched together.
-  const [programs, courses, stages, routes] = await Promise.all([
+  const [programs, courses, stages, routes, notes] = await Promise.all([
     sql<ProgramRow[]>`SELECT * FROM programs WHERE id = ANY(${programIds})`,
     sql<CourseRow[]>`SELECT * FROM program_courses WHERE program_id = ANY(${programIds}) ORDER BY program_id, position`,
     sql<StageRow[]>`SELECT * FROM pathway_stages WHERE career_id = ANY(${careerIds}) ORDER BY career_id, position`,
     sql<RouteRow[]>`SELECT * FROM pathway_routes WHERE career_id = ANY(${careerIds}) ORDER BY career_id, position`,
+    sql<NoteRow[]>`SELECT career_id, text, source_id FROM career_notes WHERE career_id = ANY(${careerIds}) ORDER BY career_id, position`,
   ]);
 
   // Only the sources these careers actually cite.
@@ -71,13 +76,22 @@ export async function loadCareers(ids?: string[]): Promise<Career[]> {
     [c.median_pay_source_id, c.job_growth_source_id, c.entry_pay_source_id, c.typical_entry_education_source_id].forEach((s) => sourceIds.add(s));
   for (const p of programs) sourceIds.add(p.total_credits_source_id);
   for (const s of stages) [s.years_source_id, s.fee_source_id].forEach((id) => id && sourceIds.add(id));
-  const sourceRows = await sql<SourceRow[]>`SELECT * FROM sources WHERE id = ANY(${[...sourceIds]})`;
+  for (const n of notes) sourceIds.add(n.source_id);
+  // checked_on as text keeps the plain YYYY-MM-DD (no time-zone shifts).
+  const sourceRows = await sql<SourceRow[]>`
+    SELECT id, label, title, url, as_of, verified, checked_on::text AS checked_on
+    FROM sources WHERE id = ANY(${[...sourceIds]})`;
 
   // ── Rows → roadmap.ts shapes ──
   const sources = new Map(
     sourceRows.map((r): [string, Source] => [
       r.id,
-      { id: r.id, label: r.label, title: r.title, url: r.url, ...(r.as_of != null && { asOf: r.as_of }), verified: r.verified },
+      {
+        id: r.id, label: r.label, title: r.title, url: r.url,
+        ...(r.as_of != null && { asOf: r.as_of }),
+        verified: r.verified,
+        ...(r.checked_on != null && { checkedOn: r.checked_on }),
+      },
     ]),
   );
   const source = (id: string): Source => {
@@ -113,6 +127,7 @@ export async function loadCareers(ids?: string[]): Promise<Career[]> {
 
   const stagesByCareer = groupBy(stages, (s) => s.career_id);
   const routesByCareer = groupBy(routes, (r) => r.career_id);
+  const notesByCareer = groupBy(notes, (n) => n.career_id);
 
   const toStage = (s: StageRow): PathwayStage => ({
     id: s.id,
@@ -123,6 +138,8 @@ export async function loadCareers(ids?: string[]): Promise<Career[]> {
     ...(s.years_value != null && s.years_source_id && { years: sourced(s.years_value, s.years_unit, s.years_source_id) }),
     ...(s.fee_value != null && s.fee_source_id && { fee: sourced(s.fee_value, s.fee_unit, s.fee_source_id) }),
     ...(s.earning_while_in_stage != null && { earningWhileInStage: s.earning_while_in_stage }),
+    ...(s.after_first_job != null && { afterFirstJob: s.after_first_job }),
+    ...(s.at_start_school != null && { atStartSchool: s.at_start_school }),
   });
 
   const toRoute = (r: RouteRow): PathwayRoute => ({
@@ -135,6 +152,7 @@ export async function loadCareers(ids?: string[]): Promise<Career[]> {
   return careers.map((c): Career => {
     const program = programById.get(c.program_id);
     if (!program) throw new Error(`Missing program ${c.program_id}`);
+    const careerNotes = (notesByCareer.get(c.id) ?? []).map((n): CareerNote => ({ text: n.text, source: source(n.source_id) }));
     return {
       id: c.id,
       title: c.title,
@@ -154,6 +172,7 @@ export async function loadCareers(ids?: string[]): Promise<Career[]> {
       program,
       stages: (stagesByCareer.get(c.id) ?? []).map(toStage),
       routes: (routesByCareer.get(c.id) ?? []).map(toRoute),
+      ...(careerNotes.length > 0 && { notes: careerNotes }),
     };
   });
 }

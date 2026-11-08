@@ -15,7 +15,6 @@ const TRAITS: Record<string, QuizTrait[]> = {
   Pharmacist: ["analyzing", "helping", "organizing"],
   Physician: ["helping", "analyzing"],
   "Data Scientist": ["analyzing", "tech"],
-  "Mechanical Engineer": ["building", "analyzing", "tech"],
   "Web Developer": ["tech", "creating"],
   "Environmental Scientist": ["analyzing", "hands-on"],
   Accountant: ["organizing", "analyzing"],
@@ -53,7 +52,6 @@ const SPECS: CareerSpec[] = [
 
   // STEM
   c({ title: "Data Scientist", metaMajor: "stem", track: "transfer", bachelor: "B.S. Data Science / Statistics", aliases: ["data", "machine learning", "ai engineer"], medianPay: 108020, jobGrowth: 36, summary: "Find patterns in data and build models that predict what happens next." }),
-  c({ title: "Mechanical Engineer", metaMajor: "stem", track: "transfer", bachelor: "B.S. Mechanical Engineering", aliases: ["engineer", "mechanical"], license: { name: "FE → PE license", body: "NCEES", fee: 575, years: 4, earning: true }, medianPay: 99510, jobGrowth: 11, summary: "Design machines, engines and devices — from AC units to rockets." }),
   c({ title: "Web Developer", metaMajor: "stem", track: "as", programName: "Web Development", aliases: ["web", "frontend", "front-end"], medianPay: 84960, jobGrowth: 8, summary: "Build and maintain websites and web apps." }),
   c({ title: "Environmental Scientist", metaMajor: "stem", track: "transfer", bachelor: "B.S. Environmental Science", aliases: ["environment", "ecology", "marine biologist"], medianPay: 78980, jobGrowth: 7, summary: "Study ecosystems like the Everglades and Biscayne Bay and protect them." }),
 

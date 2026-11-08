@@ -61,9 +61,12 @@ Load the database (safe to re-run; `schema.sql` drops and recreates):
 psql "$DATABASE_URL" -f db/schema.sql
 psql "$DATABASE_URL" -f db/seed.sql           # 5 core careers, sources, schools, deadlines
 psql "$DATABASE_URL" -f db/seed-catalog.sql   # the 30 catalog careers
+psql "$DATABASE_URL" -f db/migrations/2026-11-08-verify-core-careers.sql   # verified figures (core careers, MDC tuition)
+psql "$DATABASE_URL" -f db/migrations/2026-11-08-b-career-growth-and-mdc-bachelors.sql
+psql "$DATABASE_URL" -f db/seed-core-added.sql  # Mechanical Engineer + IT Consultant
 ```
 
-`db/seed-catalog.sql` is generated from `src/data/catalog.ts`. After changing the catalog, run `npx tsx --tsconfig tsconfig.json db/export-catalog.ts`.
+`db/seed-catalog.sql` and `db/seed-core-added.sql` are generated from `src/data`. After changing the catalog or the added core careers, run `npx tsx --tsconfig tsconfig.json db/export-catalog.ts`.
 
 Sources still have `verified: false` until someone checks them. Their chips say "Not yet verified" and turn green once flipped.
 

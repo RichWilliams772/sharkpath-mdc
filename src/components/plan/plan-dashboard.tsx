@@ -1,11 +1,12 @@
 "use client";
 
-import { CalendarDays, GraduationCap, LineChart, Network, PiggyBank, SlidersHorizontal, Users } from "lucide-react";
+import { CalendarDays, GraduationCap, Info, LineChart, Network, PiggyBank, SlidersHorizontal, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
 import { CareerIcon } from "@/components/career-icon";
 import { Panel } from "@/components/section";
+import { SourceChip } from "@/components/source-chip";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -67,7 +68,7 @@ function Dashboard() {
   const t = useTranslations("plan");
   const tWhatIf = useTranslations("whatIf");
   const { career } = usePlan();
-  const { careerTitle } = useLocalized();
+  const { careerTitle, tx } = useLocalized();
   const profile = usePlanStore((s) => s.profile);
   const tab = usePlanStore((s) => s.planTab);
   const setTab = usePlanStore((s) => s.setPlanTab);
@@ -89,6 +90,21 @@ function Dashboard() {
           <ExportPdfButton />
         </div>
       </div>
+
+      {career.notes && career.notes.length > 0 && (
+        <aside className="glass mb-6 rounded-2xl p-4" aria-label={t("notes")}>
+          <p className="mb-2 flex items-center gap-1.5 text-sm font-semibold text-primary">
+            <Info className="size-4" /> {t("notes")}
+          </p>
+          <ul className="space-y-1.5 text-sm">
+            {career.notes.map((note, i) => (
+              <li key={i}>
+                {tx(`career.${career.id}.note.${i}`, note.text)} <SourceChip source={note.source} />
+              </li>
+            ))}
+          </ul>
+        </aside>
+      )}
 
       {/* Phones: what-if controls slide up from the bottom so results stay visible. */}
       <Sheet>

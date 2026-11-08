@@ -29,7 +29,11 @@ export function SourceChip({ source, className }: { source: Source; className?: 
         <p className="font-semibold">{source.title}</p>
         {source.asOf && <p className="mt-1 text-xs text-muted-foreground">{t("asOf", { period: source.asOf })}</p>}
         <p className={cn("mt-2 text-xs font-medium", source.verified ? "text-kelp" : "text-sand")}>
-          {source.verified ? t("verified") : `${t("unverified")} · ${t("pendingTiger")}`}
+          {source.verified
+            ? source.checkedOn
+              ? `${t("verified")} · ${t("checkedOn", { date: source.checkedOn })}`
+              : t("verified")
+            : `${t("unverified")} · ${t("pendingTiger")}`}
         </p>
         <a
           href={source.url}

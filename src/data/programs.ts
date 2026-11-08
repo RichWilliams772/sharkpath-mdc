@@ -1,6 +1,7 @@
 // MDC programs for the 5 careers, in recommended course order.
 // ⚠️ Sample course lists — replaced by the Data team's MDC catalog rows.
 
+import { buildProgram } from "@/lib/careers/generate";
 import type { Course, Program } from "@/types/roadmap";
 import { SOURCES as S } from "./sources";
 
@@ -97,5 +98,18 @@ export const PROGRAMS: Program[] = [
     ],
   },
 ];
+
+// Mechanical: MDC lists an "Engineering - Mechanical" A.A. pathway (mdc.edu/entec/programs.aspx).
+// Its course list isn't published in a readable form, so it uses the same sample
+// lower-division engineering sequence as Pre-Engineering (unverified).
+const preEngineering = PROGRAMS.find((p) => p.id === "mdc-aa-engineering")!;
+PROGRAMS.push({ ...preEngineering, id: "mdc-aa-mechanical-engineering", name: "Associate in Arts · Engineering - Mechanical" });
+
+// IT Consultant: MDC's "Computer Information Technology Associate in Science". Courses come
+// from the STEM meta-major pool (placeholder titles), like other catalog A.S. programs.
+PROGRAMS.push({
+  ...buildProgram({ title: "IT Consultant", metaMajor: "stem", track: "as", origin: "catalog", programName: "Computer Information Technology" }, "cit"),
+  school: "School of Engineering & Technology",
+});
 
 export const programById = (id: string) => PROGRAMS.find((p) => p.id === id)!;

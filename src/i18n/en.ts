@@ -15,6 +15,7 @@ export const en = {
   common: {
     sample: "From our database",
     verified: "Verified",
+    checkedOn: "checked {date}",
     unverified: "Not yet verified",
     source: "Source",
     asOf: "Data period: {period}",
@@ -103,6 +104,7 @@ export const en = {
     personalize: "Personalize my plan",
     greeting: "Ahoy, {name}",
     title: "Your path to {career}",
+    notes: "Good to know",
     tabs: { map: "Map", semesters: "Semesters", money: "Financial plan", roi: "Cost & ROI", deadlines: "Deadlines", team: "Counselor team" },
     stats: {
       years: "Years to first job",
@@ -144,6 +146,7 @@ export const en = {
     title: "Pathway map",
     hint: "Tap a career to change course. Glowing current = your route.",
     you: "You",
+    afterFirstJob: "After first job",
   },
   semesters: {
     title: "Semester by semester",

@@ -19,7 +19,7 @@ import { SharkIcon } from "@/components/brand/shark";
 import { CareerIcon } from "@/components/career-icon";
 import { useLocalized } from "@/i18n/use-localized";
 import { getCareer, relatedCareers, useAllCareers } from "@/lib/careers/registry";
-import { careerNodeId, routeOf, stageIn } from "@/lib/careers/stages";
+import { careerNodeId, displayOrder, routeOf, stageIn } from "@/lib/careers/stages";
 import { formatMoney } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { usePlanStore } from "@/store/plan-store";
@@ -28,6 +28,7 @@ import type { Career, PathwayStage } from "@/types/roadmap";
 type StageData = {
   stage: PathwayStage;
   title: string;
+  growthLabel?: string;
   state: "route" | "alt" | "idle";
   careerId?: string;
 };
@@ -47,7 +48,7 @@ const COL_W = 236;
 const ROW_H = 84;
 
 const StageNodeView = memo(function StageNodeView({ data }: NodeProps<StageNode>) {
-  const { stage, state, title, careerId } = data;
+  const { stage, state, title, careerId, growthLabel } = data;
   const Icon = stage.kind === "start" ? null : KIND_ICON[stage.kind];
   return (
     <div
@@ -75,6 +76,7 @@ const StageNodeView = memo(function StageNodeView({ data }: NodeProps<StageNode>
         {stage.years && stage.kind !== "career" && <span className="shrink-0">{stage.years.value} yr</span>}
       </div>
       {stage.fee && <div className="mt-0.5 text-[12.5px] text-sand">{formatMoney(stage.fee.value)} fee</div>}
+      {stage.afterFirstJob && growthLabel && <div className="mt-0.5 text-[11px] font-semibold uppercase tracking-wide text-kelp">{growthLabel}</div>}
       <Handle type="source" position={Position.Right} className="!size-1.5 !border-0 !bg-transparent" />
     </div>
   );
@@ -103,13 +105,16 @@ export function PathwayMap() {
     const onRoute = new Set(route.stageIds);
     const onAlt = new Set(career.routes.flatMap((r) => r.stageIds));
 
-    // Column = position in the route; career nodes line up in the last column.
-    const lastCol = Math.max(...shown.flatMap((c) => c.routes.map((r) => r.stageIds.length - 1)));
+    // Column = position in the route; career nodes line up in the last column,
+    // unless career-growth steps (FE → PE) follow the first job.
+    const lastCol = Math.max(...shown.flatMap((c) => c.routes.map((r) => displayOrder(c, r).length - 1)));
     const placed = new Map<string, { stage: PathwayStage; col: number; owner: Career }>();
     for (const c of shown) {
       for (const r of c.routes) {
-        r.stageIds.forEach((id, i) => {
-          const col = id === careerNodeId(c) ? lastCol : i;
+        const ids = displayOrder(c, r);
+        const hasGrowth = ids[ids.length - 1] !== careerNodeId(c);
+        ids.forEach((id, i) => {
+          const col = id === careerNodeId(c) && !hasGrowth ? lastCol : i;
           const prev = placed.get(id);
           if (!prev) placed.set(id, { stage: stageIn(c, id), col, owner: c });
           else prev.col = Math.max(prev.col, col);
@@ -132,17 +137,20 @@ export function PathwayMap() {
           stage,
           careerId,
           title: stage.kind === "start" ? t("you") : careerId ? careerTitle(careerId) : stage.title,
+          growthLabel: t("afterFirstJob"),
           state: onRoute.has(id) ? "route" : onAlt.has(id) ? "alt" : "idle",
         },
       };
     });
 
-    const routePairs = new Set(route.stageIds.slice(1).map((id, i) => `${route.stageIds[i]}->${id}`));
+    const activeIds = displayOrder(career, route);
+    const routePairs = new Set(activeIds.slice(1).map((id, i) => `${activeIds[i]}->${id}`));
     const seen = new Map<string, Edge>();
     for (const c of shown) {
       for (const r of c.routes) {
-        r.stageIds.slice(1).forEach((target, i) => {
-          const source = r.stageIds[i];
+        const ids = displayOrder(c, r);
+        ids.slice(1).forEach((target, i) => {
+          const source = ids[i];
           const id = `${source}->${target}`;
           if (seen.has(id)) return;
           const active = routePairs.has(id);

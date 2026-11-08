@@ -18,6 +18,7 @@ export const es: typeof en = {
   common: {
     sample: "De nuestra base de datos",
     verified: "Verificado",
+    checkedOn: "revisado el {date}",
     unverified: "Aún sin verificar",
     source: "Fuente",
     asOf: "Período de datos: {period}",
@@ -106,6 +107,7 @@ export const es: typeof en = {
     personalize: "Personaliza mi plan",
     greeting: "¡Hola, {name}!",
     title: "Tu ruta hacia {career}",
+    notes: "Bueno saber",
     tabs: { map: "Mapa", semesters: "Semestres", money: "Plan financiero", roi: "Costo y retorno", deadlines: "Fechas", team: "Equipo consejero" },
     stats: {
       years: "Años hasta tu primer empleo",
@@ -147,6 +149,7 @@ export const es: typeof en = {
     title: "Mapa de rutas",
     hint: "Toca una carrera para cambiar el rumbo. La corriente brillante es tu ruta.",
     you: "Tú",
+    afterFirstJob: "Después del primer empleo",
   },
   semesters: {
     title: "Semestre por semestre",
@@ -499,6 +502,13 @@ export const esData: Record<string, string> = {
   "career.cybersecurity-analyst.title": "Analista de ciberseguridad",
   "career.cybersecurity-analyst.summary": "Defiende redes y datos de atacantes — uno de los empleos de mayor crecimiento.",
   "career.chef.title": "Chef",
+  "career.it-consultant.title": "Consultor/a de TI",
+  "career.it-consultant.summary": "Ayuda a las empresas a elegir, instalar y arreglar la tecnología que usan.",
+  "career.it-consultant.note.0": "El sueldo y las perspectivas vienen de los datos del BLS para analistas de sistemas informáticos. El BLS señala que algunos analistas de sistemas trabajan como consultores.",
+  "career.mechanical-engineer.summary": "Diseña máquinas, motores y dispositivos — desde aires acondicionados hasta cohetes.",
+  "career.mechanical-engineer.note.0":"No se requiere licencia para puestos de nivel inicial como ingeniero/a mecánico/a.",
+  "career.chef.note.0": "Los chefs y jefes de cocina normalmente necesitan 5 años o más de experiencia laboral en una ocupación relacionada.",
+  "career.cybersecurity-analyst.note.0": "Se espera que CompTIA Security+ V8 salga alrededor del 17 de noviembre de 2026. Confirma para qué versión del examen debes estudiar.",
   "career.chef.summary": "Dirige una cocina, crea menús y lidera un equipo en la escena gastronómica de Miami.",
   "career.software-developer.title": "Desarrollador/a de software",
   "career.software-developer.summary": "Crea las apps, sitios web y herramientas de IA que la gente usa todos los días.",
