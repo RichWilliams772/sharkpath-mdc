@@ -8,6 +8,7 @@ import { SharkIcon } from "@/components/brand/shark";
 import { Button } from "@/components/ui/button";
 import { AGENT_ORDER, runCounselorTeam } from "@/lib/api/counselor";
 import { cn } from "@/lib/utils";
+import { usePlanStore } from "@/store/plan-store";
 import type { AgentReport, AgentRole, WhatIfInputs } from "@/types/roadmap";
 import { usePlan } from "./use-plan";
 
@@ -22,6 +23,7 @@ const ICON: Record<AgentRole, React.ComponentType<{ className?: string }>> = {
 export function CounselorTeam() {
   const t = useTranslations("team");
   const { plan, career } = usePlan();
+  const locale = usePlanStore((s) => s.locale);
   const [reports, setReports] = useState<Partial<Record<AgentRole, AgentReport>>>({});
   const [running, setRunning] = useState(false);
   const [lastInputs, setLastInputs] = useState<WhatIfInputs | null>(null);
@@ -33,7 +35,7 @@ export function CounselorTeam() {
     setRunning(true);
     setReports({});
     setLastInputs(plan.inputs);
-    await runCounselorTeam(plan, career, (r) => setReports((prev) => ({ ...prev, [r.role]: r })));
+    await runCounselorTeam(plan, career, (r) => setReports((prev) => ({ ...prev, [r.role]: r })), locale);
     setRunning(false);
   }
 

@@ -9,7 +9,7 @@
 
 BEGIN;
 
-DROP TABLE IF EXISTS saved_plans, deadline_careers, deadlines, schools, career_notes, pathway_routes,
+DROP TABLE IF EXISTS counselor_team_cache, ai_rate_limits, saved_plans, deadline_careers, deadlines, schools, career_notes, pathway_routes,
   pathway_stages, careers, program_courses, programs, sources CASCADE;
 
 -- ─── Sources ────────────────────────────────────────────────────────────────
@@ -199,5 +199,25 @@ CREATE TABLE saved_plans (
 );
 
 CREATE INDEX saved_plans_owner_idx ON saved_plans (owner_id, created_at DESC);
+
+-- ─── AI routes ──────────────────────────────────────────────────────────────
+-- Per-visitor rate limits. `bucket` = SHA-256 of route + IP (no raw IPs stored).
+CREATE TABLE ai_rate_limits (
+  bucket        TEXT        NOT NULL,
+  window_start  TIMESTAMPTZ NOT NULL,
+  count         INT         NOT NULL,
+  PRIMARY KEY (bucket, window_start)
+);
+
+-- Finished Counselor Team reports per career + route + language.
+CREATE TABLE counselor_team_cache (
+  career_id   TEXT        NOT NULL,
+  route_id    TEXT        NOT NULL,
+  locale      TEXT        NOT NULL CHECK (locale IN ('en', 'es')),
+  facts_hash  TEXT        NOT NULL,        -- career facts + prompts; a change makes the report stale
+  agents      JSONB       NOT NULL,        -- AgentReport[]
+  created_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
+  PRIMARY KEY (career_id, route_id, locale)
+);
 
 COMMIT;

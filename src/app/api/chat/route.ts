@@ -7,11 +7,9 @@
 
 import { createGoogle, type GoogleLanguageModelOptions } from "@ai-sdk/google";
 import { streamText } from "ai";
-import { CORE } from "@/data/careers";
-import { CATALOG } from "@/data/catalog";
-import { loadCareers } from "@/lib/careers/from-db";
-import { dbEnabled } from "@/lib/db";
-import type { Career, ChatMessage, Sourced, WhatIfInputs } from "@/types/roadmap";
+import { careerFacts, careerFor, planFacts } from "@/lib/careers/facts";
+import { rateLimit, tooMany, type Limit } from "@/lib/rate-limit";
+import type { Career, ChatMessage, WhatIfInputs } from "@/types/roadmap";
 
 /**
  * Tried in order. Each gets one attempt and a time limit to start answering;
@@ -22,6 +20,8 @@ const MODELS = [
   { id: "gemini-3.5-flash-lite", firstTokenMs: 10_000 }, // lighter, for when the main model is overloaded
 ] as const;
 const MAX_MESSAGES = 20;
+/** Per visitor: plenty for a real conversation, too few to burn the Gemini quota. */
+const CHAT_LIMIT: Limit = { name: "chat", max: 20, windowSeconds: 5 * 60 };
 const MAX_CHARS = 2000;
 
 interface ChatBody {
@@ -39,47 +39,9 @@ function parseBody(body: unknown): ChatBody | null {
   return { messages, context: { ...b.context, locale: b.context.locale === "es" ? "es" : "en" } };
 }
 
-async function careerFor(id: string): Promise<Career | undefined> {
-  if (dbEnabled) {
-    try {
-      const [fromDb] = await loadCareers([id]);
-      if (fromDb) return fromDb;
-    } catch (err) {
-      console.error("chat: loading career from Tiger Data failed, using src/data", err);
-    }
-  }
-  return [...CORE, ...CATALOG].find((c) => c.id === id);
-}
-
-const status = (f: Sourced<number | string>) => `${f.source.label}, ${f.source.verified ? "verified" : "estimate / not yet verified"}`;
-const fig = (label: string, f: Sourced<number | string>) => `- ${label}: ${f.value}${f.unit ? ` ${f.unit}` : ""} (source: ${status(f)})`;
-
 function instructionsFor(ctx: ChatBody["context"], career: Career | undefined): string {
   const { inputs } = ctx;
-  const route = career?.routes.find((r) => r.id === inputs.routeId) ?? career?.routes[0];
-  const facts = career
-    ? [
-        `Career: ${career.title}. ${career.summary}`,
-        fig("Median pay", career.medianPay),
-        fig("Job growth", career.jobGrowth),
-        fig("Early-career pay", career.entryPay),
-        fig("Typical entry education", career.typicalEntryEducation),
-        `- Starting program: ${career.program.name} (${career.program.totalCredits.value} credits)`,
-        ...(route ? [`- Student's chosen route: ${route.label}`] : []),
-        ...career.stages.map((s) =>
-          [
-            `- Step "${s.title}"`,
-            s.years && `${s.years.value} yrs (${status(s.years)})`,
-            s.fee && `fee $${s.fee.value} (${status(s.fee)})`,
-            s.afterFirstJob && "taken after the first job",
-          ]
-            .filter(Boolean)
-            .join(", "),
-        ),
-        ...(career.license ? [`- License / certification: ${career.license.name} (${career.license.body})`] : []),
-        ...(career.notes ?? []).map((n) => `- Note: ${n.text} (source: ${n.source.label})`),
-      ].join("\n")
-    : `The student is exploring a career that isn't in SharkPath's database (id "${inputs.careerId}"). You have no sourced figures for it.`;
+  const facts = careerFacts(career, inputs);
 
   return [
     "You are Finn, SharkPath's friendly AI counselor for Miami Dade College (MDC) students planning a path to a career.",
@@ -94,8 +56,7 @@ function instructionsFor(ctx: ChatBody["context"], career: Career | undefined): 
     "- You are not a replacement for an MDC academic or financial aid advisor; say so for decisions about money, admissions or licensing.",
     "",
     "Student's plan:",
-    `- Credits already earned: ${inputs.creditsEarned}; works ${inputs.workHoursPerWeek} hrs/week; summer classes: ${inputs.takeSummerClasses ? "yes" : "no"}`,
-    `- Pell eligible: ${inputs.pellEligible ? "yes" : "no"}; Bright Futures: ${inputs.brightFutures ? "yes" : "no"}; lives at home: ${inputs.livesAtHome ? "yes" : "no"}`,
+    planFacts(inputs),
     "",
     "Facts from SharkPath's database:",
     facts,
@@ -106,6 +67,8 @@ function instructionsFor(ctx: ChatBody["context"], career: Career | undefined): 
 
 export async function POST(request: Request) {
   if (!process.env.GEMINI_API_KEY) return new Response("Chat not configured", { status: 501 });
+  const limited = await rateLimit(request, CHAT_LIMIT);
+  if (!limited.ok) return tooMany(limited);
   const body = parseBody(await request.json().catch(() => null));
   if (!body) return new Response("Invalid chat request", { status: 400 });
 

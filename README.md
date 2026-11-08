@@ -64,6 +64,7 @@ psql "$DATABASE_URL" -f db/seed-catalog.sql   # the 30 catalog careers
 psql "$DATABASE_URL" -f db/migrations/2026-11-08-verify-core-careers.sql   # verified figures (core careers, MDC tuition)
 psql "$DATABASE_URL" -f db/migrations/2026-11-08-b-career-growth-and-mdc-bachelors.sql
 psql "$DATABASE_URL" -f db/seed-core-added.sql  # Mechanical Engineer + IT Consultant
+psql "$DATABASE_URL" -f db/migrations/2026-11-08-c-ai-rate-limits-and-team-cache.sql
 ```
 
 `db/seed-catalog.sql` and `db/seed-core-added.sql` are generated from `src/data`. After changing the catalog or the added core careers, run `npx tsx --tsconfig tsconfig.json db/export-catalog.ts`.
