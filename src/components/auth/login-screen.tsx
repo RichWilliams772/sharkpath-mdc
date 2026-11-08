@@ -17,6 +17,7 @@ export function LoginScreen() {
   const { authEnabled, user } = useAccount();
   const profile = usePlanStore((s) => s.profile);
   const setGuest = usePlanStore((s) => s.setGuest);
+  const locale = usePlanStore((s) => s.locale);
   const next = profile ? "/plan" : "/onboarding";
 
   useEffect(() => {
@@ -28,7 +29,8 @@ export function LoginScreen() {
     router.push(next);
   }
 
-  const loginHref = `/auth/login?returnTo=${encodeURIComponent(next)}`;
+  // ui_locales: Auth0 shows its sign-in / sign-up page in the student's language (en or es).
+  const loginHref = `/auth/login?returnTo=${encodeURIComponent(next)}&ui_locales=${locale}`;
   const disabled = !authEnabled ? "pointer-events-none opacity-50" : "";
 
   return (
