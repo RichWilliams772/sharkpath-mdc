@@ -4,6 +4,7 @@
 // 501 when Auth0 or the database isn't configured, so the UI falls back to
 // browser storage. The owner always comes from the Auth0 session, never the body.
 
+import type postgres from "postgres";
 import { auth0 } from "@/lib/auth0";
 import { db, dbEnabled } from "@/lib/db";
 import type { SavedPlan } from "@/types/roadmap";
@@ -15,8 +16,8 @@ interface PlanRow {
   created_at: Date;
   inputs: SavedPlan["inputs"];
   career: SavedPlan["career"] | null;
-  summary_years_to_career: string;
-  summary_net_cost: string;
+  summary_years_to_career: string | number;
+  summary_net_cost: string | number;
   summary_break_even_year: number | null;
 }
 
@@ -59,10 +60,8 @@ function parsePlan(body: unknown): SavedPlan | null {
 export async function GET() {
   const me = await owner();
   if (me instanceof Response) return me;
-  const { rows } = await db().query<PlanRow>(
-    "SELECT * FROM saved_plans WHERE owner_id = $1 ORDER BY created_at DESC LIMIT 200",
-    [me],
-  );
+  const rows = await db()<PlanRow[]>`
+    SELECT * FROM saved_plans WHERE owner_id = ${me} ORDER BY created_at DESC LIMIT 200`;
   return Response.json(rows.map(toPlan));
 }
 
@@ -74,30 +73,22 @@ export async function POST(request: Request) {
 
   const createdAt = Number.isNaN(Date.parse(plan.createdAt)) ? new Date() : new Date(plan.createdAt);
   // Upsert, but only ever overwrite a plan this user already owns.
-  const { rows } = await db().query<PlanRow>(
-    `INSERT INTO saved_plans
-       (id, name, owner_id, created_at, inputs, career,
-        summary_years_to_career, summary_net_cost, summary_break_even_year)
-     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
-     ON CONFLICT (id) DO UPDATE SET
-       name = EXCLUDED.name, inputs = EXCLUDED.inputs, career = EXCLUDED.career,
-       summary_years_to_career = EXCLUDED.summary_years_to_career,
-       summary_net_cost = EXCLUDED.summary_net_cost,
-       summary_break_even_year = EXCLUDED.summary_break_even_year
-     WHERE saved_plans.owner_id = EXCLUDED.owner_id
-     RETURNING *`,
-    [
-      plan.id,
-      plan.name,
-      me,
-      createdAt,
-      JSON.stringify(plan.inputs),
-      plan.career ? JSON.stringify(plan.career) : null,
-      plan.summary.yearsToCareer,
-      plan.summary.netCost,
-      plan.summary.breakEvenYear,
-    ],
-  );
+  const sql = db();
+  const json = (v: unknown) => sql.json(v as postgres.JSONValue);
+  const rows = await sql<PlanRow[]>`
+    INSERT INTO saved_plans
+      (id, name, owner_id, created_at, inputs, career,
+       summary_years_to_career, summary_net_cost, summary_break_even_year)
+    VALUES (${plan.id}, ${plan.name}, ${me}, ${createdAt}, ${json(plan.inputs)},
+            ${plan.career ? json(plan.career) : null},
+            ${plan.summary.yearsToCareer}, ${plan.summary.netCost}, ${plan.summary.breakEvenYear})
+    ON CONFLICT (id) DO UPDATE SET
+      name = EXCLUDED.name, inputs = EXCLUDED.inputs, career = EXCLUDED.career,
+      summary_years_to_career = EXCLUDED.summary_years_to_career,
+      summary_net_cost = EXCLUDED.summary_net_cost,
+      summary_break_even_year = EXCLUDED.summary_break_even_year
+    WHERE saved_plans.owner_id = EXCLUDED.owner_id
+    RETURNING *`;
   if (rows.length === 0) return new Response("Plan id belongs to another user", { status: 409 });
   return Response.json(toPlan(rows[0]), { status: 201 });
 }
@@ -107,6 +98,6 @@ export async function DELETE(request: Request) {
   if (me instanceof Response) return me;
   const id = new URL(request.url).searchParams.get("id");
   if (!id) return new Response("Missing ?id=", { status: 400 });
-  await db().query("DELETE FROM saved_plans WHERE id = $1 AND owner_id = $2", [id, me]);
+  await db()`DELETE FROM saved_plans WHERE id = ${id} AND owner_id = ${me}`;
   return new Response(null, { status: 204 });
 }
