@@ -12,6 +12,7 @@ import { PageIntro } from "@/components/section";
 import { Button } from "@/components/ui/button";
 import { META_MAJORS } from "@/data/meta-majors";
 import { useLocalized } from "@/i18n/use-localized";
+import { useCareerListLoading } from "@/lib/api/career-data";
 import { useAllCareers } from "@/lib/careers/registry";
 import { formatMoney } from "@/lib/format";
 import { cn } from "@/lib/utils";
@@ -28,6 +29,7 @@ export function CareersView() {
   const router = useRouter();
   const setCareer = usePlanStore((s) => s.setCareer);
   const all = useAllCareers();
+  const loading = useCareerListLoading(); // falls back to src/data if the API fails
   const [filter, setFilter] = useState<MetaMajorId | "all">("all");
 
   const careers = all
@@ -60,11 +62,15 @@ export function CareersView() {
         })}
       </div>
 
-      <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {careers.map((c, i) => (
-          <CareerCard key={c.id} career={c} index={i} onPlan={() => plan(c)} />
-        ))}
-      </ul>
+      {loading ? (
+        <CareerGridSkeleton />
+      ) : (
+        <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {careers.map((c, i) => (
+            <CareerCard key={c.id} career={c} index={i} onPlan={() => plan(c)} />
+          ))}
+        </ul>
+      )}
     </>
   );
 }
@@ -112,6 +118,34 @@ function CareerCard({ career: c, index, onPlan }: { career: Career; index: numbe
         </Button>
       </div>
     </motion.li>
+  );
+}
+
+function CareerGridSkeleton() {
+  const tCommon = useTranslations("common");
+  return (
+    <div role="status" aria-live="polite">
+      <span className="sr-only">{tCommon("loading")}</span>
+      <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3" aria-hidden="true">
+        {Array.from({ length: 6 }, (_, i) => (
+          <li key={i} className="glass h-[340px] animate-pulse rounded-2xl p-6">
+            <div className="flex items-center gap-3">
+              <span className="size-11 rounded-xl bg-primary/15" />
+              <span className="h-5 w-40 rounded bg-muted" />
+            </div>
+            <div className="mt-5 space-y-2">
+              <div className="h-3 w-full rounded bg-muted" />
+              <div className="h-3 w-4/5 rounded bg-muted" />
+            </div>
+            <div className="mt-8 space-y-4">
+              {[0, 1, 2, 3].map((r) => (
+                <div key={r} className="h-4 w-full rounded bg-muted/70" />
+              ))}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

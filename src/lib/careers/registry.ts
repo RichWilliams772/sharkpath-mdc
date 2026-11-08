@@ -1,9 +1,12 @@
 "use client";
 
-// Every career the app knows about: the 5 core careers, the seeded catalog,
-// and any career a student has generated (kept in the store so it persists).
+// Every career the app knows about. Lookup order for an id:
+//   1. Tiger Data (loaded via /api/careers, src/lib/api/career-data.ts)
+//   2. src/data: the 5 core careers + the seeded catalog (always there as a fallback)
+//   3. careers a student generated (kept in the store so they persist)
 
 import { useMemo } from "react";
+import { useCareerData } from "@/lib/api/career-data";
 import { CORE } from "@/data/careers";
 import { CATALOG } from "@/data/catalog";
 import { metaMajorById } from "@/data/meta-majors";
@@ -15,20 +18,32 @@ const BY_ID = new Map(BUILTIN.map((c) => [c.id, c]));
 const CORE_IDS = new Set(CORE.map((c) => c.id));
 export const DEFAULT_CAREER = CORE.find((c) => c.id === "software-developer") ?? CORE[0];
 
-export function getCareer(id: string, custom: Record<string, Career> = usePlanStore.getState().customCareers): Career {
-  return BY_ID.get(id) ?? custom[id] ?? DEFAULT_CAREER;
+export function getCareer(
+  id: string,
+  custom: Record<string, Career> = usePlanStore.getState().customCareers,
+  fromDb: Record<string, Career> = useCareerData.getState().byId,
+): Career {
+  return fromDb[id] ?? BY_ID.get(id) ?? custom[id] ?? fromDb[DEFAULT_CAREER.id] ?? DEFAULT_CAREER;
 }
 
-export const isBuiltin = (id: string) => BY_ID.has(id);
+export const isBuiltin = (id: string) => BY_ID.has(id) || id in useCareerData.getState().byId;
 
 export function useCareer(id: string) {
   const custom = usePlanStore((s) => s.customCareers);
-  return getCareer(id, custom);
+  const fromDb = useCareerData((s) => s.byId);
+  return getCareer(id, custom, fromDb);
 }
 
+/** src/data careers with database versions swapped in, plus database-only and student-generated careers. */
 export function useAllCareers() {
   const custom = usePlanStore((s) => s.customCareers);
-  return useMemo(() => [...BUILTIN, ...Object.values(custom).filter((c) => !BY_ID.has(c.id))], [custom]);
+  const fromDb = useCareerData((s) => s.byId);
+  return useMemo(() => {
+    const builtin = BUILTIN.map((c) => fromDb[c.id] ?? c);
+    const dbOnly = Object.values(fromDb).filter((c) => !BY_ID.has(c.id));
+    const known = new Set([...builtin, ...dbOnly].map((c) => c.id));
+    return [...builtin, ...dbOnly, ...Object.values(custom).filter((c) => !known.has(c.id))];
+  }, [custom, fromDb]);
 }
 
 const norm = (s: string) =>
