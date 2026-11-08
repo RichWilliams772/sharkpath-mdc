@@ -1,0 +1,3300 @@
+{
+ "roadmap|cybersecurity specialist|miami dade college": {
+  "career": "Cybersecurity Specialist",
+  "college": "Miami Dade College",
+  "options": [
+   {
+    "id": "mdc-bs-cybersecurity",
+    "title": "MDC Bachelor of Science in Cybersecurity",
+    "summary": "Complete both your lower and upper-division coursework directly at Miami Dade College for an affordable, hands-on bachelor's degree.",
+    "kind": "Same-college bachelor's",
+    "landsAs": "Cybersecurity Analyst",
+    "soc": "15-1212",
+    "weeklyHours": 30,
+    "workFriendly": true,
+    "minGpa": 2.5,
+    "metrics": {
+     "costUSD": 14500,
+     "relevancy": 90,
+     "difficulty": 6,
+     "years": 4
+    },
+    "steps": [
+     {
+      "stage": "Lower-Division Coursework",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 6500,
+      "detail": "Earn an A.S. in Cybersecurity or complete prerequisite networking and programming courses."
+     },
+     {
+      "stage": "Upper-Division Bachelor's",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 8000,
+      "detail": "Complete the B.S. in Cybersecurity focusing on incident response, digital forensics, and ethical hacking."
+     },
+     {
+      "stage": "Industry Certification",
+      "institution": "CompTIA / EC-Council",
+      "duration": "3 months",
+      "costUSD": 800,
+      "detail": "Obtain Security+ or Certified Ethical Hacker (CEH) credentials to bolster your resume."
+     }
+    ],
+    "wages": {
+     "soc": "15-1212",
+     "year": "2025",
+     "nationalMedian": 129180,
+     "national25": 97810,
+     "miamiMedian": 125310
+    }
+   },
+   {
+    "id": "mdc-fiu-transfer",
+    "title": "MDC to FIU B.S. in Cybersecurity",
+    "summary": "Earn an Associate in Arts at MDC and transfer to Florida International University's NSA-designated CAE-CO cybersecurity program.",
+    "kind": "Transfer",
+    "landsAs": "Information Security Specialist",
+    "soc": "15-1212",
+    "weeklyHours": 35,
+    "workFriendly": true,
+    "minGpa": 2.75,
+    "metrics": {
+     "costUSD": 22500,
+     "relevancy": 95,
+     "difficulty": 7,
+     "years": 4
+    },
+    "steps": [
+     {
+      "stage": "Associate in Arts Pathway",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 6500,
+      "detail": "Complete an A.A. degree in Computer Science or Information Technology with prerequisite math and coding classes."
+     },
+     {
+      "stage": "Bachelor of Science in Cybersecurity",
+      "institution": "Florida International University",
+      "duration": "2 years",
+      "costUSD": 16000,
+      "detail": "Transfer seamlessly via Connect4FIU into FIU's College of Engineering & Computing."
+     }
+    ],
+    "wages": {
+     "soc": "15-1212",
+     "year": "2025",
+     "nationalMedian": 129180,
+     "national25": 97810,
+     "miamiMedian": 125310
+    }
+   },
+   {
+    "id": "mdc-uf-online-transfer",
+    "title": "MDC to UF Online B.S. in Computer Science",
+    "summary": "Transfer from MDC into the University of Florida online computer science program to gain a top-ranked, highly prestige credential.",
+    "kind": "Selective transfer",
+    "landsAs": "Cybersecurity Engineer",
+    "soc": "15-1212",
+    "weeklyHours": 40,
+    "workFriendly": false,
+    "minGpa": 3.5,
+    "metrics": {
+     "costUSD": 21000,
+     "relevancy": 98,
+     "difficulty": 9,
+     "years": 4
+    },
+    "steps": [
+     {
+      "stage": "Associate in Arts Transfer Track",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 6500,
+      "detail": "Maintain a high GPA while taking Calculus 1-2 and Physics prerequisites."
+     },
+     {
+      "stage": "B.S. in Computer Science",
+      "institution": "University of Florida (UF Online)",
+      "duration": "2 years",
+      "costUSD": 14500,
+      "detail": "Complete upper-level computer science coursework with specialization electives in network security and cryptography."
+     }
+    ],
+    "wages": {
+     "soc": "15-1212",
+     "year": "2025",
+     "nationalMedian": 129180,
+     "national25": 97810,
+     "miamiMedian": 125310
+    }
+   },
+   {
+    "id": "mdc-workforce-as-certs",
+    "title": "Fast-Track A.S. + Industry Certifications",
+    "summary": "Enter the workforce quickly by coupling MDC's hands-on Cybersecurity A.S. degree with essential industry certifications.",
+    "kind": "Workforce A.S.",
+    "landsAs": "SOC Analyst Tier 1",
+    "soc": "15-1212",
+    "weeklyHours": 25,
+    "workFriendly": true,
+    "minGpa": 2,
+    "metrics": {
+     "costUSD": 7500,
+     "relevancy": 80,
+     "difficulty": 5,
+     "years": 2
+    },
+    "steps": [
+     {
+      "stage": "Associate in Science in Cybersecurity",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 6500,
+      "detail": "Complete hands-on training in network defense, firewalls, and system administration."
+     },
+     {
+      "stage": "Certifications & Entry-Level Job",
+      "institution": "CompTIA",
+      "duration": "3 months",
+      "costUSD": 1000,
+      "detail": "Pass CompTIA Security+ and CySA+ exams to qualify for Security Operations Center (SOC) roles."
+     }
+    ],
+    "wages": {
+     "soc": "15-1212",
+     "year": "2025",
+     "nationalMedian": 129180,
+     "national25": 97810,
+     "miamiMedian": 125310
+    }
+   },
+   {
+    "id": "mdc-air-national-guard",
+    "title": "MDC + Florida Air National Guard Cyber Operations",
+    "summary": "Combine MDC studies with paid military cyber training to gain secret security clearances and practical hands-on experience.",
+    "kind": "Military",
+    "landsAs": "Cyber Defense Operations Specialist",
+    "soc": "15-1212",
+    "weeklyHours": 30,
+    "workFriendly": true,
+    "minGpa": 2.5,
+    "metrics": {
+     "costUSD": 3000,
+     "relevancy": 92,
+     "difficulty": 8,
+     "years": 3
+    },
+    "steps": [
+     {
+      "stage": "Enlistment & Cyber Training",
+      "institution": "US Air Force / Florida Air National Guard",
+      "duration": "8 months",
+      "costUSD": 0,
+      "detail": "Complete Basic Military Training and the Cyber Defense Operations tech school; receive paid training and a security clearance."
+     },
+     {
+      "stage": "Part-Time Degree Completion",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 3000,
+      "detail": "Complete an A.S. or B.S. in Cybersecurity using state tuition assistance benefits while drilling one weekend a month."
+     }
+    ],
+    "wages": {
+     "soc": "15-1212",
+     "year": "2025",
+     "nationalMedian": 129180,
+     "national25": 97810,
+     "miamiMedian": 125310
+    }
+   }
+  ],
+  "outlook": {
+   "growthPct": 32,
+   "summary": "High demand driven by increasing cyber threats across critical infrastructure, finance, healthcare, and government sectors."
+  },
+  "source": "seed"
+ },
+ "roadmap|mechanical engineer|miami dade college": {
+  "career": "Mechanical Engineer",
+  "college": "Miami Dade College",
+  "options": [
+   {
+    "id": "mdc-fiu-bsme",
+    "title": "Local State University Transfer (FIU)",
+    "summary": "Complete an AA in Engineering at Miami Dade College and transfer seamlessly to Florida International University for a BS in Mechanical Engineering.",
+    "kind": "Transfer",
+    "landsAs": "Mechanical Engineer",
+    "soc": "17-2141",
+    "weeklyHours": 35,
+    "workFriendly": true,
+    "minGpa": 2.5,
+    "metrics": {
+     "costUSD": 23500,
+     "relevancy": 95,
+     "difficulty": 7,
+     "years": 4
+    },
+    "steps": [
+     {
+      "stage": "Associate in Arts",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7100,
+      "detail": "Complete the AA in Pathway to Engineering, taking foundational calculus, physics, and chemistry courses."
+     },
+     {
+      "stage": "Bachelor of Science",
+      "institution": "Florida International University",
+      "duration": "2 years",
+      "costUSD": 16400,
+      "detail": "Transfer via Connect4Success into FIU's ABET-accredited Mechanical Engineering program."
+     },
+     {
+      "stage": "Entry-Level Engineering",
+      "institution": "Engineering Employer",
+      "duration": "Ongoing",
+      "costUSD": 0,
+      "detail": "Pass the Fundamentals of Engineering (FE) exam and begin working as a Mechanical Engineer."
+     }
+    ],
+    "wages": {
+     "soc": "17-2141",
+     "year": "2025",
+     "nationalMedian": 104110,
+     "national25": 84130,
+     "miamiMedian": 99660
+    }
+   },
+   {
+    "id": "mdc-uf-selective-transfer",
+    "title": "Top-Tier State Flagship Transfer (UF)",
+    "summary": "Complete prerequisite coursework with high grades at MDC and transfer to the University of Florida's elite Herbert Wertheim College of Engineering.",
+    "kind": "Selective transfer",
+    "landsAs": "Mechanical Engineer",
+    "soc": "17-2141",
+    "weeklyHours": 40,
+    "workFriendly": false,
+    "minGpa": 3.5,
+    "metrics": {
+     "costUSD": 21000,
+     "relevancy": 100,
+     "difficulty": 9,
+     "years": 4
+    },
+    "steps": [
+     {
+      "stage": "Associate in Arts - Engineering Track",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7100,
+      "detail": "Maintain a high GPA in Calculus I-III, Physics I-II with labs, and Differential Equations."
+     },
+     {
+      "stage": "Bachelor of Science in Mechanical Engineering",
+      "institution": "University of Florida",
+      "duration": "2 years",
+      "costUSD": 13900,
+      "detail": "Complete upper-division coursework, thermal-fluid sciences, and senior capstone design in Gainesville."
+     },
+     {
+      "stage": "Engineering Industry Career",
+      "institution": "Aerospace / Tech Employer",
+      "duration": "Ongoing",
+      "costUSD": 0,
+      "detail": "Secure a role at leading national defense, aerospace, or manufacturing firms."
+     }
+    ],
+    "wages": {
+     "soc": "17-2141",
+     "year": "2025",
+     "nationalMedian": 104110,
+     "national25": 84130,
+     "miamiMedian": 99660
+    }
+   },
+   {
+    "id": "mdc-as-technician-fast-track",
+    "title": "Workforce A.S. to Engineering Technician",
+    "summary": "Earn an Applied Associate Degree at MDC to quickly enter the workforce as a mechanical technician, with options to complete a bachelor's later.",
+    "kind": "Workforce A.S.",
+    "landsAs": "Mechanical Engineering Technician",
+    "soc": "17-3027",
+    "weeklyHours": 25,
+    "workFriendly": true,
+    "minGpa": 2,
+    "metrics": {
+     "costUSD": 7500,
+     "relevancy": 75,
+     "difficulty": 5,
+     "years": 2
+    },
+    "steps": [
+     {
+      "stage": "Associate in Science in Engineering Technology",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7500,
+      "detail": "Gain practical skills in CAD drafting, mechanical systems, fluid power, and digital manufacturing."
+     },
+     {
+      "stage": "Industry Employment",
+      "institution": "Manufacturing or Testing Firm",
+      "duration": "Ongoing",
+      "costUSD": 0,
+      "detail": "Work directly supporting mechanical engineers in product testing, prototyping, and CAD modeling."
+     }
+    ],
+    "wages": {
+     "soc": "17-3027",
+     "year": "2025",
+     "nationalMedian": 74510,
+     "national25": 59510
+    }
+   },
+   {
+    "id": "mdc-rotc-military-engineer",
+    "title": "Air Force / Navy ROTC Pathway",
+    "summary": "Transfer from MDC to an ROTC host university to gain full tuition coverage and commission as a military developmental engineer upon graduation.",
+    "kind": "Military",
+    "landsAs": "Military Developmental Engineer",
+    "soc": "17-2141",
+    "weeklyHours": 40,
+    "workFriendly": false,
+    "minGpa": 3,
+    "metrics": {
+     "costUSD": 7100,
+     "relevancy": 95,
+     "difficulty": 8,
+     "years": 4
+    },
+    "steps": [
+     {
+      "stage": "Associate in Arts & Crosstown ROTC",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7100,
+      "detail": "Complete general engineering prerequisites at MDC while participating in Air Force ROTC cross-town enrollment at UM or FIU."
+     },
+     {
+      "stage": "BSME & Officer Commissioning",
+      "institution": "Florida International University",
+      "duration": "2 years",
+      "costUSD": 0,
+      "detail": "Complete upper-division engineering with ROTC tuition scholarships covering remaining university costs."
+     },
+     {
+      "stage": "Active Duty Engineering Officer",
+      "institution": "US Air Force / US Navy",
+      "duration": "4+ years",
+      "costUSD": 0,
+      "detail": "Serve as a commissioned officer managing military mechanical systems, aerospace propulsion, or defense research."
+     }
+    ],
+    "wages": {
+     "soc": "17-2141",
+     "year": "2025",
+     "nationalMedian": 104110,
+     "national25": 84130,
+     "miamiMedian": 99660
+    }
+   },
+   {
+    "id": "mdc-parttime-fiu-working",
+    "title": "Part-Time Evening & Work Pacing",
+    "summary": "Balance entry-level CAD work while completing MDC and FIU coursework at a flexible, extended pace.",
+    "kind": "Online / part-time",
+    "landsAs": "Mechanical Engineer",
+    "soc": "17-2141",
+    "weeklyHours": 20,
+    "workFriendly": true,
+    "minGpa": 2.5,
+    "metrics": {
+     "costUSD": 24000,
+     "relevancy": 90,
+     "difficulty": 6,
+     "years": 6
+    },
+    "steps": [
+     {
+      "stage": "Part-Time Associate in Arts",
+      "institution": "Miami Dade College",
+      "duration": "3 years",
+      "costUSD": 7100,
+      "detail": "Take evening and hybrid math and science courses while working part-time as a CAD drafter."
+     },
+     {
+      "stage": "Part-Time BS in Mechanical Engineering",
+      "institution": "Florida International University",
+      "duration": "3 years",
+      "costUSD": 16900,
+      "detail": "Complete upper-level engineering coursework via evening labs and flexible course scheduling."
+     },
+     {
+      "stage": "Full-Time Mechanical Engineer",
+      "institution": "Engineering Employer",
+      "duration": "Ongoing",
+      "costUSD": 0,
+      "detail": "Promote into a full-scale mechanical engineering position with accrued practical workplace experience."
+     }
+    ],
+    "wages": {
+     "soc": "17-2141",
+     "year": "2025",
+     "nationalMedian": 104110,
+     "national25": 84130,
+     "miamiMedian": 99660
+    }
+   }
+  ],
+  "outlook": {
+   "growthPct": 10,
+   "summary": "Demand for mechanical engineers remains strong driven by automation, clean energy infrastructure, advanced manufacturing, and aerospace development."
+  },
+  "source": "seed"
+ },
+ "roadmap|architect|miami dade college": {
+  "career": "Architect",
+  "college": "Miami Dade College",
+  "options": [
+   {
+    "id": "mdc-fiu-march",
+    "title": "Public Transfer: MDC to FIU Master of Architecture",
+    "summary": "Complete an A.A. in Architecture at MDC and seamless transfer into FIU's NAAB-accredited Master of Architecture track.",
+    "kind": "Transfer",
+    "landsAs": "Architectural Designer",
+    "soc": "17-1011",
+    "weeklyHours": 35,
+    "workFriendly": true,
+    "minGpa": 3,
+    "metrics": {
+     "costUSD": 38000,
+     "relevancy": 95,
+     "difficulty": 7,
+     "years": 5
+    },
+    "steps": [
+     {
+      "stage": "Associate in Arts - Architecture Pathway",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7100,
+      "detail": "Complete prerequisite architectural design studios, math, and general education courses."
+     },
+     {
+      "stage": "Accelerated Master of Architecture (M.Arch)",
+      "institution": "Florida International University",
+      "duration": "3 years",
+      "costUSD": 30900,
+      "detail": "Complete NAAB-accredited coursework, advanced design studios, and structural systems training."
+     },
+     {
+      "stage": "Architectural Experience Program (AXP) & Licensure",
+      "institution": "NCARB / Florida Board of Architecture",
+      "duration": "1-2 years",
+      "costUSD": 1500,
+      "detail": "Log 3,740 required work hours under a licensed architect while completing the ARE exams."
+     }
+    ],
+    "wages": {
+     "soc": "17-1011",
+     "year": "2025",
+     "nationalMedian": 99280,
+     "national25": 77960,
+     "miamiMedian": 97500
+    }
+   },
+   {
+    "id": "mdc-um-barch",
+    "title": "Selective Private Transfer: MDC to University of Miami B.Arch",
+    "summary": "Transfer from MDC into the prestigious, NAAB-accredited 5-year Bachelor of Architecture program at UM with portfolio review.",
+    "kind": "Selective transfer",
+    "landsAs": "Junior Architect",
+    "soc": "17-1011",
+    "weeklyHours": 45,
+    "workFriendly": false,
+    "minGpa": 3.5,
+    "metrics": {
+     "costUSD": 145000,
+     "relevancy": 98,
+     "difficulty": 9,
+     "years": 5
+    },
+    "steps": [
+     {
+      "stage": "Associate in Arts - Architecture Pathway",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7100,
+      "detail": "Maintain a high GPA and build a competitive design portfolio for private university transfer."
+     },
+     {
+      "stage": "Bachelor of Architecture (B.Arch)",
+      "institution": "University of Miami",
+      "duration": "3 years",
+      "costUSD": 137900,
+      "detail": "Complete intensive urban design, classical and modern studio tracks at UM's School of Architecture."
+     },
+     {
+      "stage": "AXP Internship & Licensure",
+      "institution": "Florida Board of Architecture & Interior Design",
+      "duration": "2 years",
+      "costUSD": 1500,
+      "detail": "Complete professional experience hours and pass the Architect Registration Examination (ARE)."
+     }
+    ],
+    "wages": {
+     "soc": "17-1011",
+     "year": "2025",
+     "nationalMedian": 99280,
+     "national25": 77960,
+     "miamiMedian": 97500
+    }
+   },
+   {
+    "id": "mdc-uf-bdarch",
+    "title": "Flagship Public Pathway: MDC to UF Architecture",
+    "summary": "Transfer MDC credits to the University of Florida's Bachelor of Design in Architecture and follow up with an M.Arch.",
+    "kind": "Transfer",
+    "landsAs": "Architectural Project Manager",
+    "soc": "17-1011",
+    "weeklyHours": 40,
+    "workFriendly": false,
+    "minGpa": 3.2,
+    "metrics": {
+     "costUSD": 42000,
+     "relevancy": 95,
+     "difficulty": 8,
+     "years": 6
+    },
+    "steps": [
+     {
+      "stage": "Associate in Arts - Architecture Transfer Track",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7100,
+      "detail": "Complete lower-division architectural history, physics, and studio coursework."
+     },
+     {
+      "stage": "Bachelor of Design in Architecture",
+      "institution": "University of Florida",
+      "duration": "2 years",
+      "costUSD": 12700,
+      "detail": "Complete upper-division studio, theory, and digital fabrication courses in Gainesville."
+     },
+     {
+      "stage": "Master of Architecture (M.Arch Track 1)",
+      "institution": "University of Florida",
+      "duration": "2 years",
+      "costUSD": 22200,
+      "detail": "Earn a professional NAAB degree through advanced research studios and thesis work."
+     }
+    ],
+    "wages": {
+     "soc": "17-1011",
+     "year": "2025",
+     "nationalMedian": 99280,
+     "national25": 77960,
+     "miamiMedian": 97500
+    }
+   },
+   {
+    "id": "mdc-as-drafting",
+    "title": "Fast Workforce: MDC A.S. Architectural Technology",
+    "summary": "Gain immediate technical employment in architectural drafting, BIM modeling, and building technology without a 5-year degree.",
+    "kind": "Workforce A.S.",
+    "landsAs": "Architectural Drafter",
+    "soc": "17-3011",
+    "weeklyHours": 25,
+    "workFriendly": true,
+    "minGpa": null,
+    "metrics": {
+     "costUSD": 7600,
+     "relevancy": 75,
+     "difficulty": 4,
+     "years": 2
+    },
+    "steps": [
+     {
+      "stage": "A.S. in Architectural Design & Construction Technology",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7600,
+      "detail": "Master Revit, AutoCAD, Florida building codes, and construction documentation."
+     },
+     {
+      "stage": "Industry Certification & Entry-Level Role",
+      "institution": "Autodesk / Engineering Firms",
+      "duration": "6 months",
+      "costUSD": 400,
+      "detail": "Earn Autodesk Certified Professional credentials and work at a South Florida architectural firm."
+     }
+    ],
+    "wages": {
+     "soc": "17-3011",
+     "year": "2025",
+     "nationalMedian": 66150,
+     "national25": 55650,
+     "miamiMedian": 61720
+    }
+   },
+   {
+    "id": "mdc-bac-online-march",
+    "title": "Earn & Learn: MDC to BAC Distance M.Arch",
+    "summary": "Work full-time as an architectural technician while completing an online, practice-integrated Master of Architecture at Boston Architectural College.",
+    "kind": "Online / part-time",
+    "landsAs": "Architectural Associate",
+    "soc": "17-1011",
+    "weeklyHours": 25,
+    "workFriendly": true,
+    "minGpa": 2.8,
+    "metrics": {
+     "costUSD": 68000,
+     "relevancy": 90,
+     "difficulty": 7,
+     "years": 6
+    },
+    "steps": [
+     {
+      "stage": "Associate in Arts - Architecture",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7100,
+      "detail": "Earn your associate degree while gaining initial CAD/BIM technical skills."
+     },
+     {
+      "stage": "Entry into Workplace & Online Bachelor's Completion",
+      "institution": "Miami Architectural Firm / Online Partner",
+      "duration": "2 years",
+      "costUSD": 18000,
+      "detail": "Work as a BIM technician while finishing bachelor's requirements online or part-time."
+     },
+     {
+      "stage": "Online Master of Architecture (Low-Residency)",
+      "institution": "Boston Architectural College",
+      "duration": "2 years",
+      "costUSD": 42900,
+      "detail": "Complete NAAB-accredited online distance M.Arch while concurrently earning AXP hours at work."
+     }
+    ],
+    "wages": {
+     "soc": "17-1011",
+     "year": "2025",
+     "nationalMedian": 99280,
+     "national25": 77960,
+     "miamiMedian": 97500
+    }
+   }
+  ],
+  "outlook": {
+   "growthPct": 5,
+   "summary": "Demand for licensed architects remains steady, fueled by sustainable building design, South Florida urban redevelopment, and climate-resilient infrastructure."
+  },
+  "source": "seed"
+ },
+ "roadmap|chef|miami dade college": {
+  "career": "Chef",
+  "college": "Miami Dade College",
+  "options": [
+   {
+    "id": "mdc-as-culinary",
+    "title": "A.S. in Culinary Arts Management at MDC",
+    "summary": "Earn an associate degree at the Miami Culinary Institute and enter restaurant kitchens directly as a skilled cook on a fast path to sous chef.",
+    "kind": "Workforce A.S.",
+    "landsAs": "Sous Chef",
+    "soc": "35-1011",
+    "weeklyHours": 32,
+    "workFriendly": true,
+    "minGpa": 2,
+    "metrics": {
+     "costUSD": 9200,
+     "relevancy": 90,
+     "difficulty": 5,
+     "years": 2
+    },
+    "steps": [
+     {
+      "stage": "Associate Degree",
+      "institution": "Miami Dade College (Miami Culinary Institute)",
+      "duration": "2 years",
+      "costUSD": 9200,
+      "detail": "Complete hands-on culinary labs, food safety, cost control, and beverage management courses."
+     },
+     {
+      "stage": "Industry Internship",
+      "institution": "Partner Restaurant or Hotel in Miami",
+      "duration": "3 months",
+      "costUSD": 0,
+      "detail": "Gain practical kitchen experience during the required industry practicum."
+     },
+     {
+      "stage": "Initial Employment",
+      "institution": "South Florida Restaurant Group",
+      "duration": "2–3 years",
+      "costUSD": 0,
+      "detail": "Work as a Line Cook or Lead Station Chef to build speed and recipe mastery toward a Sous Chef role."
+     }
+    ],
+    "wages": {
+     "soc": "35-1011",
+     "year": "2025",
+     "nationalMedian": 62470,
+     "national25": 48440,
+     "miamiMedian": 57940
+    }
+   },
+   {
+    "id": "mdc-fiu-hospitality-transfer",
+    "title": "MDC to FIU B.S. in Hospitality Management",
+    "summary": "Combine technical culinary training at MDC with high-level hospitality business management at FIU's renowned Chaplin School.",
+    "kind": "Selective transfer",
+    "landsAs": "Executive Chef / Culinary Director",
+    "soc": "35-1011",
+    "weeklyHours": 35,
+    "workFriendly": true,
+    "minGpa": 2.5,
+    "metrics": {
+     "costUSD": 23500,
+     "relevancy": 95,
+     "difficulty": 6,
+     "years": 4
+    },
+    "steps": [
+     {
+      "stage": "Associate Degree",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 9200,
+      "detail": "Complete the A.S. in Culinary Arts Management with prerequisite courses for FIU transfer."
+     },
+     {
+      "stage": "Bachelor's Degree Transfer",
+      "institution": "Florida International University (Chaplin School)",
+      "duration": "2 years",
+      "costUSD": 14300,
+      "detail": "Earn a B.S. in Hospitality Management with advanced coursework in culinary leadership and food service systems."
+     },
+     {
+      "stage": "Leadership Entry",
+      "institution": "Luxury Hotel or Resort",
+      "duration": "1–2 years",
+      "costUSD": 0,
+      "detail": "Enter management training programs or sous chef roles leading to Executive Chef positions."
+     }
+    ],
+    "wages": {
+     "soc": "35-1011",
+     "year": "2025",
+     "nationalMedian": 62470,
+     "national25": 48440,
+     "miamiMedian": 57940
+    }
+   },
+   {
+    "id": "mdc-certificate-fast-track",
+    "title": "Culinary Arts Certificate & Fast-Track Kitchen Path",
+    "summary": "Complete a 1-year certificate to master fundamentals quickly and start gaining paid kitchen experience immediately.",
+    "kind": "Certificate",
+    "landsAs": "Line Cook / Station Chef",
+    "soc": "35-2014",
+    "weeklyHours": 28,
+    "workFriendly": true,
+    "minGpa": null,
+    "metrics": {
+     "costUSD": 5400,
+     "relevancy": 75,
+     "difficulty": 4,
+     "years": 1
+    },
+    "steps": [
+     {
+      "stage": "College Certificate",
+      "institution": "Miami Dade College",
+      "duration": "1 year",
+      "costUSD": 5400,
+      "detail": "Complete the Culinary Arts Management Operations College Credit Certificate focusing on core technique and sanitation."
+     },
+     {
+      "stage": "Entry-Level Employment",
+      "institution": "Miami Restaurant or Bistro",
+      "duration": "2 years",
+      "costUSD": 0,
+      "detail": "Work as a prep cook or line cook to refine skills in high-volume, real-world service."
+     },
+     {
+      "stage": "Career Advancement",
+      "institution": "Fine Dining Establishment",
+      "duration": "2 years",
+      "costUSD": 0,
+      "detail": "Promote to station chef or lead cook while preparing to take on head chef responsibilities."
+     }
+    ],
+    "wages": {
+     "soc": "35-2014",
+     "year": "2025",
+     "nationalMedian": 37390,
+     "national25": 34010,
+     "miamiMedian": 36920
+    }
+   },
+   {
+    "id": "mdc-bas-supervision-mgmt",
+    "title": "MDC Culinary A.S. to MDC B.A.S. in Supervision & Management",
+    "summary": "Stay at MDC to get a 4-year degree in supervision while working part-time in Miami kitchens to prepare for executive chef roles.",
+    "kind": "Same-college bachelor's",
+    "landsAs": "Kitchen Manager / Head Chef",
+    "soc": "35-1011",
+    "weeklyHours": 30,
+    "workFriendly": true,
+    "minGpa": 2,
+    "metrics": {
+     "costUSD": 16800,
+     "relevancy": 85,
+     "difficulty": 5,
+     "years": 4
+    },
+    "steps": [
+     {
+      "stage": "Associate Degree",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 9200,
+      "detail": "Complete the A.S. in Culinary Arts Management at the Miami Culinary Institute."
+     },
+     {
+      "stage": "Bachelor's Degree",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7600,
+      "detail": "Earn a B.A.S. in Supervision and Management with a focus on operations, human resources, and financial oversight."
+     },
+     {
+      "stage": "Culinary Advancement",
+      "institution": "Commercial Kitchen or Catering Company",
+      "duration": "1 year",
+      "costUSD": 0,
+      "detail": "Step into roles such as Kitchen Manager or Banquet Chef combining administrative and culinary duties."
+     }
+    ],
+    "wages": {
+     "soc": "35-1011",
+     "year": "2025",
+     "nationalMedian": 62470,
+     "national25": 48440,
+     "miamiMedian": 57940
+    }
+   },
+   {
+    "id": "acf-apprenticeship-route",
+    "title": "ACF Registered Culinary Apprenticeship with MDC Coursework",
+    "summary": "Combine paid culinary work under a master chef with evening academic courses at MDC through an American Culinary Federation model.",
+    "kind": "Apprenticeship",
+    "landsAs": "Certified Sous Chef",
+    "soc": "35-1011",
+    "weeklyHours": 45,
+    "workFriendly": true,
+    "minGpa": null,
+    "metrics": {
+     "costUSD": 4500,
+     "relevancy": 92,
+     "difficulty": 7,
+     "years": 3
+    },
+    "steps": [
+     {
+      "stage": "Apprenticeship Entry",
+      "institution": "ACF South Florida Chapter / Partner Hotel",
+      "duration": "3 years",
+      "costUSD": 0,
+      "detail": "Work 4,000+ paid hours on station rotations under executive chefs while earning a progressive wage."
+     },
+     {
+      "stage": "Related Instruction",
+      "institution": "Miami Dade College",
+      "duration": "3 years (part-time)",
+      "costUSD": 4500,
+      "detail": "Take evening culinary theory, nutrition, and food cost accounting courses to satisfy apprenticeship technical requirements."
+     },
+     {
+      "stage": "Certification & Promotion",
+      "institution": "American Culinary Federation",
+      "duration": "Immediate",
+      "costUSD": 0,
+      "detail": "Graduate with ACF Certified Journey Baker or Sous Chef credentials and step directly into leadership."
+     }
+    ],
+    "wages": {
+     "soc": "35-1011",
+     "year": "2025",
+     "nationalMedian": 62470,
+     "national25": 48440,
+     "miamiMedian": 57940
+    }
+   }
+  ],
+  "outlook": {
+   "growthPct": 6,
+   "summary": "Strong demand for chefs and head cooks driven by expanding dining options, tourism, and hotel culinary operations, particularly in major culinary hubs like South Florida."
+  },
+  "source": "seed"
+ },
+ "roadmap|it consultant|miami dade college": {
+  "career": "IT Consultant",
+  "college": "Miami Dade College",
+  "options": [
+   {
+    "id": "mdc-bs-ist",
+    "title": "MDC B.S. in Information Systems Technology",
+    "summary": "Complete your bachelor's entirely at Miami Dade College for a highly affordable, direct pathway into technical consulting.",
+    "kind": "Same-college bachelor's",
+    "landsAs": "Junior IT Consultant",
+    "soc": "15-1211",
+    "weeklyHours": 25,
+    "workFriendly": true,
+    "minGpa": 2.5,
+    "metrics": {
+     "costUSD": 14000,
+     "relevancy": 85,
+     "difficulty": 5,
+     "years": 4
+    },
+    "steps": [
+     {
+      "stage": "Lower-Division Prerequisites",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7000,
+      "detail": "Complete general education requirements alongside introductory programming, networking, and database courses."
+     },
+     {
+      "stage": "B.S. in Information Systems Technology",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7000,
+      "detail": "Focus on upper-level coursework in project management, system analysis, cybersecurity, and enterprise architecture."
+     },
+     {
+      "stage": "IT Consulting Internship",
+      "institution": "Miami Tech Firm / Enterprise",
+      "duration": "6 months",
+      "costUSD": 0,
+      "detail": "Gain hands-on experience delivering IT solutions and systems integration for business clients."
+     }
+    ],
+    "wages": {
+     "soc": "15-1211",
+     "year": "2025",
+     "nationalMedian": 105850,
+     "national25": 82860,
+     "miamiMedian": 103650
+    }
+   },
+   {
+    "id": "fiu-bs-it",
+    "title": "Transfer to FIU for B.S. in Information Technology",
+    "summary": "Transfer locally to Florida International University to leverage their extensive South Florida corporate hiring network.",
+    "kind": "Transfer",
+    "landsAs": "IT Solutions Consultant",
+    "soc": "15-1211",
+    "weeklyHours": 30,
+    "workFriendly": true,
+    "minGpa": 2.8,
+    "metrics": {
+     "costUSD": 21000,
+     "relevancy": 90,
+     "difficulty": 6,
+     "years": 4
+    },
+    "steps": [
+     {
+      "stage": "A.A. in Computer Information Systems",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7000,
+      "detail": "Earn your associate degree while satisfying FIU transfer prerequisites in programming and statistics."
+     },
+     {
+      "stage": "B.S. in Information Technology",
+      "institution": "Florida International University",
+      "duration": "2 years",
+      "costUSD": 14000,
+      "detail": "Take advanced courses in network administration, cloud infrastructure, and IT project management."
+     },
+     {
+      "stage": "Campus Career Fairs & Internship",
+      "institution": "FIU Knight Foundation School of Computing",
+      "duration": "1 year",
+      "costUSD": 0,
+      "detail": "Connect with consulting firms at FIU career expos to secure a technology analyst internship."
+     }
+    ],
+    "wages": {
+     "soc": "15-1211",
+     "year": "2025",
+     "nationalMedian": 105850,
+     "national25": 82860,
+     "miamiMedian": 103650
+    }
+   },
+   {
+    "id": "uf-bsba-is",
+    "title": "Selective Transfer to UF Warrington College of Business",
+    "summary": "Transfer to UF's business school to target high-paying technology strategy consulting roles at major national firms.",
+    "kind": "Selective transfer",
+    "landsAs": "Technology Strategy Consultant",
+    "soc": "13-1111",
+    "weeklyHours": 35,
+    "workFriendly": false,
+    "minGpa": 3.5,
+    "metrics": {
+     "costUSD": 23000,
+     "relevancy": 95,
+     "difficulty": 8,
+     "years": 4
+    },
+    "steps": [
+     {
+      "stage": "A.A. in Business Administration",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7000,
+      "detail": "Maintain a top GPA while taking required calculus, micro/macroeconomics, and accounting prerequisites."
+     },
+     {
+      "stage": "B.S.B.A. in Information Systems",
+      "institution": "University of Florida",
+      "duration": "2 years",
+      "costUSD": 16000,
+      "detail": "Study business analytics, enterprise systems (SAP), database management, and corporate strategy."
+     },
+     {
+      "stage": "On-Campus Recruiting",
+      "institution": "UF Business Career Services",
+      "duration": "1 year",
+      "costUSD": 0,
+      "detail": "Interview directly with Big 4 accounting and management consulting firms for entry-level analyst roles."
+     }
+    ],
+    "wages": {
+     "soc": "13-1111",
+     "year": "2025",
+     "nationalMedian": 101860,
+     "national25": 77950,
+     "miamiMedian": 94290
+    }
+   },
+   {
+    "id": "mdc-as-workforce",
+    "title": "Fast-Track A.S. to MSP Technical Support Consultant",
+    "summary": "Earn an applied associate degree and entry-level certs to enter a Managed Service Provider (MSP) consulting environment in 2 years.",
+    "kind": "Workforce A.S.",
+    "landsAs": "Junior IT Support Consultant",
+    "soc": "15-1232",
+    "weeklyHours": 25,
+    "workFriendly": true,
+    "minGpa": 2,
+    "metrics": {
+     "costUSD": 7600,
+     "relevancy": 70,
+     "difficulty": 4,
+     "years": 2
+    },
+    "steps": [
+     {
+      "stage": "A.S. in Network Systems Technology",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7000,
+      "detail": "Gain hands-on skills in router configuration, system troubleshooting, active directory, and network security."
+     },
+     {
+      "stage": "Industry Certifications",
+      "institution": "CompTIA / Cisco",
+      "duration": "3 months",
+      "costUSD": 600,
+      "detail": "Pass the CompTIA Network+ and Security+ exams to enhance resume competitiveness."
+     },
+     {
+      "stage": "Managed Service Provider Entry Role",
+      "institution": "South Florida MSP / IT Consultancy",
+      "duration": "1 year",
+      "costUSD": 0,
+      "detail": "Provide outsourced IT infrastructure management and troubleshooting for client companies."
+     }
+    ],
+    "wages": {
+     "soc": "15-1232",
+     "year": "2025",
+     "nationalMedian": 61860,
+     "national25": 49000,
+     "miamiMedian": 60500
+    }
+   },
+   {
+    "id": "wgu-online-bs",
+    "title": "MDC A.S. + WGU Online B.S. Cloud Computing",
+    "summary": "Work in IT entry-level while completing an accelerated, self-paced online bachelor's degree featuring built-in industry certifications.",
+    "kind": "Online / part-time",
+    "landsAs": "Cloud IT Consultant",
+    "soc": "15-1299",
+    "weeklyHours": 20,
+    "workFriendly": true,
+    "minGpa": 2.5,
+    "metrics": {
+     "costUSD": 15000,
+     "relevancy": 85,
+     "difficulty": 5,
+     "years": 3.5
+    },
+    "steps": [
+     {
+      "stage": "A.S. in Computer Information Technology",
+      "institution": "Miami Dade College",
+      "duration": "2 years",
+      "costUSD": 7000,
+      "detail": "Complete core technical foundation courses while working part-time in helpdesk support."
+     },
+     {
+      "stage": "B.S. in Cloud Computing",
+      "institution": "Western Governors University",
+      "duration": "1.5 years",
+      "costUSD": 8000,
+      "detail": "Complete online competency units and earn embedded AWS, Azure, and CompTIA certifications."
+     },
+     {
+      "stage": "Cloud Solutions Advisory Role",
+      "institution": "Technology Consulting Practice",
+      "duration": "1 year",
+      "costUSD": 0,
+      "detail": "Transition to assisting clients with cloud infrastructure design, deployment, and optimization."
+     }
+    ],
+    "wages": {
+     "soc": "15-1299",
+     "year": "2025",
+     "nationalMedian": 116580,
+     "national25": 79370,
+     "miamiMedian": 106080
+    }
+   }
+  ],
+  "outlook": {
+   "growthPct": 10,
+   "summary": "Demand for IT consultants remains robust as organizations accelerate cloud migration, cybersecurity hardening, and AI integration."
+  },
+  "source": "seed"
+ },
+ "detail|cybersecurity specialist|miami dade college|mdc-bs-cybersecurity": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1500,
+    "detail": "Complete lower-division general education and core IT foundations like Introduction to Cybersecurity and Computer Networking."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1500,
+    "detail": "Take Linux System Administration and Router/Switch Fundamentals while setting up hands-on labs at home."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1500,
+    "detail": "Complete Python Programming and Information Security Fundamentals; study independently for and pass the CompTIA Security+ exam."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1500,
+    "detail": "Finish Associate in Science coursework and apply for formal admission into MDC's Bachelor of Science in Cybersecurity program."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1800,
+    "detail": "Begin upper-division coursework including Ethical Hacking and Database Security; join the MDC Cyber Range student club."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1800,
+    "detail": "Take Network Defense and Computer Forensics while applying for local Miami-area IT support or junior security internships."
+   },
+   {
+    "stage": "Year 4 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1800,
+    "detail": "Complete Incident Response and Applied Cryptography; sit for advanced industry certifications like CompTIA CySA+ or EC-Council CEH."
+   },
+   {
+    "stage": "Year 4 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1800,
+    "detail": "Finish the Cybersecurity Senior Capstone Project (CIS 4910), graduate with your BS in Cybersecurity, and transition into full-time roles."
+   }
+  ],
+  "costs": {
+   "tuition": 11500,
+   "booksFees": 3000,
+   "living": 0,
+   "aidEstimate": 14500,
+   "aidNote": "Assumes full Federal Pell Grant and Florida Student Assistance Grant (FSAG) for an in-state student living at home."
+  },
+  "requirements": [
+   "High school diploma or GED equivalent for initial MDC admission.",
+   "Minimum 2.5 cumulative GPA for admission into the upper-division BS in Cybersecurity program.",
+   "Completion of lower-division technical core prerequisites (Linux, Networking, Python).",
+   "Passing industry certification exams (e.g., CompTIA Security+ and CySA+ or CEH) to maximize employment outcomes."
+  ],
+  "risks": [
+   "Relying solely on classroom theory: Employers require practical experience, so you must participate in MDC Cyber Range labs and capture-the-flag (CTF) competitions.",
+   "Graduating without industry certifications: A degree alone may not bypass HR filters; schedule time to earn Security+ before your senior year.",
+   "Neglecting networking opportunities: Failing to connect with South Florida IT groups (like ISSA Miami) limits your entry-level internship referrals."
+  ],
+  "nextActions": [
+   "Apply for admission to Miami Dade College and complete the FAFSA using MDC school code 001501.",
+   "Schedule an advising appointment with MDC's EnTec (Engineering, Technology & Design) department to map out your lower-division course schedule.",
+   "Create a free account on self-study platforms like TryHackMe or Hack The Box to build basic hands-on security skills early.",
+   "Register for your first semester classes, prioritizing Computer Networking and Intro to Cybersecurity.",
+   "Join the MDC Cybersecurity Club and build a professional LinkedIn profile highlighting your tech skills."
+  ],
+  "dayInLife": "As a Cybersecurity Analyst, your day starts by reviewing SIEM system alerts to investigate unusual network traffic or potential security breaches. You collaborate with IT system administrators to patch vulnerabilities, analyze suspicious emails reported by users, and document security events. In the afternoon, you run automated vulnerability scans across corporate networks and present security status reports to team leadership.",
+  "source": "seed"
+ },
+ "detail|chef|miami dade college|mdc-fiu-hospitality-transfer": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1600,
+    "detail": "Enroll in A.S. in Culinary Arts Management. Take Sanitation & Safety, Culinary Math, and Intro to Culinary Arts lab skills."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1600,
+    "detail": "Focus on Garde Manger, American Regional Cuisine, and basic Food & Beverage Purchasing while obtaining ServSafe certification."
+   },
+   {
+    "stage": "Year 1 · Summer",
+    "institution": "Miami Dade College / Industry",
+    "duration": "3 months",
+    "costUSD": 1000,
+    "detail": "Complete a required culinary practicum at a Miami restaurant while taking Gen Ed English Composition."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1600,
+    "detail": "Study International Cuisine, Dining Room Service, and Menu Planning & Cost Control to prepare for management-level decisions."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1600,
+    "detail": "Finish Advanced Culinary Techniques and Dining Room Management. Graduate with A.S. in Culinary Arts Management and submit FIU transfer application."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "Florida International University",
+    "duration": "4 months",
+    "costUSD": 3800,
+    "detail": "Begin B.S. in Hospitality Management at FIU Chaplin School. Take Hospitality Financial Accounting and Foodservice Management."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "Florida International University",
+    "duration": "4 months",
+    "costUSD": 3800,
+    "detail": "Take Hospitality Law, Leadership & Human Resources, and Advanced Food and Beverage Management."
+   },
+   {
+    "stage": "Year 4 · Fall",
+    "institution": "Florida International University",
+    "duration": "4 months",
+    "costUSD": 4200,
+    "detail": "Take Hospitality Marketing, Financial Analysis, and complete part of the required 1,000 industry work hours as a Lead Line Cook."
+   },
+   {
+    "stage": "Year 4 · Spring",
+    "institution": "Florida International University",
+    "duration": "4 months",
+    "costUSD": 4300,
+    "detail": "Complete Senior Hospitality Strategic Management Capstone and Culinary Operations. Graduate with B.S. in Hospitality Management."
+   }
+  ],
+  "costs": {
+   "tuition": 18900,
+   "booksFees": 4600,
+   "living": 0,
+   "aidEstimate": 18000,
+   "aidNote": "Assumes maximum Federal Pell Grant eligibility and Florida Student Assistance Grant (FSAG) for an in-state commuter student."
+  },
+  "requirements": [
+   "High school diploma or GED for MDC entry",
+   "ServSafe Manager Certification",
+   "Completion of MDC A.S. in Culinary Arts Management with a minimum 2.25 transfer GPA",
+   "Documentation of 1,000 total hours of hospitality work experience for FIU graduation",
+   "Successful completion of FIU Chaplin School upper-division prerequisite business courses"
+  ],
+  "risks": [
+   "Physical burnout from long kitchen shifts conflicting with demanding FIU business coursework; set strict schedule boundaries.",
+   "Accepting non-leadership post-grad roles; actively target Sous Chef or Kitchen Supervisor positions rather than remaining a line cook.",
+   "Loss of transfer credits; work directly with an FIU Chaplin transfer advisor during your first year at MDC to align electives."
+  ],
+  "nextActions": [
+   "Submit your admissions application to Miami Dade College for the Culinary Arts Management program.",
+   "File your FAFSA listing MDC (school code 001501) to maximize Pell Grant eligibility.",
+   "Order required MDC culinary kit (knives, uniform, non-slip footwear) before lab orientation.",
+   "Meet with an MDC culinary advisor to confirm your academic plan aligns with FIU Chaplin transfer pathways.",
+   "Enroll in ServSafe Manager Prep and secure your initial food handler certification."
+  ],
+  "dayInLife": "As an Executive Chef, your day begins early inspecting morning deliveries of produce and proteins, verifying quality, and managing inventory. You conduct pre-shift line checks, guide your culinary team during busy service, and ensure plates meet strict presentation and flavor standards. In the afternoon, you analyze food cost reports, design seasonal menus, and coordinate with hotel executive management on banquet and event logistics.",
+  "source": "seed"
+ },
+ "detail|architect|miami dade college|mdc-fiu-march": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1800,
+    "detail": "Enroll in ARC 1301 Architectural Design I, ARC 1115 Architectural Drawing, and MAC 1114 Trigonometry to establish basic studio skills and math requirements."
+   },
+   {
+    "stage": "Year 1 · Spring & Summer",
+    "institution": "Miami Dade College",
+    "duration": "7 months",
+    "costUSD": 2200,
+    "detail": "Take ARC 1302 Design II, ARC 2201 History of Architecture I, and PHY 2053 General Physics. Begin compiling physical model photos and studio drawings."
+   },
+   {
+    "stage": "Year 2 · Fall & Spring",
+    "institution": "Miami Dade College",
+    "duration": "9 months",
+    "costUSD": 3100,
+    "detail": "Complete ARC 2303 Design III and ARC 2304 Design IV. Finalize your A.A. degree in Architecture and submit your portfolio to FIU CAPP admissions."
+   },
+   {
+    "stage": "Year 3 · Fall & Spring",
+    "institution": "Florida International University",
+    "duration": "9 months",
+    "costUSD": 7500,
+    "detail": "Begin upper-division Accelerated M.Arch track taking ARC 5320 Design 5 and ARC 5205 Building Theories. Master digital software including Revit, Rhino, and Enscape."
+   },
+   {
+    "stage": "Year 4 · Fall & Spring",
+    "institution": "Florida International University",
+    "duration": "9 months",
+    "costUSD": 7800,
+    "detail": "Take Structural Design I & II, Environmental Controls, and Advanced Building Systems. Secure a summer architectural internship to begin logging AXP hours."
+   },
+   {
+    "stage": "Year 5 · Fall & Spring",
+    "institution": "Florida International University",
+    "duration": "9 months",
+    "costUSD": 8600,
+    "detail": "Complete your Graduate Master's Project/Thesis studio and ARC 5612 Professional Practice. Graduate with an NAAB-accredited Master of Architecture."
+   },
+   {
+    "stage": "Post-Graduation · Years 1–2",
+    "institution": "Architecture Firm & NCARB",
+    "duration": "24 months",
+    "costUSD": 2000,
+    "detail": "Work full-time as an Architectural Designer. Log remaining 3,740 required AXP hours under a licensed architect and sit for the ARE 5.0 exams."
+   }
+  ],
+  "costs": {
+   "tuition": 31000,
+   "booksFees": 4500,
+   "living": 0,
+   "aidEstimate": 24000,
+   "aidNote": "Assumes full Federal Pell Grant eligibility ($7,395/yr) plus Florida Student Assistance Grant (FSAG) for a commuting low-income student."
+  },
+  "requirements": [
+   "Minimum 2.75 cumulative GPA at MDC for A.A. completion and transfer eligibility.",
+   "Passing physics (PHY 2053) and trigonometry/calculus prerequisites before upper-division transfer.",
+   "Competitive portfolio submission approved by FIU Department of Architecture for studio placement.",
+   "Completion of 3,740 NCARB Architectural Experience Program (AXP) hours across 6 core practice areas.",
+   "Passing all 6 divisions of the Architect Registration Examination (ARE 5.0) for Florida state licensure."
+  ],
+  "risks": [
+   "Studio placement delays at FIU if the MDC design portfolio does not meet upper-division visual standards; mitigate by attending portfolio workshops early.",
+   "Severe burnout from 15+ hour studio work sessions alongside external work; mitigate by using strict calendar blocking and minimizing off-campus work hours during studio deadlines.",
+   "Failure to log AXP hours post-graduation by taking non-traditional design jobs; mitigate by verifying employer licensure supervision before accepting entry-level offers."
+  ],
+  "nextActions": [
+   "Register for ARC 1301 Architectural Design I and MAC 1114 Trigonometry at MDC Kendall or North Campus.",
+   "Submit the FAFSA listing Miami Dade College (school code 001501) to claim Pell and state grant aid.",
+   "Purchase essential drafting supplies (scale rule, drafting markers, trace paper, cutting mat) before the first studio class.",
+   "Meet with an MDC Architecture Pathway advisor to confirm articulation requirements for FIU's Accelerated M.Arch.",
+   "Create a free NCARB student account to familiarize yourself with AXP categories and tracking procedures."
+  ],
+  "dayInLife": "An architectural designer begins the workday updating 3D Building Information Modeling (BIM) models in Revit and coordinating technical details with structural engineers. In the afternoon, they select material finishes with clients, print physical drawings, and join senior architects on site visits to inspect progress on active construction projects.",
+  "source": "seed"
+ },
+ "detail|mechanical engineer|miami dade college|mdc-fiu-bsme": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1770,
+    "detail": "Enroll in MAC 2311 (Calculus I), CHM 1045/L (General Chemistry I with Lab), and ENC 1101. Establish strong study habits for foundational math and science."
+   },
+   {
+    "stage": "Year 1 · Spring & Summer",
+    "institution": "Miami Dade College",
+    "duration": "6 months",
+    "costUSD": 2360,
+    "detail": "Complete MAC 2312 (Calculus II), PHY 2048/L (Physics with Calculus I & Lab), and EGN 1008C (Intro to Engineering). Join the Connect4Success FIU transfer pathway program."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1770,
+    "detail": "Take MAC 2313 (Calculus III), PHY 2049/L (Physics with Calculus II & Lab), and EGM 2511 (Statics). Begin building projects with 3D CAD modeling software."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1420,
+    "detail": "Complete MAP 2302 (Differential Equations) and EGM 2521 (Dynamics). Graduate with an Associate in Arts in Engineering and finalize direct transfer to FIU."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "Florida International University",
+    "duration": "4 months",
+    "costUSD": 3200,
+    "detail": "Begin upper-division work in EML 3100 (Thermodynamics I), EGM 3520 (Mechanics of Materials), and EML 3036 (CAD for Mechanical Engineers). Join FIU's ASME or SAE Panther Motorsports chapter."
+   },
+   {
+    "stage": "Year 3 · Spring & Summer",
+    "institution": "Florida International University",
+    "duration": "6 months",
+    "costUSD": 4500,
+    "detail": "Complete EML 3701 (Fluid Mechanics), EML 4140 (Heat Transfer), and EML 3500 (Mechanical Design I). Secure and complete a summer engineering internship in South Florida."
+   },
+   {
+    "stage": "Year 4 · Fall",
+    "institution": "Florida International University",
+    "duration": "4 months",
+    "costUSD": 3200,
+    "detail": "Take EML 4551 (Senior Capstone Design I) and advanced mechanical electives. Register for and take the NCEES Fundamentals of Engineering (FE) exam."
+   },
+   {
+    "stage": "Year 4 · Spring",
+    "institution": "Florida International University",
+    "duration": "4 months",
+    "costUSD": 3200,
+    "detail": "Complete EML 4552 (Senior Capstone Design II) and finalize your degree. Apply for entry-level mechanical engineering roles, mechanical design, or thermal engineering jobs."
+   }
+  ],
+  "costs": {
+   "tuition": 18200,
+   "booksFees": 3300,
+   "living": 0,
+   "aidEstimate": 20000,
+   "aidNote": "Assumes full Federal Pell Grant and Florida Student Assistance Grant (FSAG) for an eligible Florida resident living at home and commuting."
+  },
+  "requirements": [
+   "Maintain a minimum cumulative GPA of 2.50 to qualify for guaranteed transfer via the MDC-FIU Connect4Success agreement.",
+   "Earn a 'C' or higher in all prerequisite engineering courses (Calculus sequence, Differential Equations, Physics I/II, Chemistry I).",
+   "Earn at least 60 transferable credits at MDC to complete the AA degree, followed by 68 upper-division credits at FIU for the BSME.",
+   "Pass the NCEES Fundamentals of Engineering (FE) Exam prior to graduation to earn Engineer Intern (EI) certification."
+  ],
+  "risks": [
+   "Math Gatekeeper Delay: Failing Calculus I or II can push back your entire transfer schedule by up to a year due to strict prerequisite chains. Avoid this by using MDC's STEM tutoring centers immediately when struggling.",
+   "Transfer Credit Misalignment: Taking general electives that do not count toward FIU's BSME map can result in wasted money and extra terms. Avoid this by following the exact FIU Mechanical Engineering articulation sheet and confirming with your advisor each semester.",
+   "Lack of Practical Experience: Graduating with a high GPA but no internship or project experience makes landing an engineering job difficult. Avoid this by joining FIU project clubs like SAE Formula SAE or taking on undergraduate design research early."
+  ],
+  "nextActions": [
+   "Complete the Miami Dade College admissions application and submit your FAFSA listing MDC (school code 001501).",
+   "Take the ALEKS PPCM math placement exam or submit your high school transcripts to qualify directly for MAC 2311 (Calculus I).",
+   "Schedule an appointment with an MDC STEM Academic Advisor to sign up for the FIU Connect4Success pathway.",
+   "Register for your Fall Year 1 courses, ensuring Calculus I and General Chemistry I are on your schedule.",
+   "Create a LinkedIn account to start connecting with FIU engineering alumni and tracking local South Florida engineering companies."
+  ],
+  "dayInLife": "As an entry-level Mechanical Engineer, your morning begins by reviewing 3D CAD models in SolidWorks and running structural or thermal simulations on new component designs. In the afternoon, you head to the manufacturing floor or test facility to inspect physical prototypes, run stress tests, and troubleshoot design flaws alongside technicians. You finish the day documenting test results and presenting progress updates to senior project engineers.",
+  "source": "seed"
+ },
+ "detail|chef|miami dade college|mdc-certificate-fast-track": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College (Miami Culinary Institute)",
+    "duration": "4 months",
+    "costUSD": 1800,
+    "detail": "Take Sanitation & Safety (ServSafe), Culinary Fundamentals, and Knife Skills while building foundational culinary techniques."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College (Miami Culinary Institute)",
+    "duration": "4 months",
+    "costUSD": 1800,
+    "detail": "Complete Quantity Food Preparation, Garde Manger (cold food kitchen), and Baking Fundamentals to round out kitchen capabilities."
+   },
+   {
+    "stage": "Year 1 · Summer",
+    "institution": "Miami Dade College & Partner Restaurant",
+    "duration": "3 months",
+    "costUSD": 1800,
+    "detail": "Complete the required Culinary Practicum/Internship at a local hotel or bistro and graduate with your Career Technical Certificate."
+   },
+   {
+    "stage": "Year 2 · Entry-Level Employment",
+    "institution": "Local Miami Bistro or Hotel Kitchen",
+    "duration": "12 months",
+    "costUSD": 0,
+    "detail": "Work as a Prep Cook or Commis Chef, mastering speed, station organization, and timing under a Lead Line Cook."
+   },
+   {
+    "stage": "Year 3 · Station Promotion",
+    "institution": "High-Volume Miami Restaurant",
+    "duration": "12 months",
+    "costUSD": 0,
+    "detail": "Advance to full Line Cook managing the Salad, Pantry, or Fry station during busy dinner services."
+   },
+   {
+    "stage": "Year 4 · Transition to Fine Dining",
+    "institution": "Upscale Restaurant (Brickell / South Beach)",
+    "duration": "12 months",
+    "costUSD": 0,
+    "detail": "Secure a Line Cook position at a high-end restaurant; cross-train on demanding Sauté and Grill stations."
+   },
+   {
+    "stage": "Year 5 · Career Advancement",
+    "institution": "Fine Dining Establishment",
+    "duration": "12 months",
+    "costUSD": 0,
+    "detail": "Promoted to Chef de Partie (Station Chef), leading a specific line section, training junior cooks, and contributing to daily specials."
+   }
+  ],
+  "costs": {
+   "tuition": 3500,
+   "booksFees": 1900,
+   "living": 0,
+   "aidEstimate": 4200,
+   "aidNote": "Assumes student qualifies for federal Pell Grant and Florida Student Assistance Grant (FSAG) attending full-time while living at home."
+  },
+  "requirements": [
+   "High school diploma or GED equivalent for Miami Dade College admission",
+   "ServSafe Food Protection Manager Certification",
+   "Completion of ~30-35 vocational credit hours at Miami Culinary Institute",
+   "Physical capability to stand 8-12 hours per shift and lift up to 50 lbs"
+  ],
+  "risks": [
+   "Physical burnout and injury from high-stress, fast-paced kitchen environments; mitigate by using proper posture, supportive footwear, and strict heat safety.",
+   "Early wage stagnation in entry-level prep roles; mitigate by actively cross-training on hot stations and seeking positions in high-volume or high-end venues.",
+   "Seasonal hiring slowdowns in South Florida hospitality; mitigate by securing positions with year-round resort hotels or established fine-dining groups."
+  ],
+  "nextActions": [
+   "Submit the admissions application for Miami Dade College and complete the FAFSA.",
+   "Contact the Miami Culinary Institute at MDC Wolfson Campus for program advising and registration.",
+   "Purchase mandatory program equipment including an approved chef uniform and a standard starter knife roll.",
+   "Study for and pass the ServSafe Food Protection Manager certification exam during your first term.",
+   "Apply for part-time prep cook positions or kitchen staging opportunities around Miami to gain real kitchen stamina immediately."
+  ],
+  "dayInLife": "Your shift starts at 2:00 PM setting up your station, prepping fresh ingredients, and making sauces for the evening service. From 6:00 PM to 10:00 PM, you execute dozens of ticket orders simultaneously at the Sauté station, communicating constantly with the Expediter to ensure flawless timing. After final orders close at 11:00 PM, you break down the station, scrub surfaces, and log inventory for the morning prep crew.",
+  "source": "seed"
+ },
+ "detail|chef|miami dade college|mdc-bas-supervision-mgmt": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Begin the Culinary Arts Associate in Science (A.S.) program, taking FOS 2201 (Sanitation and Safety) and HFT 1100 (Introduction to Hospitality)."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Continue core culinary coursework including FSS 1240 (Basic Food Preparation) and secure an entry-level prep cook job in a local Miami kitchen."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Advance hands-on skills with FSS 1248L (Garde Manger) and FSS 2251 (Baking and Pastry), balancing coursework with evening line cook shifts."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Complete final A.S. requirements, including the culinary internship course, and officially graduate with your Associate in Science in Culinary Arts."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Transition immediately into MDC's Bachelor of Applied Science (B.A.S.) in Supervision and Management, taking MAN 3025 (Introduction to Management)."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Advance to a Lead Line Cook or Sous Chef role in a commercial kitchen while taking upper-division business courses like BUL 3130 (Legal Environment of Business)."
+   },
+   {
+    "stage": "Year 4 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Take courses in financial management and operations management tailored for hospitality leaders while working full-time or acting as a kitchen supervisor."
+   },
+   {
+    "stage": "Year 4 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Complete the B.A.S. capstone project focused on restaurant operations, graduate with your bachelor's degree, and transition to a full-time Kitchen Manager / Head Chef role."
+   }
+  ],
+  "costs": {
+   "tuition": 14000,
+   "booksFees": 2800,
+   "living": 0,
+   "aidEstimate": 12000,
+   "aidNote": "Assumes eligibility for the maximum Federal Pell Grant and Florida student assistance grants based on low-to-middle income status while living at home."
+  },
+  "requirements": [
+   "High school diploma or GED with a minimum 2.0 GPA for admission to Miami Dade College",
+   "Completion of MDC Culinary Arts A.S. core courses before advancing to upper-division B.A.S. coursework",
+   "Maintain a cumulative GPA of 2.5 or higher to remain in good standing in the B.A.S. program",
+   "ServSafe Manager certification earned during the culinary program",
+   "Background check and health screening as required by certain hospitality employer partners"
+  ],
+  "risks": [
+   "Burnout from balancing heavy kitchen work hours with full-time college classes; avoid this by scaling back shifts during midterms and finals.",
+   "Stalling out in the kitchen without realizing business management potential; avoid this by actively applying B.A.S. concepts like food costing and inventory control to your current job immediately.",
+   "Delaying graduation due to scheduling conflicts with restaurant shifts; avoid this by prioritizing online and evening course sections offered by MDC."
+  ],
+  "nextActions": [
+   "Submit your admissions application to Miami Dade College for the upcoming term.",
+   "Complete the Free Application for Federal Student Aid (FAFSA) and list MDC's school code.",
+   "Meet with an MDC culinary academic advisor to map out your specific A.S. course schedule.",
+   "Research local Miami restaurants or catering companies hiring entry-level prep cooks with flexible student hours.",
+   "Purchase basic kitchen tools and non-slip chef shoes required for your first culinary lab."
+  ],
+  "dayInLife": "A Kitchen Manager starts their day by reviewing inventory, placing food orders with vendors, and checking equipment functionality. During the lunch and dinner rushes, they expedite orders on the line, manage kitchen staff performance, and ensure strict adherence to food safety and sanitation standards. After service, they complete administrative duties such as labor scheduling, food cost calculations, and food safety logs.",
+  "source": "seed"
+ },
+ "detail|chef|miami dade college|acf-apprenticeship-route": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College / ACF Partner Kitchen",
+    "duration": "16 weeks",
+    "costUSD": 800,
+    "detail": "Begin working as a line apprentice in a partner hotel while taking HOS 1010 (Introduction to Hospitality) at MDC."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College / ACF Partner Kitchen",
+    "duration": "16 weeks",
+    "costUSD": 800,
+    "detail": "Continue full-time paid apprenticeship hours and complete FSS 1221C (Sanitation and Safety) at MDC, earning your ServSafe certification."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College / ACF Partner Kitchen",
+    "duration": "16 weeks",
+    "costUSD": 750,
+    "detail": "Advance kitchen stations to sauté or grill while taking FSS 1063C (Baking and Pastry) in the evening."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College / ACF Partner Kitchen",
+    "duration": "16 weeks",
+    "costUSD": 750,
+    "detail": "Log required ACF practical hours and complete FSS 2248C (Front of House/Dining Room Operations)."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "Miami Dade College / ACF Partner Kitchen",
+    "duration": "16 weeks",
+    "costUSD": 700,
+    "detail": "Take on supervisory kitchen tasks and complete FSS 2120 (Food Purchasing and Cost Control)."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "Miami Dade College / ACF Partner Kitchen",
+    "duration": "16 weeks",
+    "costUSD": 700,
+    "detail": "Complete final MDC coursework, finish the 6,000 required apprenticeship hours, and submit your portfolio to the American Culinary Federation."
+   }
+  ],
+  "costs": {
+   "tuition": 4500,
+   "booksFees": 600,
+   "living": 0,
+   "aidEstimate": 5100,
+   "aidNote": "Assumes eligibility for the Federal Pell Grant and Florida Student Assistance Grant (FSAG), which fully covers tuition and fees for low-to-middle income students."
+  },
+  "requirements": [
+   "High school diploma or GED equivalent",
+   "Passing a background check and drug screening required by partner hotels",
+   "Maintain a minimum 2.0 GPA in all MDC culinary courses",
+   "Complete 6,000 hours of on-the-job training under an ACF-certified chef",
+   "Pass the American Culinary Federation (ACF) Certified Sous Chef written and practical exam"
+  ],
+  "risks": [
+   "Burnout from balancing a demanding 40+ hour kitchen work week with evening college classes; avoid this by maintaining strict sleep schedules and leaning on your mentor.",
+   "Falling behind on required work-hour logs; avoid this by updating your ACF apprentice logbook weekly without fail."
+  ],
+  "nextActions": [
+   "Meet with an MDC advisor to apply for admission and review the Culinary Arts certificate/degree pathways.",
+   "Submit the FAFSA using Miami Dade College's school code (001504) to secure federal and state financial aid.",
+   "Contact the local American Culinary Federation (ACF) South Florida Chapter to inquire about current partner hotel apprenticeship openings.",
+   "Purchase a professional set of knife skills equipment and non-slip kitchen shoes required for both work and class.",
+   "Schedule an introductory meeting with the executive chef at your assigned partner kitchen to review expectations."
+  ],
+  "dayInLife": "A normal workday starts by arriving at the hotel kitchen early to inspect station inventory, prep fresh ingredients for the dinner shift, and coordinate with the executive chef on daily specials. During the rush, you actively manage line cooks, ensure food safety standards, and plate consistent, high-end dishes before closing down and reviewing kitchen logistics for the next day.",
+  "source": "seed"
+ },
+ "detail|architect|miami dade college|mdc-um-barch": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1800,
+    "detail": "Enroll in ARC 1301 (Architectural Design I), ARC 1115 (Architectural Drawing I), and MAC 1114 (Trigonometry). Begin digitizing high-quality photos of all studio models and drawings."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1800,
+    "detail": "Complete ARC 1302 (Architectural Design II), ARC 2201 (History of Architecture I), and PHY 1053 (General Physics I). Attend UM School of Architecture transfer open houses."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1800,
+    "detail": "Take ARC 2303 (Architectural Design III) and ARC 2461 (Architectural Materials and Construction). Draft your transfer portfolio layout and request faculty recommendations."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1800,
+    "detail": "Complete ARC 2304 (Design IV) and earn your AA in Architecture. Submit the UM transfer application, CSS Profile, and digital portfolio before the priority deadline."
+   },
+   {
+    "stage": "Year 3 · Fall & Spring",
+    "institution": "University of Miami",
+    "duration": "1 academic year",
+    "costUSD": 45000,
+    "detail": "Transfer into UM's B.Arch studio sequence (ARC 301/302). Establish an NCARB Record to track Architectural Experience Program (AXP) hours and join AIAS."
+   },
+   {
+    "stage": "Year 4 · Fall & Spring",
+    "institution": "University of Miami",
+    "duration": "1 academic year",
+    "costUSD": 45000,
+    "detail": "Complete Advanced Integrative Design Studio and Structural Systems (ARC 4xx). Secure a paid summer architecture internship at a local Miami firm."
+   },
+   {
+    "stage": "Year 5 · Fall & Spring",
+    "institution": "University of Miami",
+    "duration": "1 academic year",
+    "costUSD": 48000,
+    "detail": "Complete your B.Arch Degree Project and Professional Practice coursework. Graduate with a NAAB-accredited degree and transition into full-time employment."
+   },
+   {
+    "stage": "Post-Graduation · Years 1–2",
+    "institution": "Full-Time Employment / Licensing Board",
+    "duration": "24 months",
+    "costUSD": 1000,
+    "detail": "Work as a Junior Architect while finishing 3,740 required AXP hours. Pass all 6 divisions of the Architect Registration Examination (ARE 5.0) for Florida licensure."
+   }
+  ],
+  "costs": {
+   "tuition": 137000,
+   "booksFees": 8000,
+   "living": 0,
+   "aidEstimate": 95000,
+   "aidNote": "Assumes maximum Federal Pell Grant (~$7,400/yr), Florida Bright Futures/FSAG, and substantial UM institutional need-based transfer financial aid."
+  },
+  "requirements": [
+   "Completion of MDC Associate in Arts (Architecture Pathway) with a minimum 3.5 cumulative GPA.",
+   "Competitive design portfolio review passed by University of Miami School of Architecture faculty.",
+   "College Trigonometry (MAC 1114) and General Physics I (PHY 1053) completed with a grade of B or higher.",
+   "Graduation from UM's NAAB-accredited 5-year Bachelor of Architecture (B.Arch) program.",
+   "Completion of 3,740 AXP hours and passing scores on all 6 ARE 5.0 exam divisions for Florida licensure."
+  ],
+  "risks": [
+   "Studio Credit Placement Loss: UM faculty portfolio evaluation may place you in an earlier studio tier, extending your stay at UM; counter this by strictly adhering to UM's portfolio guidelines during your time at MDC.",
+   "Private Tuition Gap: UM is expensive; if institutional financial aid falls short, apply early for outside local architecture scholarships (e.g., AIA Miami, Florida Foundation for Architecture).",
+   "Studio Time Demands: High workload can drop GPAs below scholarship retention thresholds; maintain strict time management between studio work and general education requirements."
+  ],
+  "nextActions": [
+   "Meet with an MDC Architecture Department advisor to review the UM transfer course articulation checklist.",
+   "Enroll in ARC 1301 (Architectural Design I) and ARC 1115 (Architectural Drawing I) for your first term at MDC.",
+   "Submit your FAFSA and CSS Profile selecting both Miami Dade College and University of Miami (School Code 001536).",
+   "Create a dedicated digital archive (Google Drive or Dropbox) to store raw files and high-res photos of all studio projects from day one.",
+   "Register for a student NCARB account to learn about logging AXP hours during summer design jobs."
+  ],
+  "dayInLife": "As a Junior Architect at a Miami design studio, your morning is spent adjusting 3D Revit models and drafting construction details for a commercial project based on feedback from the Senior Associate. In the afternoon, you meet with structural engineering consultants, select interior finish samples, and update specifications. You finish the day visiting an active construction site in Brickell to verify dimensions and log your completed work hours into your NCARB AXP record.",
+  "source": "seed"
+ },
+ "detail|architect|miami dade college|mdc-uf-bdarch": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Take ENC1101 (English Composition 1), MAC1105 (College Algebra), and ARC1131 (Architectural Drawing 1) to build foundational design and general education credits."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Complete MAC1114 (Trigonometry), ARC1301 (Architectural Design 1), and general education humanities requirements while maintaining a 3.5+ GPA."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Enroll in ARC2303 (Architectural Design 3), MAC2233 (Calculus for Business/Social Science), and Physics with Algebra to meet UF transfer prerequisites."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Finish remaining AA requirements, complete ARC2461 (Materials and Methods), and submit your application for the UF Bachelor of Design in Architecture program."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "University of Florida",
+    "duration": "1 semester",
+    "costUSD": 3200,
+    "detail": "Begin upper-division design studios (ARC3320) in Gainesville, focusing on advanced digital fabrication and site analysis."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "University of Florida",
+    "duration": "1 semester",
+    "costUSD": 3200,
+    "detail": "Take structures and environmental technology courses alongside your studio work, building a competitive portfolio for graduate school."
+   },
+   {
+    "stage": "Year 4 · Fall",
+    "institution": "University of Florida",
+    "duration": "1 semester",
+    "costUSD": 3200,
+    "detail": "Complete your final B.Des. semester, prepare your comprehensive portfolio, and apply internally or nationally to the NAAB-accredited Master of Architecture program."
+   },
+   {
+    "stage": "Years 5 & 6 · M.Arch",
+    "institution": "University of Florida",
+    "            duration": "2 years",
+    "costUSD": 13000,
+    "detail": "Complete the 2-year M.Arch Track 1 program focusing on comprehensive design, urban theory, and your graduate thesis project."
+   }
+  ],
+  "costs": {
+   "tuition": 26400,
+   "booksFees": 4200,
+   "living": 12000,
+   "aidEstimate": 25000,
+   "aidNote": "Assumes eligibility for maximum Federal Pell Grant, Florida Bright Futures, and state need-based grants (FSAG)."
+  },
+  "requirements": [
+   "Associate in Arts degree from Miami Dade College with a minimum 3.2 cumulative GPA",
+   "Prerequisite completion: MAC1105, MAC1114, Physics sequence, and introductory architectural design courses",
+   "Competitive architectural portfolio reviewed by UF admissions for upper-division B.Des entry",
+   "Admission into UF NAAB-accredited Master of Architecture (M.Arch) program",
+   "Completion of AXP (Architectural Experience Program) hours and ARE (Architectural Registration Examinations) post-graduation"
+  ],
+  "risks": [
+   "Transfer bottleneck: UF's architecture program is competitive and rejects students with lower GPAs. Maintain a 3.5+ GPA at MDC.",
+   "Portfolio neglect: Waiting until the final semester to compile work will hurt transfer and grad school chances. Document every studio project from Day 1.",
+   "Cost of living shock: Moving from Miami to Gainesville requires budgeting for rent and food which aren't covered solely by tuition aid."
+  ],
+  "nextActions": [
+   "Meet with an MDC advisor this week to declare the Architecture Transfer Track (AA).",
+   "Download Adobe Creative Cloud (InDesign, Photoshop, Illustrator) using MDC student discounts and start learning basics.",
+   "Register for ENC1101, MAC1105, and ARC1131 for your upcoming term.",
+   "Set up a digital portfolio website (e.g., Behance or Squarespace) to store your design projects.",
+   "Apply for FAFSA immediately to lock in state and federal aid for community college."
+  ],
+  "dayInLife": "As an Architectural Project Manager, you spend your morning leading coordination meetings with structural and MEP engineers, reviewing BIM/Revit models for code compliance. In the afternoon, you manage client communications, draft fee proposals, and oversee junior staff on construction document production.",
+  "source": "seed"
+ },
+ "detail|architect|miami dade college|mdc-as-drafting": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1413,
+    "detail": "Begin the A.S. in Architectural Design and Construction Technology, taking core drafting classes like ARC 1121 (Architectural Drawing I) and MAC 1105 (College Algebra)."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1413,
+    "detail": "Advance technical skills with CAD and BIM software in classes like ARC 1301 (Architectural Design I) and BCN 1210 (Construction Materials)."
+   },
+   {
+    "stage": "Year 1 · Summer",
+    "institution": "Miami Dade College",
+    "duration": "2 months",
+    "costUSD": 706,
+    "detail": "Take general education and technical elective requirements to stay on track for an accelerated graduation timeline."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1413,
+    "detail": "Focus on advanced BIM modeling, structural fundamentals, and construction documents in ARC 2302 and related labs."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1413,
+    "detail": "Complete capstone architectural design projects, build a professional portfolio, and prepare for Autodesk Certified Professional exams."
+   },
+   {
+    "stage": "Post-Grad · Summer",
+    "institution": "Self-Study & Local Firms",
+    "duration": "2 months",
+    "costUSD": 300,
+    "detail": "Sit for the Autodesk Revit certification exam and aggressively apply for entry-level architectural drafter roles across Miami."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "Engineering/Architecture Firm",
+    "duration": "Ongoing",
+    "costUSD": 0,
+    "detail": "Work full-time as an Architectural Drafter, producing construction documents and coordinating BIM models under licensed architects."
+   }
+  ],
+  "costs": {
+   "tuition": 6258,
+   "booksFees": 1400,
+   "living": 0,
+   "aidEstimate": 5500,
+   "aidNote": "Assumes eligibility for max Federal Pell Grant and Florida student assistance grants based on low-to-middle income status, covering the vast majority of out-of-pocket costs."
+  },
+  "requirements": [
+   "High school diploma or GED with a minimum 2.0 GPA",
+   "MDC placement testing or exemption via SAT/ACT scores for college-level math and English",
+   "Maintain a cumulative 2.0 GPA in all MDC architectural core courses",
+   "Autodesk Revit Certified Professional certification (recommended post-graduation)"
+  ],
+  "risks": [
+   "Getting stuck in a pure drafting loop without learning design; avoid this by actively seeking project coordination and Revit troubleshooting tasks at work.",
+   "Falling behind on software updates; combat this by utilizing free online tutorials to master the latest versions of AutoCAD and Revit."
+  ],
+  "nextActions": [
+   "Meet with an MDC advisor to officially declare the A.S. in Architectural Design and Construction Technology.",
+   "Submit the FAFSA early to maximize federal and state financial aid grants.",
+   "Purchase or secure a high-performance laptop capable of running demanding CAD and BIM software.",
+   "Register for your first-semester classes including ARC 1121 and MAC 1105.",
+   "Join the MDC architecture student club or local American Institute of Architects (AIA) Miami student chapter for networking."
+  ],
+  "dayInLife": "Arrives at the architecture firm and opens Revit to update floor plans, elevations, and wall sections based on the project architect's redlines. Spends part of the afternoon coordinating consultant drawings (MEP/Structural) in the shared BIM model and occasionally attends site visits to observe construction progress.",
+  "source": "seed"
+ },
+ "detail|architect|miami dade college|mdc-bac-online-march": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1800,
+    "detail": "Enroll in Associate in Arts - Architecture track taking ARC 1126 (Architectural Drawing) and ARC 1301 (Architectural Design I) along with general education math."
+   },
+   {
+    "stage": "Year 1 · Spring & Summer",
+    "institution": "Miami Dade College",
+    "duration": "6 months",
+    "costUSD": 2200,
+    "detail": "Complete ARC 1302 (Design II) and ARC 2461 (Architectural Materials & Construction); master Autodesk Revit and AutoCAD fundamentals."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1800,
+    "detail": "Take ARC 2303 (Design III) and Architectural History; compile your initial design portfolio for employment and transfer applications."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1800,
+    "detail": "Finish ARC 2304 (Design IV Capstone), earn AA in Architecture degree, and secure an entry-level position as an Architectural Technician at a local Miami firm."
+   },
+   {
+    "stage": "Year 3 · Work & Bachelor's Completion",
+    "institution": "Online Partner / Boston Architectural College",
+    "duration": "12 months",
+    "costUSD": 11000,
+    "detail": "Work full-time drafting construction documents ($40k+ salary) while taking online upper-division design and general education credits toward a Bachelor of Science in Design."
+   },
+   {
+    "stage": "Year 4 · Work & Bachelor's Completion",
+    "institution": "Online Partner / Boston Architectural College",
+    "duration": "12 months",
+    "costUSD": 11400,
+    "detail": "Advance at work taking on building code reviews, complete your Bachelor's degree, establish an NCARB record, and gain formal admission to the BAC Distance M.Arch."
+   },
+   {
+    "stage": "Year 5 · M.Arch Phase 1",
+    "institution": "Boston Architectural College (Low-Residency)",
+    "duration": "12 months",
+    "costUSD": 19000,
+    "detail": "Begin the NAAB-accredited online Master of Architecture; log concurrent AXP hours through full-time firm employment and attend mandatory 8-day intensive campus residencies."
+   },
+   {
+    "stage": "Year 6 · M.Arch Phase 2",
+    "institution": "Boston Architectural College (Low-Residency)",
+    "duration": "12 months",
+    "costUSD": 19000,
+    "detail": "Complete your Master's thesis design studio, finish required AXP categories (3,740 total hours), sit for initial ARE exam divisions, and graduate ready for licensure."
+   }
+  ],
+  "costs": {
+   "tuition": 59000,
+   "booksFees": 9000,
+   "living": 0,
+   "aidEstimate": 18000,
+   "aidNote": "Assumes full Federal Pell Grant and Florida Student Assistance Grant during MDC years, plus partial employer tuition assistance during graduate studies."
+  },
+  "requirements": [
+   "AA Degree in Architecture from MDC with a minimum 3.0 cumulative GPA",
+   "Comprehensive portfolio showcasing drafting, 3D modeling (Revit/Rhino), and physical design work",
+   "NAAB-accredited Master of Architecture degree completion for state licensure eligibility",
+   "Completion of NCARB Architectural Experience Program (AXP) requiring 3,740 documented practice hours",
+   "Passing all 6 divisions of the Architect Registration Examination (ARE)"
+  ],
+  "risks": [
+   "Severe burnout from balancing 40 hours of firm work per week with rigorous late-night architecture design studios. (Mitigation: Set firm boundaries on work hours and negotiate flexible study days during studio deadlines).",
+   "Out-of-pocket tuition costs spikes during the BAC Master's program. (Mitigation: Seek employment at architecture firms that offer tuition assistance or professional development stipends).",
+   "Losing track of NCARB AXP hour supervisor sign-offs. (Mitigation: Log and submit practice hours in the NCARB app at the end of every month)."
+  ],
+  "nextActions": [
+   "Schedule an advising session with MDC's Architecture Department to map out course sequencing for maximum transferability.",
+   "Submit your FAFSA and Florida Financial Aid Application (FFAA) to secure grant funding for MDC.",
+   "Download student software licenses for Autodesk Revit, Rhino 3D, and Adobe Creative Cloud to start practice projects.",
+   "Create an NCARB account to begin tracking your architectural education and career milestones early."
+  ],
+  "dayInLife": "As an Architectural Associate, you start your morning coordinating building systems with structural engineers and revising BIM models in Revit for an ongoing project. In the afternoon, you visit an active construction site with a senior architect to verify framing inspections against your construction drawings. You finish the day reviewing local zoning codes, updating client presentation boards, and logging your supervised AXP hours.",
+  "source": "seed"
+ },
+ "detail|mechanical engineer|miami dade college|mdc-uf-selective-transfer": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1400,
+    "detail": "Begin the Associate in Arts Engineering Track, taking Calculus I, Composition I, and General Chemistry I with lab."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1400,
+    "detail": "Continue core STEM prerequisites, taking Calculus II, Physics I with Calculus, and General Education requirements."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1400,
+    "detail": "Take Calculus III, Physics II with Calculus, and Introduction to Engineering. Maintain a cumulative GPA above 3.5."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1400,
+    "detail": "Complete Differential Equations and Statics, earn the AA degree, and submit the UF transfer application."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "University of Florida",
+    "duration": "4 months",
+    "costUSD": 3200,
+    "detail": "Transition to Gainesville for junior year in the Herbert Wertheim College of Engineering, taking Dynamics and Mechanics of Materials."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "University of Florida",
+    "duration": "4 months",
+    "costUSD": 3200,
+    "detail": "Take Fluid Mechanics, Thermodynamics, and Manufacturing Processes. Attend the UF Engineering Career Showcase to secure an internship."
+   },
+   {
+    "stage": "Year 4 · Fall",
+    "institution": "University of Florida",
+    "duration": "4 months",
+    "costUSD": 3200,
+    "detail": "Take Heat Transfer, Machine Design, and senior technical electives while completing the first half of the capstone design project."
+   },
+   {
+    "stage": "Year 4 · Spring",
+    "institution": "University of Florida",
+    "duration": "4 months",
+    "costUSD": 3200,
+    "detail": "Finish capstone senior design, graduate with a B.S. in Mechanical Engineering, and convert internship into a full-time offer."
+   }
+  ],
+  "costs": {
+   "tuition": 16800,
+   "booksFees": 4200,
+   "living": 0,
+   "aidEstimate": 18000,
+   "aidNote": "Assumes eligibility for Federal Pell Grant and Florida Bright Futures/FSAG based on lower-to-middle income status."
+  },
+  "requirements": [
+   "High school diploma with strong math and science background",
+   "Minimum 3.4 GPA in state-mandated engineering prerequisites (Calculus 1-3, Differential Equations, Physics 1-2, Chemistry)",
+   "Completion of MDC Associate in Arts degree before transfer",
+   "Passing grades in all prerequisite courses on the first or second attempt (UF limits critical-tracking repeats)"
+  ],
+  "risks": [
+   "Earning a grade below a 'B' in key weed-out classes like Calculus or Physics, which will drop your GPA below competitive transfer thresholds for UF Engineering.",
+   "Failing to apply for transfer deadlines or missing critical-tracking prerequisite requirements unique to UF.",
+   "Lack of hands-on project experience making it difficult to secure internships during the junior year."
+  ],
+  "nextActions": [
+   "Meet with an MDC academic advisor this week to map out the exact Engineering Track AA course sequence.",
+   "Register for MDC STEM tutoring and join the local Society of Hispanic Professional Engineers (SHPE) or IEEE student chapter.",
+   "Set up a profile on FloridaShines to track your degree progress and articulation requirements.",
+   "Review UF's critical tracking GPA requirements for Mechanical Engineering to establish your target grades."
+  ],
+  "dayInLife": "A mechanical engineer spends the morning reviewing CAD models of aerospace components in SolidWorks, running thermal and structural simulations in ANSYS, and collaborating with manufacturing teams. The afternoon involves hands-on prototype testing in the lab, analyzing sensor data from stress tests, and documenting design specifications for upcoming flight hardware.",
+  "source": "seed"
+ },
+ "detail|mechanical engineer|miami dade college|mdc-as-technician-fast-track": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Enroll in the A.S. in Engineering Technology program taking core courses like College Algebra, Introduction to Engineering Technology, and Computer-Aided Drafting (CAD)."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Complete applied technical courses including Statics, Materials Science for Technology, and Advanced SolidWorks or AutoCAD certification prep."
+   },
+   {
+    "stage": "Year 1 · Summer",
+    "institution": "Miami Dade College",
+    "duration": "1 summer term",
+    "costUSD": 700,
+    "detail": "Take general education requirements and focus on securing a summer internship or part-time position in local manufacturing."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Advance into Automated Manufacturing Systems, Quality Control, and DC/AC Circuits to build multidisciplinary technical skills."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Complete the Engineering Technology Capstone course, finalize your resume, and sit for industry-recognized certifications like the Siemens Certified Mechatronics Systems Assistant."
+   },
+   {
+    "stage": "Year 2 · Summer / Post-Grad",
+    "institution": "Local Engineering Firm / Manufacturer",
+    "duration": "Ongoing",
+    "costUSD": 0,
+    "detail": "Graduate with your A.S. degree and transition into a full-time Mechanical Engineering Technician role with a local aerospace, medical device, or industrial firm."
+   }
+  ],
+  "costs": {
+   "tuition": 6300,
+   "booksFees": 1200,
+   "living": 0,
+   "aidEstimate": 5500,
+   "aidNote": "Assumes eligibility for max Federal Pell Grant and Florida Student Assistance Grant (FSAG) for an in-state low-income student."
+  },
+  "requirements": [
+   "High school diploma or GED with a minimum 2.0 GPA",
+   "MDC placement testing in math and English (or valid dual-enrollment/SAT exemptions)",
+   "Maintain a minimum 2.0 cumulative GPA to remain in good standing in the A.S. program",
+   "Completion of 60 total credit hours as outlined in the Engineering Technology curriculum map",
+   "Recommended: Passing score on the Siemens Mechatronics Systems Certification Level 1 exam"
+  ],
+  "risks": [
+   "Treating the A.S. as a terminal dead-end for career growth; avoid this by negotiating tuition reimbursement with your employer if you later pursue a B.S. in Engineering Technology.",
+   "Neglecting hands-on software skills; avoid this by building a portfolio of CAD designs and projects outside of class assignments.",
+   "Failing to network locally; avoid this by attending MDC career fairs and joining the local SME (Society of Manufacturing Engineers) chapter."
+  ],
+  "nextActions": [
+   "Meet with an MDC academic advisor this week to map out your specific A.S. in Engineering Technology course sequence.",
+   "Submit your FAFSA immediately to maximize Pell Grant and state aid allocations.",
+   "Download the student versions of AutoCAD and SolidWorks to begin practicing basic 3D modeling on your personal computer.",
+   "Visit the MDC campus career center to review resume templates tailored for technical and manufacturing roles.",
+   "Research local Miami manufacturing companies to identify potential employers and internship hosts."
+  ],
+  "dayInLife": "A mechanical engineering technician spends the morning calibrating testing equipment and reviewing CAD blueprints for a new assembly line component. In the afternoon, they build prototypes in the machine shop, run stress tests on materials, and log data to help engineers troubleshoot design flaws.",
+  "source": "seed"
+ },
+ "detail|mechanical engineer|miami dade college|mdc-rotc-military-engineer": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1600,
+    "detail": "Enroll in Associate in Arts engineering prerequisites (MAC 2311 Calculus I, General Chemistry I) and register as a crosstown ROTC cadet at host detachment."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1600,
+    "detail": "Take MAC 2312 Calculus II and PHY 2048 Physics with Calculus I while attending weekly ROTC leadership labs and physical training."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1600,
+    "detail": "Complete MAC 2313 Calculus III and PHY 2049 Physics II; complete DoDMERB military medical exam and take officer qualification tests."
+   },
+   {
+    "stage": "Year 2 · Spring & Summer",
+    "institution": "Miami Dade College / Military Host",
+    "duration": "20 weeks",
+    "costUSD": 1100,
+    "detail": "Finish AA degree with MAP 2302 Differential Equations, complete summer ROTC Field Training/Summer Cruise, and sign official officer contract."
+   },
+   {
+    "stage": "Year 3 · Fall & Spring",
+    "institution": "Florida International University",
+    "duration": "32 weeks",
+    "costUSD": 0,
+    "detail": "Transfer to FIU for BS in Mechanical Engineering under full ROTC tuition coverage; complete Statics, Dynamics, and Thermodynamics alongside upper-level ROTC courses."
+   },
+   {
+    "stage": "Year 4 · Fall",
+    "institution": "Florida International University",
+    "duration": "16 weeks",
+    "costUSD": 0,
+    "detail": "Take Mechanical Systems Design and Senior Design I; submit career duty preferences for Air Force Materiel Command or Naval Sea Systems Command."
+   },
+   {
+    "stage": "Year 4 · Spring",
+    "institution": "Florida International University",
+    "duration": "16 weeks",
+    "costUSD": 0,
+    "detail": "Complete Senior Design II, pass the Fundamentals of Engineering (FE) exam, graduate with your BSME, and take the oath of office as a commissioned 2nd Lieutenant or Ensign."
+   },
+   {
+    "stage": "Active Duty · Years 1–4+",
+    "institution": "U.S. Air Force / U.S. Navy",
+    "duration": "4+ years",
+    "costUSD": 0,
+    "detail": "Serve on active duty as a Military Developmental Engineer managing advanced aerospace, weapon systems, or naval research and development projects."
+   }
+  ],
+  "costs": {
+   "tuition": 5900,
+   "booksFees": 1200,
+   "living": 0,
+   "aidEstimate": 7100,
+   "aidNote": "Assumes Federal Pell Grant covering MDC tuition plus 100% ROTC scholarship tuition coverage at FIU with a monthly cadet living stipend."
+  },
+  "requirements": [
+   "U.S. Citizenship required for military officer commissioning and security clearance",
+   "Minimum 2.5 cumulative GPA for MDC transfer; 3.0+ competitive GPA for ROTC scholarship retention",
+   "Pass the Air Force Officer Qualifying Test (AFOQT) or Navy ASTB exam",
+   "Pass the Department of Defense Medical Examination Review Board (DoDMERB) physical",
+   "Pass semesterly Physical Fitness Assessments (push-ups, sit-ups, 1.5-mile run)",
+   "Completion of Calculus sequence (I-III), Differential Equations, and Physics I & II prior to FIU upper-division coursework"
+  ],
+  "risks": [
+   "Medical Disqualification: Unexpected medical findings during DoDMERB screening can derail officer commissioning; resolve this early in Year 1.",
+   "Academic or Fitness Drop: Dropping below GPA or physical standards causes loss of ROTC scholarship and contract; utilize free MDC/FIU tutoring and peer workouts.",
+   "Active Duty Service Commitment: ROTC contract requires 4+ years of active duty service post-graduation; ensure complete alignment with military lifestyle before contracting."
+  ],
+  "nextActions": [
+   "Contact the Air Force or Navy ROTC Crosstown Coordinator at FIU/UM to register as an MDC crosstown cadet.",
+   "Apply to Miami Dade College and select the Associate in Arts in Mechanical Engineering pathway.",
+   "Submit the FAFSA immediately to secure Pell Grant funding for lower-division courses at MDC.",
+   "Schedule an MDC STEM advisor meeting to confirm transferability of MAC 2311 and chemistry courses to FIU.",
+   "Start a structured daily physical fitness program focused on running, push-ups, and core strength."
+  ],
+  "dayInLife": "As an Active Duty Military Developmental Engineer, your day combines technical engineering management with military leadership. You might spend your morning reviewing flight-test telemetry or structural analysis data for advanced defense hardware, and your afternoon leading meetings with defense contractors and briefing senior military commanders on program milestones. You directly oversee multi-million-dollar technology acquisitions while managing civilian scientists and enlisted technical specialists.",
+  "source": "seed"
+ },
+ "detail|mechanical engineer|miami dade college|mdc-parttime-fiu-working": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall & Spring",
+    "institution": "Miami Dade College",
+    "duration": "8 months",
+    "costUSD": 2100,
+    "detail": "Take MAC1105/MAC1114 (Precalculus) and EGN1002 (Intro to Engineering), alongside AutoCAD/SolidWorks certificate coursework while establishing a part-time study routine."
+   },
+   {
+    "stage": "Year 2 · Fall & Spring",
+    "institution": "Miami Dade College",
+    "duration": "8 months",
+    "costUSD": 2400,
+    "detail": "Complete Calculus I (MAC2311), Calculus II (MAC2312), and Physics I with Calculus (PHY2048); secure an entry-level part-time CAD Drafter position at a local firm."
+   },
+   {
+    "stage": "Year 3 · Fall & Spring",
+    "institution": "Miami Dade College",
+    "duration": "8 months",
+    "costUSD": 2500,
+    "detail": "Finish Calculus III (MAC2313), Differential Equations (MAP2302), and Physics II (PHY2049); graduate with an AA in Engineering Pathway and transfer seamlessly to FIU."
+   },
+   {
+    "stage": "Year 4 · Fall & Spring",
+    "institution": "Florida International University",
+    "duration": "8 months",
+    "costUSD": 4200,
+    "detail": "Enroll in evening/hybrid courses for Statics (EGM3520), Dynamics (EGN3321), and Thermodynamics (EML3100) while continuing part-time engineering technician work."
+   },
+   {
+    "stage": "Year 5 · Fall & Spring",
+    "institution": "Florida International University",
+    "duration": "8 months",
+    "costUSD": 4500,
+    "detail": "Complete intermediate BSME coursework including Mechanics of Materials (EGM3311), Fluid Mechanics (EML3701), and Intermediate CAD/CAM Design."
+   },
+   {
+    "stage": "Year 6 · Fall & Spring",
+    "institution": "Florida International University",
+    "duration": "8 months",
+    "costUSD": 4800,
+    "detail": "Complete Senior Design I & II (EML4905/EML4551), pass the NCEES Fundamentals of Engineering (FE) exam, graduate with a BSME, and transition into full-time engineering."
+   }
+  ],
+  "costs": {
+   "tuition": 17000,
+   "booksFees": 3500,
+   "living": 0,
+   "aidEstimate": 14000,
+   "aidNote": "Assumes prorated part-time Pell Grant eligibility and Florida Student Assistance Grant (FSAG) for low-to-middle income Florida residents living at home."
+  },
+  "requirements": [
+   "Complete MDC Associate in Arts in Engineering Pathway with a minimum 2.5 overall GPA and 2.5 GPA in math/science prerequisites.",
+   "Complete prerequisite chain: Precalculus, Calculus I-III, Differential Equations, Physics I & II with Calculus, and General Chemistry I.",
+   "Gain admission to FIU College of Engineering and Computing as a transfer student.",
+   "Pass the Fundamentals of Engineering (FE) Mechanical Exam before or shortly after graduation."
+  ],
+  "risks": [
+   "Burnout from balancing evening classes with 20–30 hours of weekly CAD drafting; mitigate by limiting course loads to 6–8 credits per term.",
+   "FIU upper-level engineering courses having limited evening availability; mitigate by coordinating flexible work hours with your employer early.",
+   "Prerequisite sequencing delays; mitigate by sticking strictly to the FIU BSME transfer articulation map at MDC."
+  ],
+  "nextActions": [
+   "Apply for admission to Miami Dade College and complete the FAFSA listing MDC (School Code 001501).",
+   "Enroll in MDC's Computer-Aided Design (CAD) Specialist certificate courses alongside foundational math.",
+   "Schedule an advising session with an MDC STEM Pathway Advisor to lock in the FIU transfer track.",
+   "Create a targeted entry-level resume emphasizing AutoCAD and SolidWorks skills to apply for local drafting technician roles."
+  ],
+  "dayInLife": "A mechanical engineer spends the morning analyzing 3D CAD models and running stress simulations in SolidWorks, then collaborates with manufacturing technicians on the shop floor to review physical prototypes. In the afternoon, they update design specifications, write technical reports, and meet with project managers to refine client requirements.",
+  "source": "seed"
+ },
+ "detail|chef|miami dade college|mdc-as-culinary": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College (Miami Culinary Institute)",
+    "duration": "1 term",
+    "costUSD": 1400,
+    "detail": "Take FSS 1200C (Basic Food Preparation) and safety certifications like ServSafe to build foundational kitchen skills."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College (Miami Culinary Institute)",
+    "duration": "1 term",
+    "costUSD": 1400,
+    "detail": "Complete FSS 1063C (Baking and Pastry) and FSS 2246C (A La Carte Kitchen) to learn diverse station operations."
+   },
+   {
+    "stage": "Year 1 · Summer",
+    "institution": "Miami Dade College (Miami Culinary Institute)",
+    "duration": "1 term",
+    "costUSD": 700,
+    "detail": "Focus on remaining general education requirements to keep your GPA above 2.5 for graduation eligibility."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College (Miami Culinary Institute)",
+    "duration": "1 term",
+    "costUSD": 1400,
+    "detail": "Take FSS 2248C (Advanced Culinary Techniques) and FSS 2108C (Purchasing and Menu Planning)."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College (Miami Culinary Institute)",
+    "duration": "1 term",
+    "costUSD": 1400,
+    "detail": "Complete FSS 2383 (Culinary Management Capstone) and finalize your portfolio for the upcoming internship."
+   },
+   {
+    "stage": "Year 2 · Summer Internship",
+    "institution": "Partner Restaurant or Hotel in Miami",
+    "duration": "3 months",
+    "costUSD": 500,
+    "detail": "Complete a 300-hour hands-on industry internship in a high-volume Miami kitchen to network with executive chefs."
+   },
+   {
+    "stage": "Years 3–5 · Line Cook to Sous Chef",
+    "institution": "South Florida Restaurant Group",
+    "duration": "2–3 years",
+    "costUSD": 2400,
+    "detail": "Work full-time as a line cook, mastering every station, and earn promotion to Sous Chef through proven leadership."
+   }
+  ],
+  "costs": {
+   "tuition": 7500,
+   "booksFees": 1700,
+   "living": 0,
+   "aidEstimate": 5500,
+   "aidNote": "Assumes eligibility for maximum Federal Pell Grant and Florida Student Assistance Grant (FSAG) for an in-state student living at home."
+  },
+  "requirements": [
+   "High school diploma or GED with a minimum 2.0 GPA",
+   "MDC placement testing in math and reading or approved exemption",
+   "Maintain a cumulative GPA of 2.0 or higher in all Culinary Arts Management coursework",
+   "Obtain ServSafe Manager certification prior to advanced food production labs",
+   "Complete required physical health clearance and immunizations for clinical/internship sites"
+  ],
+  "risks": [
+   "Burnout from balancing heavy kitchen lab hours with outside jobs; avoid this by mapping your weekly schedule strictly and protecting your sleep.",
+   "Stagnating at the line cook level without moving up; avoid this by actively asking executive chefs for feedback and volunteering to take on inventory and ordering tasks.",
+   "Skipping general education classes until the end; take them concurrently with culinary classes to ensure timely graduation."
+  ],
+  "nextActions": [
+   "Apply to Miami Dade College and complete the FAFSA using MDC's school code (001507).",
+   "Meet with an advisor at the Miami Culinary Institute to register for FSS 1200C and introductory general education courses.",
+   "Purchase mandatory kitchen uniforms, non-slip shoes, and the required knife kit before the first day of class.",
+   "Register for the ServSafe Manager certification exam review session offered through the culinary department.",
+   "Set up a profile on Handshake to browse local Miami culinary internship and part-time line cook opportunities."
+  ],
+  "dayInLife": "A sous chef arrives early to inspect all kitchen stations, check inventory, and oversee prep lists for the upcoming service. During the rush, they expedite tickets, manage line cooks, ensure strict quality and food safety standards, and step in to run stations when the kitchen gets slammed.",
+  "source": "seed"
+ },
+ "detail|cybersecurity specialist|miami dade college|mdc-fiu-transfer": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1400,
+    "detail": "Complete ENC1101, MAC1105 (College Algebra), and general education requirements while maintaining a 3.0+ GPA."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1400,
+    "detail": "Take introductory computer science and logic courses like CGS1060 and MAD1104 to build a foundation for IT."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1400,
+    "detail": "Focus on natural sciences and humanities electives, ensuring all prerequisites for the FIU transfer articulation are met."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1400,
+    "detail": "Complete the final credits for your Associate in Arts degree and submit your transfer application to Florida International University."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "Florida International University",
+    "duration": "16 weeks",
+    "costUSD": 3300,
+    "detail": "Begin upper-division coursework in the B.S. in Cybersecurity program, taking core classes like Computer Networking and Operating Systems."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "Florida International University",
+    "duration": "16 weeks",
+    "costUSD": 3300,
+    "detail": "Dive into specialized security courses such as Ethical Hacking and Information Security Management."
+   },
+   {
+    "stage": "Year 4 · Fall",
+    "institution": "Florida International University",
+    "duration": "16 weeks",
+    "costUSD": 3300,
+    "detail": "Take advanced cryptography and network security classes, and attend FIU career fairs to secure a summer internship."
+   },
+   {
+    "stage": "Year 4 · Spring",
+    "institution": "Florida International University",
+    "duration": "16 weeks",
+    "costUSD": 3300,
+    "detail": "Complete your senior capstone project in cybersecurity, polish your resume, and study for industry certifications like Security+."
+   }
+  ],
+  "costs": {
+   "tuition": 18600,
+   "booksFees": 3900,
+   "living": 0,
+   "aidEstimate": 15000,
+   "aidNote": "Assumes eligibility for full Federal Pell Grant and Florida Student Assistance Grant (FSAG) based on low-to-middle income status."
+  },
+  "requirements": [
+   "High school diploma or GED with a minimum 2.0 GPA for initial admission to Miami Dade College.",
+   "Completion of the Associate in Arts (A.A.) degree at MDC with a minimum 2.5 cumulative GPA for seamless transfer to FIU.",
+   "Completion of common prerequisite courses including College Algebra and Statistics prior to upper-division FIU transition.",
+   "Passing grades in all FIU cybersecurity major core courses to progress through the cohort model.",
+   "CompTIA Security+ or CISSP certification recommended prior to graduation for competitive employment."
+  ],
+  "risks": [
+   "Losing credits during transfer by taking non-articulated electives; avoid this by strictly following the MDC-to-FIU articulation pathway map.",
+   "Falling behind in technical math or programming concepts; utilize campus tutoring centers early and often at both MDC and FIU.",
+   "Failing to gain hands-on experience outside the classroom; mitigate this by joining the FIU Cyber Panther student club and pursuing local internships."
+  ],
+  "nextActions": [
+   "Meet with your Miami Dade College academic advisor this week to map your A.A. coursework to the FIU cybersecurity transfer profile.",
+   "Submit the Free Application for Federal Student Aid (FAFSA) to maximize Pell Grant and state aid awards.",
+   "Register for your first-semester classes, ensuring you include ENC1101 and a foundational math course.",
+   "Set up your student portals for MDC and check for scholarship deadlines.",
+   "Join a student tech or cybersecurity club on campus to start networking with peers."
+  ],
+  "dayInLife": "An Information Security Specialist typically starts the day reviewing automated security alerts and SIEM dashboards for suspicious network activity. They spend the afternoon investigating potential vulnerabilities, patching systems, and collaborating with IT teams to enforce security policies and incident response protocols.",
+  "source": "seed"
+ },
+ "detail|cybersecurity specialist|miami dade college|mdc-uf-online-transfer": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1400,
+    "detail": "Enroll in MDC AA Transfer Track; take MAC1105 (College Algebra), ENC1101, COP1000 (Intro to Programming), and SLS1106."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1400,
+    "detail": "Complete MAC1114 (Trigonometry), MAC2311 (Calculus 1), and COP2270 (C/C++ Programming) to start core math prerequisites."
+   },
+   {
+    "stage": "Year 1 · Summer",
+    "institution": "Miami Dade College",
+    "duration": "2 months",
+    "costUSD": 700,
+    "detail": "Take general education humanities electives and practice hands-on cybersecurity basics via TryHackMe."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1500,
+    "detail": "Take MAC2312 (Calculus 2), PHY2048/L (Physics 1 with Lab), and COP2800 (Java). Submit transfer application to UF Online B.S. in Computer Science."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1500,
+    "detail": "Complete MAC2313 (Calculus 3) and PHY2049/L (Physics 2 with Lab), graduating with your Associate in Arts degree with a 3.0+ GPA."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "University of Florida (UF Online)",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Begin UF Online coursework with COT3100 (Applications of Discrete Structures), COP3502C (Programming Fundamentals 1), and CDA3101 (Computer Organization)."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "University of Florida (UF Online)",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Take COP3503C (Programming Fundamentals 2) and COP3530 (Data Structures and Algorithms); join UF's CyberGators cybersecurity student club."
+   },
+   {
+    "stage": "Year 4 · Fall",
+    "institution": "University of Florida (UF Online)",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Take CIS4360 (Computer & Information Security) and CNT4007C (Computer Networks); study for and pass the CompTIA Security+ certification."
+   },
+   {
+    "stage": "Year 4 · Spring",
+    "institution": "University of Florida (UF Online)",
+    "duration": "4 months",
+    "costUSD": 2100,
+    "detail": "Complete COP4600 (Operating Systems) and Senior Design Project focused on network defense; apply to entry-level Cybersecurity Engineer positions."
+   }
+  ],
+  "costs": {
+   "tuition": 12900,
+   "booksFees": 2100,
+   "living": 0,
+   "aidEstimate": 14000,
+   "aidNote": "Assumes full Federal Pell Grant eligibility (~$7,395/year) plus Florida Student Assistance Grant (FSAG) for a low-income Florida resident living at home."
+  },
+  "requirements": [
+   "Completion of MDC Associate in Arts degree with at least a 3.0 cumulative GPA",
+   "Completion of UF critical-tracking courses (Calculus 1 & 2, Physics 1 & 2 with labs) with a minimum 2.5 tracking GPA",
+   "Passing grade in entry programming courses (C++ or Java) before transfer",
+   "CompTIA Security+ certification earned prior to senior year job applications"
+  ],
+  "risks": [
+   "Missing a critical math or physics tracking course at MDC can delay UF Online admission by a full semester; mitigate by double-checking UF Online transfer guides with an MDC advisor early.",
+   "Online CS degrees can leave students isolated without practical lab experience; mitigate by building home labs (using VirtualBox and Wireshark) and participating in virtual CTF (Capture the Flag) competitions.",
+   "Theoretical CS focus lacks direct tool training (like SIEM or firewalls); mitigate by obtaining the CompTIA Security+ exam before your final semester."
+  ],
+  "nextActions": [
+   "Enroll in the Associate in Arts Transfer Track at Miami Dade College and schedule an appointment with an academic advisor.",
+   "File the FAFSA early to maximize Federal Pell Grant and Florida state financial aid eligibility.",
+   "Register for MAC1105 (or MAC2311 via placement test) and COP1000 for your first term at MDC.",
+   "Create a free account on TryHackMe or HackTheBox to begin learning practical cybersecurity concepts outside of class.",
+   "Look up UF Online's CS transfer tracking guide online to ensure every MDC course maps directly to UF requirements."
+  ],
+  "dayInLife": "A Cybersecurity Engineer begins the morning checking automated security alerts and monitoring network traffic for anomalies or unauthorized access attempts. Throughout the day, they write Python scripts to automate security patch deployments, audit cloud infrastructure vulnerabilities, and collaborate with software developers to ensure system configurations meet strict security standards. The afternoon involves conducting simulated penetration tests and updating incident response documentation to keep company systems resilient against emerging threats.",
+  "source": "seed"
+ },
+ "detail|cybersecurity specialist|miami dade college|mdc-workforce-as-certs": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1450,
+    "detail": "Take foundational IT courses including Introduction to Information Technology and basic networking concepts."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1450,
+    "detail": "Complete Linux administration and routing/switching courses, building core technical competency."
+   },
+   {
+    "stage": "Year 1 · Summer",
+    "institution": "Miami Dade College",
+    "duration": "8 weeks",
+    "costUSD": 725,
+    "detail": "Take accelerated general education requirements to stay on track for the A.S. degree timeline."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1450,
+    "detail": "Enroll in core security classes focusing on firewall configuration, system hardening, and defensive security."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "16 weeks",
+    "costUSD": 1450,
+    "detail": "Take ethical hacking, digital forensics, and your capstone project course to complete the A.S. degree."
+   },
+   {
+    "stage": "Post-Grad · Months 21-22",
+    "institution": "Self-Study / Testing Center",
+    "duration": "2 months",
+    "costUSD": 750,
+    "detail": "Intensive study and testing for industry certifications including CompTIA Security+ and Network+."
+   },
+   {
+    "stage": "Post-Grad · Month 23-24",
+    "institution": "Local Job Market (Miami)",
+    "duration": "2 months",
+    "costUSD": 200,
+    "detail": "Leverage MDC career fairs and networking events to land and onboard into your first SOC Analyst Tier 1 role."
+   }
+  ],
+  "costs": {
+   "tuition": 7000,
+   "booksFees": 500,
+   "living": 0,
+   "aidEstimate": 6500,
+   "aidNote": "Assumes maximum Federal Pell Grant and Florida student assistance based on an expected family contribution of zero."
+  },
+  "requirements": [
+   "High school diploma or GED with a minimum 2.0 GPA",
+   "MDC placement testing in math and reading or approved exemptions",
+   "Maintain a cumulative GPA of 2.0 or higher while in the A.S. program",
+   "Pass CompTIA Security+ certification exam post-graduation"
+  ],
+  "risks": [
+   "Focusing solely on the degree without earning practical certifications, which slows down hiring; avoid this by studying for CompTIA certs during your final semesters.",
+   "Falling behind in foundational math and networking; avoid this by utilizing free on-campus tutoring at MDC early and often."
+  ],
+  "nextActions": [
+   "Meet with an MDC advisor to officially declare the Cybersecurity A.S. major and map out your schedule.",
+   "Submit the FAFSA immediately to secure federal and state financial aid for your tuition.",
+   "Set up your student portal and register for your first-semester networking and IT courses.",
+   "Join the MDC Cybersecurity Club to connect with peers and find out about upcoming study groups.",
+   "Create a LinkedIn profile and start following local security professionals in the Miami tech scene."
+  ],
+  "dayInLife": "As a Tier 1 SOC Analyst, you begin your shift by reviewing automated alerts from security tools and prioritizing potential threats. You spend the day investigating suspicious network activity, escalating true security incidents to senior analysts, and documenting your findings in incident response tickets.",
+  "source": "seed"
+ },
+ "detail|cybersecurity specialist|miami dade college|mdc-air-national-guard": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1000,
+    "detail": "Apply to MDC, file the FAFSA, and enroll in the Associate in Science in Cybersecurity while speaking to a local Air National Guard recruiter."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1000,
+    "detail": "Complete general education and introductory IT courses at MDC while processing your enlistment paperwork and taking the ASVAB exam."
+   },
+   {
+    "stage": "Year 1 · Summer",
+    "institution": "US Air Force Basic Military Training",
+    "duration": "2 months",
+    "costUSD": 0,
+    "detail": "Ship to Lackland AFB for Basic Military Training (BMT), getting paid while learning military discipline and foundational standards."
+   },
+   {
+    "stage": "Year 2 · Fall to Spring",
+    "institution": "USAF Cyber Technical School",
+    "duration": "6 months",
+    "costUSD": 0,
+    "detail": "Complete rigorous tech school for Cyber Operations at Keesler AFB, earning your Security+ certification and top-secret clearance."
+   },
+   {
+    "stage": "Year 2 · Summer",
+    "institution": "Florida Air National Guard",
+    "duration": "3 months",
+    "costUSD": 0,
+    "detail": "Return to Florida, drill with your local Air National Guard unit one weekend a month and two weeks a year, applying real network defense skills."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 500,
+    "detail": "Resume part-time studies at MDC using Federal Tuition Assistance (FTA) and remaining financial aid to cover classes."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 500,
+    "detail": "Complete final AS in Cybersecurity courses, leveraging your military IT experience for prior learning credits where applicable."
+   },
+   {
+    "stage": "Year 3 · Summer",
+    "institution": "Miami Dade College & FLANG",
+    "duration": "3 months",
+    "costUSD": 0,
+    "detail": "Graduate with your AS in Cybersecurity, secure full-time contractor or civilian defense roles utilizing your active security clearance."
+   }
+  ],
+  "costs": {
+   "tuition": 3000,
+   "booksFees": 800,
+   "living": 0,
+   "aidEstimate": 4500,
+   "aidNote": "Assumes Federal Pell Grant, Florida Bright Futures/FSAG, and Air Force Federal Tuition Assistance (FTA)."
+  },
+  "requirements": [
+   "High school diploma or GED with a competitive GPA",
+   "Qualifying score on the Armed Services Vocational Aptitude Battery (ASVAB), specifically high General Technical (GT) and Electronic (EL) scores",
+   "Ability to pass a rigorous background check for a DoD Secret or Top-Secret security clearance",
+   "Meet Air Force physical fitness and height/weight standards",
+   "Maintain a 2.0+ GPA at Miami Dade College"
+  ],
+  "risks": [
+   "Basic training and tech school delays can pause college momentum; stay in close contact with MDC academic advisors to plan course sequencing around military orders.",
+   "Failing to secure a security clearance due to prior legal or financial issues; ensure your personal record and credit history are clean before enlisting.",
+   "Balancing drill weekends with college exams; use military accommodation policies proactively with your professors."
+  ],
+  "nextActions": [
+   "Meet with an Air National Guard recruiter to discuss Cyber Operations job availability (AFSC 1D7X1).",
+   "Study for and take the ASVAB practice tests to guarantee a high score for cyber fields.",
+   "Submit your admissions application to Miami Dade College for the upcoming term.",
+   "Complete the FAFSA to lock in federal and state grants.",
+   "Meet with an MDC advisor to map out your Associate in Science in Cybersecurity degree plan."
+  ],
+  "dayInLife": "A Cyber Defense Operations Specialist starts the day by reviewing automated security alerts and monitoring network traffic for anomalies or unauthorized access attempts. They investigate potential security incidents, patch vulnerabilities, and collaborate with team members to harden network defenses against active cyber threats.",
+  "source": "seed"
+ },
+ "detail|it consultant|miami dade college|mdc-bs-ist": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1500,
+    "detail": "Start the Associate in Arts/Science pathway focusing on core IT courses, taking ENC1101 and MAC1105."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1500,
+    "detail": "Continue lower-division prerequisites, introducing yourself to foundational programming and computer hardware concepts."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1500,
+    "detail": "Complete database fundamentals and networking essentials courses while maintaining a 3.0+ GPA."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1500,
+    "detail": "Finish lower-division requirements and officially apply for transition into the B.S. in Information Systems Technology program."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 2000,
+    "detail": "Begin upper-division B.S. coursework focusing on systems analysis, design, and enterprise architecture."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 2000,
+    "detail": "Take advanced database management and cybersecurity courses while joining the MDC tech clubs to build a peer network."
+   },
+   {
+    "stage": "Year 4 · Summer/Fall (Internship)",
+    "institution": "Miami Tech Firm / Enterprise",
+    "duration": "6 months",
+    "costUSD": 500,
+    "detail": "Secure and complete a paid IT consulting internship in the local Miami tech ecosystem, bridging classroom theory with client-facing work."
+   },
+   {
+    "stage": "Year 4 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 2000,
+    "detail": "Complete your capstone project, polish your resume with internship experience, and apply for full-time Junior IT Consultant roles."
+   }
+  ],
+  "costs": {
+   "tuition": 11000,
+   "booksFees": 3000,
+   "living": 0,
+   "aidEstimate": 12000,
+   "aidNote": "Assumes eligibility for max Federal Pell Grant and Florida student assistance programs based on low-to-middle income status."
+  },
+  "requirements": [
+   "High school diploma or GED with a minimum 2.0 GPA for MDC general admission",
+   "Completion of lower-division prerequisites with a cumulative GPA of 2.5 or higher for upper-division BSIT entry",
+   "Passing scores on college placement tests (PERT) or exemption via SAT/ACT scores",
+   "CompTIA Security+ or AWS Certified Cloud Practitioner certifications recommended before graduation",
+   "Successful completion of the senior capstone project"
+  ],
+  "risks": [
+   "Getting stuck in purely technical support roles without developing business and communication skills; avoid this by taking elective courses in project management and public speaking.",
+   "Failing to secure an internship before the final year; avoid this by attending MDC career fairs starting in Year 2 and leveraging local Miami tech networking groups."
+  ],
+  "nextActions": [
+   "Meet with an MDC academic advisor this week to map out your exact course sequence for the B.S. in Information Systems Technology.",
+   "Submit your FAFSA early to maximize federal and state financial aid grants.",
+   "Set up a student account on Handshake to browse on-campus jobs and local tech internships.",
+   "Download Discord or join MDC campus student chapters focused on technology and coding.",
+   "Begin researching introductory IT certifications like CompTIA IT Fundamentals or AWS Cloud Practitioner."
+  ],
+  "dayInLife": "A Junior IT Consultant starts the day by reviewing client system diagnostics and joining a stand-up meeting with the project team to discuss software deployment roadblocks. The afternoon involves analyzing client business requirements, mapping out database workflows, and drafting technical recommendation reports.",
+  "source": "seed"
+ },
+ "detail|it consultant|miami dade college|fiu-bs-it": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Take foundational general education courses and ENC1101 (English Composition I) while meeting with an MDC advisor to map your A.A. prerequisites for FIU."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Enroll in CGS1060 (Intro to Computer Technology) and MAC1105 (College Algebra) to build basic technical fluency and satisfy math requirements."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Complete programming logic courses like COP1000 and intermediate math/science electives to stay on track for graduation."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "1 semester",
+    "costUSD": 1400,
+    "detail": "Graduate with your A.A. in Computer Information Systems and finalize your State articulation transfer application to Florida International University."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "Florida International University",
+    "duration": "1 semester",
+    "costUSD": 3200,
+    "detail": "Begin upper-division coursework in the B.S. in Information Technology program, focusing on networking and systems administration."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "Florida International University",
+    "duration": "1 semester",
+    "costUSD": 3200,
+    "detail": "Take advanced database management and cybersecurity courses; attend the FIU Knight Foundation School of Computing career fair."
+   },
+   {
+    "stage": "Year 4 · Fall",
+    "institution": "Florida International University",
+    "duration": "1 semester",
+    "costUSD": 3200,
+    "detail": "Secure a local IT internship in South Florida through FIU Handshake and complete elective courses in IT project management."
+   },
+   {
+    "stage": "Year 4 · Spring",
+    "institution": "Florida International University",
+    "duration": "1 semester",
+    "costUSD": 3200,
+    "detail": "Finish your senior capstone project, polish your resume with internship experience, and transition your internship into a full-time IT Solutions Consultant role."
+   }
+  ],
+  "costs": {
+   "tuition": 16800,
+   "booksFees": 4200,
+   "living": 0,
+   "aidEstimate": 18000,
+   "aidNote": "Assumes eligibility for max Federal Pell Grant and Florida Bright Futures/FSAG state aid for an in-state student living at home."
+  },
+  "requirements": [
+   "High school diploma or GED with a minimum 2.0 GPA for initial Miami Dade College admission.",
+   "Completion of the A.A. degree with a cumulative GPA of 2.5 or higher for guaranteed transfer to FIU under the statewide articulation agreement.",
+   "Prerequisite courses including College Algebra and introductory programming completed with grades of C or better.",
+   "Maintenance of a 2.75+ GPA at FIU to remain in good standing within the School of Computing and Information Sciences."
+  ],
+  "risks": [
+   "Credits failing to transfer properly: Prevent this by strictly following the MDC-to-FIU Transfer Guide and meeting with an advisor each semester.",
+   "Isolating academically: Avoid this by joining student tech clubs like ACM or Women in Computer Science at MDC and FIU to build a peer network.",
+   "Delaying practical experience: Do not wait until senior year to look for internships; start applying by the end of your junior fall semester."
+  ],
+  "nextActions": [
+   "Meet with your Miami Dade College academic advisor this week to declare the A.A. in Computer Information Systems.",
+   "Submit your FAFSA early to maximize Pell Grant and state financial aid disbursement.",
+   "Sign up for a free student account on GitHub and LinkedIn to start building your professional digital footprint.",
+   "Review the FIU transfer prerequisite checklist to ensure your upcoming semester classes align with their admissions criteria."
+  ],
+  "dayInLife": "As an IT Solutions Consultant, your morning starts by reviewing client system tickets and joining a stand-up meeting with the engineering team to discuss ongoing cloud migration projects. You spend the afternoon analyzing business workflows, proposing software integrations to corporate clients, and documenting technical requirements for developers.",
+  "source": "seed"
+ },
+ "detail|it consultant|miami dade college|uf-bsba-is": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1400,
+    "detail": "Enroll in the A.A. Business Administration pathway, taking macroeconomics, college algebra, and composition while maintaining a 3.8+ GPA."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1400,
+    "detail": "Complete microeconomics, financial accounting, and statistics. Attend MDC transfer fairs to connect with UF admissions representatives."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1400,
+    "detail": "Finish managerial accounting, business law, and general education electives. Finalize prerequisite coursework required for UF Warrington."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1400,
+    "detail": "Graduate with an A.A. degree, submit the UF application with all limited-access prerequisites met, and secure the Florida Statewide Articulation agreement transfer."
+   },
+   {
+    "stage": "Year 3 · Fall",
+    "institution": "University of Florida",
+    "duration": "4 months",
+    "costUSD": 3200,
+    "detail": "Start the B.S.B.A. in Information Systems at Warrington, taking ISM3004 (Computing in Business) and joining the Business Technology Council."
+   },
+   {
+    "stage": "Year 3 · Spring",
+    "institution": "University of Florida",
+    "duration": "4 months",
+    "costUSD": 3200,
+    "detail": "Take advanced systems analysis and database management. Attend Warrington Welcome events and prepare behavioral/case interview stories."
+   },
+   {
+    "stage": "Year 4 · Fall",
+    "institution": "University of Florida",
+    "duration": "4 months",
+    "costUSD": 3200,
+    "detail": "Participate in Business Career Services (BCS) Fall Recruiting, applying heavily to technology consulting roles at Big 4 and boutique firms."
+   },
+   {
+    "stage": "Year 4 · Spring",
+    "institution": "University of Florida",
+    "duration": "4 months",
+    "costUSD": 3200,
+    "detail": "Complete capstone IT consulting projects, finalize internship or full-time offer negotiations, and graduate with a B.S.B.A."
+   }
+  ],
+  "costs": {
+   "tuition": 18400,
+   "booksFees": 4600,
+   "living": 0,
+   "aidEstimate": 14000,
+   "aidNote": "Assumes eligibility for maximum Federal Pell Grant and Florida Bright Futures/FSAG based on low-to-middle income status while commuting locally."
+  },
+  "requirements": [
+   "Completion of Miami Dade College A.A. degree with a cumulative GPA of 3.5 or higher",
+   "Prerequisite courses completed: Financial Accounting, Managerial Accounting, Macroeconomics, Microeconomics, Statistics, and Calculus/Business Math",
+   "Admission acceptance into the UF Warrington College of Business Information Systems major",
+   "Active participation in professional student business organizations at UF"
+  ],
+  "risks": [
+   "GPA drop below competitive transfer thresholds during MDC sophomore year; avoid this by utilizing free campus tutoring early.",
+   "Failing to land a junior-year summer internship; prevent this by participating in case competitions and networking through Business Career Services in your first UF semester."
+  ],
+  "nextActions": [
+   "Meet with an MDC advisor this week to map your exact A.A. course sequence for guaranteed UF transfer.",
+   "Apply for the FAFSA and all applicable Florida state financial aid programs.",
+   "Create a LinkedIn profile and start researching student organizations at both MDC and UF.",
+   "Form study groups for your gateway accounting and economics classes."
+  ],
+  "dayInLife": "As a Technology Strategy Consultant, you spend your morning in client workshops analyzing their current software infrastructure and identifying operational bottlenecks. In the afternoon, you build slide decks in PowerPoint to present digital transformation recommendations to senior corporate executives.",
+  "source": "seed"
+ },
+ "detail|it consultant|miami dade college|mdc-as-workforce": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1450,
+    "detail": "Enroll in the A.S. in Network Systems Technology program and take foundational courses like Intro to Information Technology and PC Hardware & Software."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1450,
+    "detail": "Complete networking fundamentals and operating systems courses while preparing for your first industry certification."
+   },
+   {
+    "stage": "Year 1 · Summer",
+    "institution": "Self-Study / Testing Center",
+    "duration": "2 months",
+    "costUSD": 400,
+    "detail": "Intensive self-study and testing for the CompTIA A+ certification to validate basic troubleshooting and hardware skills."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1450,
+    "detail": "Advance into routing, switching, and security courses, laying the groundwork for Cisco and security certifications."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1450,
+    "detail": "Finish final degree requirements for the A.S. in Network Systems Technology and study for the CompTIA Network+ or Cisco CCNA."
+   },
+   {
+    "stage": "Year 2 · Summer",
+    "institution": "Self-Study / Testing Center",
+    "duration": "2 months",
+    "costUSD": 400,
+    "detail": "Obtain Network+ or CCNA certification and build a resume highlighting hands-on lab projects to target local MSPs."
+   },
+   {
+    "stage": "Year 3 · Full Year",
+    "institution": "South Florida MSP / IT Consultancy",
+    "duration": "12 months",
+    "costUSD": 0,
+    "detail": "Work full-time as a Junior IT Support Consultant, handling client ticketing, remote endpoint management, and network troubleshooting."
+   }
+  ],
+  "costs": {
+   "tuition": 6600,
+   "booksFees": 1000,
+   "living": 0,
+   "aidEstimate": 5500,
+   "aidNote": "Assumes eligibility for maximum Federal Pell Grant and Florida Student Assistance Grant (FSAG) for low-to-middle income in-state students."
+  },
+  "requirements": [
+   "High school diploma or GED equivalent",
+   "Miami Dade College placement testing (or waiver via SAT/ACT/previous coursework)",
+   "Maintain a minimum 2.0 cumulative GPA to remain in good standing",
+   "Pass CompTIA A+ and Network+ or Cisco CCNA certification exams",
+   "Valid driver's license and reliable transportation for on-site client visits in South Florida"
+  ],
+  "risks": [
+   "Focusing solely on classes without earning certs will make it hard to get hired by MSPs; avoid this by scheduling certification exams before your final semester.",
+   "Burnout from balancing heavy technical courseloads and part-time work; avoid this by utilizing campus study groups and keeping a strict weekly schedule.",
+   "Communication skill gaps can stall consulting careers; avoid this by actively practicing customer service scenarios and ticket-writing during labs."
+  ],
+  "nextActions": [
+   "Submit your application to Miami Dade College for the upcoming term and complete the FAFSA.",
+   "Meet with an MDC advisor to map out your exact course schedule for the A.S. in Network Systems Technology.",
+   "Open a free account on Professor Messer or similar platforms to preview CompTIA A+ study material.",
+   "Draft a basic tech resume highlighting any troubleshooting, hardware repair, or customer service experience.",
+   "Join the MDC IT Student Association or local tech meetups to begin building a professional network."
+  ],
+  "dayInLife": "A Junior IT Support Consultant starts the day reviewing remote monitoring dashboards and client service desk tickets for network or hardware alerts. You spend the bulk of the day diagnosing user issues remotely, configuring new workstations, and occasionally visiting local small business clients to resolve on-site IT infrastructure problems.",
+  "source": "seed"
+ },
+ "detail|it consultant|miami dade college|wgu-online-bs": {
+  "timeline": [
+   {
+    "stage": "Year 1 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1500,
+    "detail": "Begin the A.S. in Computer Information Technology. Focus on core networking and foundational programming courses while maintaining a 3.0+ GPA."
+   },
+   {
+    "stage": "Year 1 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1500,
+    "detail": "Continue coursework in operating systems and database management. Apply for campus IT help desk positions to gain immediate experience."
+   },
+   {
+    "stage": "Year 2 · Fall",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1500,
+    "detail": "Take advanced networking and security electives. Secure an entry-level IT Support Specialist or Help Desk job locally."
+   },
+   {
+    "stage": "Year 2 · Spring",
+    "institution": "Miami Dade College",
+    "duration": "4 months",
+    "costUSD": 1500,
+    "detail": "Complete capstone requirements and graduate with the A.S. in Computer Information Technology. Prepare for CompTIA and AWS certifications."
+   },
+   {
+    "stage": "Year 3 · Term 1",
+    "institution": "Western Governors University",
+    "duration": "6 months",
+    "costUSD": 4000,
+    "detail": "Enroll in the B.S. Cloud Computing program. Leverage transfer credits from MDC and accelerate coursework by passing certifications (AWS, CompTIA)."
+   },
+   {
+    "stage": "Year 3 · Term 2",
+    "institution": "Western Governors University",
+    "duration": "6 months",
+    "costUSD": 4000,
+    "detail": "Advance through specialized cloud architecture courses covering Azure, Linux, and scripting. Maintain full-time IT support work to build resume experience."
+   },
+   {
+    "stage": "Year 4 · Term 3",
+    "institution": "Western Governors University",
+    "duration": "6 months",
+    "costUSD": 2000,
+    "detail": "Complete the cloud capstone project and graduate with the B.S. in Cloud Computing. Update resume with earned industry certifications."
+   },
+   {
+    "stage": "Year 4.5 · Transition",
+    "institution": "Technology Consulting Practice",
+    "duration": "6 months",
+    "costUSD": 0,
+    "detail": "Transition from internal IT support into an entry-level Cloud Solutions Advisory or Junior IT Consultant role."
+   }
+  ],
+  "costs": {
+   "tuition": 13500,
+   "booksFees": 2500,
+   "living": 0,
+   "aidEstimate": 9000,
+   "aidNote": "Assumes eligibility for maximum Federal Pell Grant and Florida Student Assistance Grant (FSAG) due to low-to-middle income status."
+  },
+  "requirements": [
+   "High school diploma or GED with a minimum 2.0 GPA for Miami Dade College admission",
+   "Maintain a cumulative GPA of 2.5 or higher during the A.S. program",
+   "Earn an A.S. in Computer Information Technology (or equivalent credits) for seamless WGU transfer",
+   "Pass industry certifications embedded in WGU courses (e.g., AWS Certified Solutions Architect, CompTIA Security+)",
+   "Strong communication and problem-solving skills for client-facing consulting"
+  ],
+  "risks": [
+   "Burnout from balancing full-time IT work with an accelerated, self-paced WGU degree; mitigate by strict time management and scheduling study blocks.",
+   "Procrastination in WGU's competency-based model; mitigate by setting aggressive weekly goals to finish classes ahead of term deadlines.",
+   "Lacking soft skills required for consulting; mitigate by actively participating in client interactions during entry-level IT support roles."
+  ],
+  "nextActions": [
+   "Meet with an MDC advisor to map out your exact A.S. course schedule for the upcoming term.",
+   "Submit the FAFSA early to maximize federal and state grant aid for your community college tuition.",
+   "Set up a LinkedIn profile and research basic IT help desk job postings in the Miami area.",
+   "Begin reviewing free introductory networking resources (like Cisco CCNA basics) to get a head start.",
+   "Apply for local or institutional scholarships specifically earmarked for first-generation college students."
+  ],
+  "dayInLife": "A typical day as a Cloud IT Consultant involves meeting with business clients to understand their infrastructure challenges and designing scalable cloud architectures using AWS or Azure. You will spend hours collaborating with engineering teams to migrate legacy systems, reviewing security compliance reports, and presenting technical migration strategies to non-technical stakeholders.",
+  "source": "seed"
+ }
+}
