@@ -1,20 +1,49 @@
-# SharkPath MDC 🦈
+<div align="center">
 
-Like a shark that never stops moving forward, students navigate from their first Miami Dade College class to a career. SharkPath maps the route with a branching pathway map, live what-if planning, semester plans, ROI, deadlines and an AI counselor team.
+# 🦈 SharkPath MDC
 
-**Stack:** Next.js 16 (App Router, Cache Components) · TypeScript · Tailwind 4 · shadcn/ui (Base UI, Nova) · React Flow · Recharts · Motion · lucide-react · Zustand · next-intl · jsPDF + html2canvas · ics · Auth0
+**Map your path from your first Miami Dade College class to a career.**
 
-## Run it
+### [▶ Open SharkPath: sharkpath-mdc.vercel.app](https://sharkpath-mdc.vercel.app)
+
+Pathway map · what-if planning · semester plans · cost & ROI · deadlines<br>
+Finn, the AI counselor · a 5-agent Counselor Team · English & Español
+
+</div>
+
+---
+
+## Run it on your computer
+
+**You need:** [Node.js](https://nodejs.org) 20 or newer, and Git.
 
 ```bash
+git clone https://github.com/RichWilliams772/sharkpath-mdc.git
+cd sharkpath-mdc
+git checkout user-interface-demo-1   # the app lives on this branch (main only has a README)
 npm install
-cp .env.example .env.local   # optional: add Auth0 keys to turn on login
-npm run dev                  # http://localhost:3000
+cp .env.example .env.local           # then fill in the keys below
+npm run dev                          # open http://localhost:3000
 ```
 
-The app works with no env vars at all. It runs in **guest mode**, and every AI or backend feature uses a built-in demo mock.
+**No keys? It still runs.** With an empty `.env.local`, SharkPath opens in guest mode and uses built-in answers. Each key turns on a real feature:
 
-## Screens (`feat/student-experience`)
+| Key in `.env.local` | Turns on | Where to get it |
+| --- | --- | --- |
+| `DATABASE_URL` | Careers, verified figures and saved plans from our Tiger Data database | Tiger Cloud console → SharkPath service → connection string |
+| `GEMINI_API_KEY` | Finn, the chat counselor | Google AI Studio → API keys |
+| `SWARMS_API_KEY` | The Counselor Team tab | swarms.world → API keys |
+| `AUTH0_DOMAIN` · `AUTH0_CLIENT_ID` · `AUTH0_CLIENT_SECRET` | Accounts, and saving plans to your account | Auth0 → Applications → **SharkPath** |
+| `AUTH0_SECRET` | (signs the login cookie) | Make your own: `openssl rand -hex 32` |
+| `APP_BASE_URL` | (where login sends you back) | `http://localhost:3000` on your computer |
+
+Ask the team for the shared values, and never commit `.env.local`.
+
+**Deploy to the live site:** run `npx vercel deploy --prod` from this folder. You need access to the SharkPath team on Vercel; the keys are already set there.
+
+**Stack:** Next.js 16 (App Router, Cache Components) · TypeScript · Tailwind 4 · shadcn/ui (Base UI, Nova) · React Flow · Recharts · Motion · lucide-react · Zustand · next-intl · jsPDF + html2canvas · ics · Auth0 · Tiger Data (Postgres) · Vercel AI SDK + Gemini · Swarms
+
+## Screens
 
 | Route | What it does |
 | --- | --- |
@@ -33,9 +62,11 @@ English/Spanish toggle in the header (next-intl). Text lives in `src/i18n/en.ts`
 
 Everything shared is in **`src/types/roadmap.ts`**. Change it together.
 
-### AI / Backend: build these routes; the UI switches over automatically
+### AI / Backend routes
 
-The UI already calls these endpoints. If a route doesn't exist yet (404/501), it falls back to a local demo mock (`src/lib/api/`).
+The UI calls these endpoints. If a route is missing (404/501), busy (503) or rate-limited (429), the UI falls back to built-in answers in `src/lib/api/`, so the site never breaks.
+
+**Live:** `/api/chat` (Gemini, with a lighter fallback model), `/api/counselor-team` (Swarms; finished reports are saved in Tiger Data per career, route and language), `/api/plans`, `/api/careers`, `/api/careers/[id]`. **Still to build:** `/api/careers/resolve` and `/api/quiz`.
 
 | Endpoint | Request → Response | Used by |
 | --- | --- | --- |
